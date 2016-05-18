@@ -6,10 +6,6 @@ layouts : static layout and how the site will be converted to static
 static : all static contents needed by the site
 
 #### Frequent Commands ####
-hugo server --theme=academic --buildDrafts
-
 hugo server --theme=hugo-theme-bleak --buildDrafts --watch
-
-hugo server --theme=hugo-cactus-theme --buildDrafts --watch
 
 hugo server --theme=hugo-theme-crisp --buildDrafts --watch

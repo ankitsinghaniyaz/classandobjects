@@ -1,6 +1,7 @@
 +++
 date = "1993-10-05T14:02:37+02:00"
 title = "About - Ankit Singhnaiya"
+description = "Technology and Hacks all on one platform. You get unique, interesting and cutting edge reviews and posts.."
 hidden = true
 +++
 

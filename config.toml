@@ -2,7 +2,7 @@
 baseurl = "http://classandobjects.com/"
 languageCode = "en-us"
 title = "Class & Objects"
-theme = "hugo-cactus-theme"
+theme = "hugo-theme-crisp"
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
 # Disable comments by leaving disqusShortname empty
@@ -45,6 +45,9 @@ disqusShortname = ""
    # "mono-social"
 	# The social icons can be styled differently if you use mono as font - circle, rounded, or empty
 	socialIconStyle = "rounded"
+
+	# enable table of content
+	toc = false
 
 # Add additional social link entries underneath
 [social]
