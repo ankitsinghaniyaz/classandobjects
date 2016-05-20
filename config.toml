@@ -6,7 +6,7 @@
 
 # Site settings
 # baseurl = "http://classandobjects.com/"
-baseurl = "https://ankitsinghaniyaz.github.com/"
+baseurl = "http://ankitsinghaniyaz.github.com/classandobjects"
 languageCode = "en-us"
 title = "Class & Objects"
 theme = "hugo-theme-crisp"
