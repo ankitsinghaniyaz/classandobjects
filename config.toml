@@ -1,5 +1,8 @@
 # Hosting settings
-canonifyurls: true
+# canonifyurls: true
+# contentdir = "content"
+# layoutdir = "layouts"
+# publishdir = "public"
 
 # Site settings
 # baseurl = "http://classandobjects.com/"
