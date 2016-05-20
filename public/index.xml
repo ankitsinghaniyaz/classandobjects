@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Class &amp; Objects</title>
+    <link>https://ankitsinghaniyaz.github.com/</link>
+    <description>Recent content on Class &amp; Objects</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 May 2016 19:45:15 +0530</lastBuildDate>
+    <atom:link href="https://ankitsinghaniyaz.github.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Why Hugo is best for blogging? You should use it too!</title>
+      <link>https://ankitsinghaniyaz.github.com/hugo/why_hugo/</link>
+      <pubDate>Wed, 18 May 2016 19:45:15 +0530</pubDate>
+      
+      <guid>https://ankitsinghaniyaz.github.com/hugo/why_hugo/</guid>
+      <description>
+
+&lt;p&gt;Just like any blogger, I also wanted to start my own blog. I had many doubts. What is my niche? Will people read my blog? Which platform to use for blogging? I do not know if I have found my answers but, for the last one it is &lt;strong&gt;HUGO&lt;/strong&gt;. Yes, I searched for different blogging platform and all had their own set of drawbacks. Here are few reasons for not selecting them :&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Blogger : Free, SEO optimized, but no good themes&lt;/li&gt;
+&lt;li&gt;Wordpress : Good themes, SEO Optimized, but costly&lt;/li&gt;
+&lt;li&gt;Quora : Good theme, Free, but not SEO optimized&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I would have used Wordpress, but I discovered &lt;strong&gt;HUGO&lt;/strong&gt;, which is times faster and way cheaper than Wordpress. Here I am on Hugo and doing amazing stuffs. Here are the reasons why I love Hugo:&lt;/p&gt;
+
+&lt;h2 id=&#34;fast-very-fast:47e02ac62400e2bf33a3dc648fdd1233&#34;&gt;Fast, very fast&lt;/h2&gt;
+
+&lt;p&gt;I did my research and found out that hugo is faster than, not only Wordpress, but also against other products(static site generators) like Jekyll and Octopress2. You can see this &lt;a href=&#34;https://youtu.be/CdiDYZ51a2o&#34;&gt;video&lt;/a&gt; on hugo official website and get the estimate. For detailed comparison, this &lt;a href=&#34;http://conscientiousprogrammer.com/blog/2015/05/31/why-i-switched-from-octopress-2-to-hugo/&#34;&gt;blog&lt;/a&gt; is also an awesome resource to look at.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;In simple words, Hugo creates and stores your HTML file just once. This reduces the delay of creating HTML content every time. These files do not require much resource(CPU, Memory, etc), thus it can be hosted cheap.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;themes-beautiful-themes:47e02ac62400e2bf33a3dc648fdd1233&#34;&gt;Themes, beautiful themes&lt;/h2&gt;
+
+&lt;p&gt;I am crazy about the look and feel of anything. Say me nuts, but I will not use anything that does not look good. It may have lot of functionalities, but the feel is equally important to me. Hugo has a good set of themes you can choose from and customize, if needed. You can also create your own theme. This is also a theme called as &lt;a href=&#34;http://themes.gohugo.io/crisp/&#34;&gt;Hugo Crips&lt;/a&gt;. I liked it for the simplicity. You can explore more hugo themes at &lt;a href=&#34;http://themes.gohugo.io/&#34;&gt;themes.gohugo.io&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;ease-of-setup:47e02ac62400e2bf33a3dc648fdd1233&#34;&gt;Ease of Setup&lt;/h2&gt;
+
+&lt;!-- point about setup blog on ubuntu --&gt;
+
+&lt;p&gt;Setting up hugo is also really easy. They have setup files for most of the Operating system. You can find them &lt;a href=&#34;https://github.com/spf13/hugo/releases/tag/v0.15&#34;&gt;here&lt;/a&gt;.
+You can just click and install it just like any other operating system. For ubuntu users they can download &lt;code&gt;hugo_0.15_amd64.deb&lt;/code&gt; or &lt;code&gt;*.deb&lt;/code&gt; files depending on their platform. Then installing is just a matter of clicks.&lt;/p&gt;
+
+&lt;h2 id=&#34;host-for-free:47e02ac62400e2bf33a3dc648fdd1233&#34;&gt;Host for free&lt;/h2&gt;
+
+&lt;!-- point about hosting github detailed blog --&gt;
+
+&lt;p&gt;It is almost free to host them. They can be hosted for free on &lt;a href=&#34;https://gohugo.io/tutorials/github-pages-blog/&#34;&gt;github&lt;/a&gt; or &lt;a href=&#34;https://gohugo.io/tutorials/hosting-on-bitbucket/&#34;&gt;bitbucket&lt;/a&gt; with links to their respective official tutorial. You can also see &lt;a href=&#34;..&#34;&gt;how to setup custom domain on github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This domain will cost you just $5 per year.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;warning:47e02ac62400e2bf33a3dc648fdd1233&#34;&gt;Warning&lt;/h2&gt;
+
+&lt;p&gt;Hugo has lots of features built-in, like &lt;code&gt;syntax highlighting&lt;/code&gt;, table of contents, pagination, etc. It has almost all the things you need for content development. If you want something more, you may have to wait or tinker around. Optimistically, you may create something which is missing and help the whole hugo community.&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusion:47e02ac62400e2bf33a3dc648fdd1233&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Do you see &lt;strong&gt;Hugo is fast, beautiful, easy and free&lt;/strong&gt;. If you can take initial trouble of setting it up and getting is started, which is minimal, you are going to reap its benefits. Tough, you should remember hugo has just started its journey. So, awaken the hacker in you and get started&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About - Ankit Singhnaiya</title>
+      <link>https://ankitsinghaniyaz.github.com/about/</link>
+      <pubDate>Tue, 05 Oct 1993 14:02:37 +0200</pubDate>
+      
+      <guid>https://ankitsinghaniyaz.github.com/about/</guid>
+      <description>
+
+&lt;p&gt;I need to learn and experiment. It feels dumb and
+boring without some tech to play with. My tools of choice are Java, Python, Jade,
+SASS. I love to kill dragons using Django, Flask, Git. Analytics is also
+something, I am looking forward to.&lt;/p&gt;
+
+&lt;p&gt;I have build several web based and mobile applications. You can find them all on
+my github link. My blogs are like a micro copy of the things in my brain. I
+write blogs to better my thoughts and, help others build something easy.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Let me know if you want a tutorial on something, may be I am getting bored!&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;about-blog-content:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;About Blog Content&lt;/h3&gt;
+
+&lt;p&gt;All the posts that you will see here have been build, using awesome free and
+open source stuff available out there. I am a learner first, I hunt down master
+blogs and aggregate content and better them. Content here will be a in-depth
+coverage of things you do not find easy. I will try to keep the content crips and
+clear. I thank you for your precious time!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
