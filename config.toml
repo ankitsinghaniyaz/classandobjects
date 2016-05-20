@@ -1,7 +1,9 @@
 # Hosting settings
+canonifyurls: true
 
 # Site settings
-baseurl = "http://classandobjects.com/"
+# baseurl = "http://classandobjects.com/"
+baseurl = "https://ankitsinghaniyaz.github.com/"
 languageCode = "en-us"
 title = "Class & Objects"
 theme = "hugo-theme-crisp"
