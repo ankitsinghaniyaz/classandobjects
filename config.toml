@@ -1,0 +1,64 @@
+# Hosting settings
+# canonifyurls: true
+# contentdir = "content"
+# layoutdir = "layouts"
+# publishdir = "public"
+
+# Site settings
+# baseurl = "http://classandobjects.com/"
+baseurl = "https://ankitsinghaniyaz.github.com/"
+languageCode = "en-us"
+title = "Class & Objects"
+theme = "hugo-theme-crisp"
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+# Disable comments by leaving disqusShortname empty
+disqusShortname = ""
+
+[params]
+	name = "Ankit Singhaniya"
+	description = "Describe your website"
+	bio = "Blogger - Programmer - Philosopher"
+	# Enter optionally your twitter account
+	twitter = ""
+	enableRSS = false  # RESEARCH MORE ON RSS
+
+	# Add custom assets with their paths relative to the static folder
+	customCSS = []
+	customJS  = []
+
+	# The variables below are optionally too and can be used to
+	# translate or customize each string of the theme.
+
+	# Navigation links
+	home = ""
+	about = ""
+	subscribe = ""
+	# Pagination links
+	olderPosts = ""
+	newerPosts = ""
+	readMore = ""
+	copyright = ""
+	# Sharing options and author information in posts
+	aboutAuthor = "I'm an techie and I love to explore."
+	tweet = ""
+	share = ""
+	# 404 page
+	title404 = "Page Not Found"
+	subtitle404 = "Page Not Found"
+
+	# Choose a font for the social icons in the footer. Either "mono-social" or "font-awesome"
+	iconFont = "font-awesome"
+   # "mono-social"
+	# The social icons can be styled differently if you use mono as font - circle, rounded, or empty
+	socialIconStyle = "rounded"
+
+	# enable table of content
+	toc = false
+
+# Add additional social link entries underneath
+[social]
+    twitter  = "https://www.twitter.com/"
+    facebook = "https://www.facebook.com/"
+    github   = "https://www.github.com/"
+    dribble  = "https://www.dribbble.com/"
