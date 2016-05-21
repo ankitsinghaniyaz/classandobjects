@@ -6,8 +6,18 @@
     <description>Recent content on Class &amp; Objects</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 May 2016 19:45:15 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 21 May 2016 10:39:33 +0530</lastBuildDate>
     <atom:link href="http://ankitsinghaniyaz.github.com/classandobjects/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>test</title>
+      <link>http://ankitsinghaniyaz.github.com/classandobjects/test/test/</link>
+      <pubDate>Sat, 21 May 2016 10:39:33 +0530</pubDate>
+      
+      <guid>http://ankitsinghaniyaz.github.com/classandobjects/test/test/</guid>
+      <description>&lt;p&gt;I hope this works..&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Why Hugo is best for blogging? You should use it too!</title>
