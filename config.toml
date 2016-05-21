@@ -20,7 +20,7 @@ theme = "hugo-theme-crisp"
 	# Enter your tracking code to enable Google Analytics
 	googleAnalytics = "UA-78114335-1"
 	# Disable comments by leaving disqusShortname empty
-	disqus = "classandobjectscom"
+	disqus = "classandobjects"
 
 
 	# Enter optionally your twitter account
