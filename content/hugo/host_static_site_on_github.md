@@ -1,8 +1,8 @@
 +++
-categories = []
+categories = ["hugo", "github", "hosting"]
 date = "2016-05-21T15:36:40+05:30"
 description = ""
-tags = []
+tags = ["hosting on github", "hugo", "github"]
 title = "How to Easily Host a Static website on Github"
 toc = false
 
@@ -106,6 +106,10 @@ git push
 ```
 
 Now you can just run `bash deploy.sh "your message"`. This will do all the above tasks we did manually.
+
+
+## Custom Domain
+Adding a domain to your website is optional. You can read [how to add domain to my github page](http://classandobjects.com/hugo/adding_custom_domain_to_github_pages/).
 
 ## Finally
 
