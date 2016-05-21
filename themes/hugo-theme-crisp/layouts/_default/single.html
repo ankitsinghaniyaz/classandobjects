@@ -17,6 +17,24 @@
         </span>
     </div>
     <h1 class="post-title">{{ .Title }}</h1>
+
+    <!-- adding TOC -->
+    {{ if .Params.toc }}
+       <div id="toc" class="well col-md-4 col-sm-6">
+          {{ .TableOfContents }}
+       </div>
+
+       <style>
+         #toc ul {
+            list-style-type: none;
+         }
+
+         #toc ul ul {
+            list-style-type: disc; 
+         }
+       </style>
+    {{ end }}
+
     {{ .Content }}
     {{ partial "share.html" . }}
     {{ partial "author.html" . }}
