@@ -10,15 +10,19 @@ baseurl = "http://ankitsinghaniyaz.github.io/"
 languageCode = "en-us"
 title = "Class & Objects"
 theme = "hugo-theme-crisp"
-# Enter your tracking code to enable Google Analytics
-googleAnalytics = ""
-# Disable comments by leaving disqusShortname empty
-disqusShortname = ""
+
 
 [params]
 	name = "Ankit Singhaniya"
 	description = "Describe your website"
 	bio = "Blogger - Programmer - Philosopher"
+
+	# Enter your tracking code to enable Google Analytics
+	googleAnalytics = "UA-78114335-1"
+	# Disable comments by leaving disqusShortname empty
+	disqus = "classandobjectscom"
+
+
 	# Enter optionally your twitter account
 	twitter = ""
 	enableRSS = false  # RESEARCH MORE ON RSS
