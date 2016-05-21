@@ -2,8 +2,14 @@
 
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
+# Clear folder first
+# rm -rf ../classandobjectspage
+
+# copy CNAME
+# cp CNAME ../classandobjectspage
+
 # Build the project.
-hugo -t hugo-theme-crisp
+hugo -d ../classandobjectspage
 
 # Add changes to git.
 git add -A
@@ -17,5 +23,3 @@ git commit -m "$msg"
 
 # Push source and build repos.
 git push origin master
-
-git subtree push --prefix=public https://github.com/ankitsinghaniyaz/classandobjects.git gh-pages
