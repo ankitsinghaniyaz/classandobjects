@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugos on Class &amp; Objects</title>
-    <link>http://ankitsinghaniyaz.github.com/classandobjects/hugo/</link>
+    <link>http://ankitsinghaniyaz.github.com/hugo/</link>
     <description>Recent content in Hugos on Class &amp; Objects</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 18 May 2016 19:45:15 +0530</lastBuildDate>
-    <atom:link href="http://ankitsinghaniyaz.github.com/classandobjects/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://ankitsinghaniyaz.github.com/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Why Hugo is best for blogging? You should use it too!</title>
-      <link>http://ankitsinghaniyaz.github.com/classandobjects/hugo/why_hugo/</link>
+      <link>http://ankitsinghaniyaz.github.com/hugo/why_hugo/</link>
       <pubDate>Wed, 18 May 2016 19:45:15 +0530</pubDate>
       
-      <guid>http://ankitsinghaniyaz.github.com/classandobjects/hugo/why_hugo/</guid>
+      <guid>http://ankitsinghaniyaz.github.com/hugo/why_hugo/</guid>
       <description>
 
 &lt;p&gt;Just like any blogger, I also wanted to start my own blog. I had many doubts. What is my niche? Will people read my blog? Which platform to use for blogging? I do not know if I have found my answers but, for the last one it is &lt;strong&gt;HUGO&lt;/strong&gt;. Yes, I searched for different blogging platform and all had their own set of drawbacks. Here are few reasons for not selecting them :&lt;/p&gt;

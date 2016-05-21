@@ -6,7 +6,7 @@ publishdir = "public"
 
 # Site settings
 # baseurl = "http://classandobjects.com/"
-baseurl = "http://ankitsinghaniyaz.github.com/classandobjects"
+baseurl = "http://ankitsinghaniyaz.github.com/"
 languageCode = "en-us"
 title = "Class & Objects"
 theme = "hugo-theme-crisp"
