@@ -3,7 +3,7 @@
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 # Clear folder first
-# rm -rf ../classandobjectspage
+# rm -rf ../classandobjectspage/*.html
 
 # copy CNAME
 # cp CNAME ../classandobjectspage
