@@ -9,3 +9,16 @@ static : all static contents needed by the site
 hugo server --theme=hugo-theme-bleak --buildDrafts --watch
 
 hugo server --theme=hugo-theme-crisp --buildDrafts --watch
+
+
+
+#### Hosting  ####
+# Add the gh-pages branch of the repository. It will look like a folder named public
+
+git subtree add --prefix=public https://github.com/ankitsinghaniyaz/classandobjects.git gh-pages --squash
+
+# Pull down the file we just committed. This helps avoid merge conflicts
+git subtree pull --prefix=public https://github.com/ankitsinghaniyaz/classandobjects.git gh-pages
+
+
+git subtree push --prefix=public https://github.com/ankitsinghaniyaz/classandobjects.git gh-pages
