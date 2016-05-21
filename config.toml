@@ -58,7 +58,7 @@ disqusShortname = ""
 
 # Add additional social link entries underneath
 [social]
-    twitter  = "https://www.twitter.com/"
-    facebook = "https://www.facebook.com/"
-    github   = "https://www.github.com/"
-    dribble  = "https://www.dribbble.com/"
+    twitter  = "https://www.twitter.com/classandobjects"
+   #  facebook = "https://www.facebook.com/
+    github   = "https://www.github.com/ankitsinghaniyaz"
+   #  dribble  = "https://www.dribbble.com/"
