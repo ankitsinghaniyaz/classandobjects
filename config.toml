@@ -13,9 +13,9 @@ theme = "hugo-theme-crisp"
 
 
 [params]
-	name = "Ankit Singhaniya"
-	description = "Describe your website"
-	bio = "Blogger - Programmer - Philosopher"
+	name = "classandobjects.com"
+	description = "Useful blogs that matters!"
+	# bio = "Blogger - Programmer - Philosopher"
 
 	# Enter your tracking code to enable Google Analytics
 	googleAnalytics = "UA-78114335-1"
