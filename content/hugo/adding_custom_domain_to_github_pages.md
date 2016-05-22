@@ -5,7 +5,7 @@ description = "Step by step guide on how to add custom domain to github pages an
 tags = ["add doamin to github page", "add godaddy domain to github page"]
 title = "Adding Domain to Github Pages"
 toc = false
-draft = "true"
+draft = "false"
 
 +++
 
