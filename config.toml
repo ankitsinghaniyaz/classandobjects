@@ -24,7 +24,8 @@ theme = "hugo-theme-crisp"
 
 
 	# Enter optionally your twitter account
-	twitter = ""
+	twitter = "classandobjects"
+	gplus = "+AnkitSinghaniya"
 	enableRSS = false  # RESEARCH MORE ON RSS
 
 	# Add custom assets with their paths relative to the static folder
