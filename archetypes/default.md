@@ -5,4 +5,5 @@ tags = []
 date = ""
 categories = []
 toc = false
+slug = ""
 +++
