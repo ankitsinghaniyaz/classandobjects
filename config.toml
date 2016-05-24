@@ -26,7 +26,7 @@ theme = "hugo-theme-crisp"
 	# Enter optionally your twitter account
 	twitter = "classandobjects"
 	gplus = "+AnkitSinghaniya"
-	enableRSS = false  # RESEARCH MORE ON RSS
+	enableRSS = true  # RESEARCH MORE ON RSS
 
 	# Add custom assets with their paths relative to the static folder
 	customCSS = []
