@@ -5,8 +5,8 @@ layoutdir = "layouts"
 publishdir = "public"
 
 # Site settings
-# baseurl = "http://classandobjects.com/"
-baseurl = "http://ankitsinghaniyaz.github.io/"
+baseurl = "http://classandobjects.com/"
+# baseurl = "http://ankitsinghaniyaz.github.io/"
 languageCode = "en-us"
 title = "Class & Objects"
 theme = "hugo-theme-crisp"
