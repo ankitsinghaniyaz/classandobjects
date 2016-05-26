@@ -2,7 +2,7 @@
 categories = ["algorithms", "problem solving", "logical reasoning"]
 date = "2016-05-27T00:36:36+05:30"
 description = "Boggle is a grid of alphabets from which you have to find out recurring counts of given word."
-draft = true
+draft = false
 slug = "python_boggle_solver"
 tags = ["algorithms", "boggle solver algorithm", "boggle solver program", "boggle solver python" ]
 title = "Can you Boggle Solve?"
