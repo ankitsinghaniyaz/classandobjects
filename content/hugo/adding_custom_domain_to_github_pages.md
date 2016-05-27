@@ -9,7 +9,7 @@ draft = "false"
 
 +++
 
-A domain which shows what you do can add *credibility* to your blog. In this tutorial we are going to add custom domain to our github page. You may also want to [host a website on github](..). You can have domain with [godaddy](www.godaddy.com), [hostgator](www.hostgator.com), [namecheap](www.namecheap.com), etc. The steps remains the same. I will point out any peculiarity, if they exist. So, lets get started.
+A domain which shows what you do can add *credibility* to your blog. In this tutorial we are going to add custom domain to our github page. You may also want to [host a website on github](..). You can have domain with [godaddy](https://www.godaddy.com), [hostgator](https://www.hostgator.com), [namecheap](https://www.namecheap.com), etc. The steps remains the same. I will point out any peculiarity, if they exist. So, lets get started.
 
 ## Configuring Github
 

@@ -76,7 +76,7 @@ git add -A
 git push
 ```
 
-You can now view you website at [www.{username}.github.io](www.yourusername.github.io)
+You can now view you website at **www.yourusername.github.io**
 
 ## Automate It
 
