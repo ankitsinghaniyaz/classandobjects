@@ -1,10 +1,9 @@
 +++
-categories = ["hugo", "blogs"]
+categories = ["blogs"]
 date = "2016-05-18T19:45:15+05:30"
 description = "A guide to choosing the right blogging platform for you blog.."
-tags = [ "hugo",
-         "hugo vs Wordpress vs Jekyll",
-         "blogs"]
+tags = [ "blogging"]
+keywords = "why hugo blog is best, hugo vs jekyll"
 title = "Why Hugo is best for blogging? You should use it too!"
 toc = false
 +++

@@ -1,10 +1,11 @@
 +++
-categories = []
+categories = ["blogs"]
 date = "2016-09-08T23:11:40+05:30"
 description = "Why should we all think about freelancing? What are my inspirations to go for it."
 draft = false
 slug = ""
-tags = ["freelance", "reasons to freelance"]
+keywords = "reason to freelance, why freelancing is good"
+tags = ["freelance"]
 title = "To Life: Work from home"
 toc = false
 

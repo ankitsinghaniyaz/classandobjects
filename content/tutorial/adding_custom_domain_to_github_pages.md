@@ -1,8 +1,9 @@
 +++
-categories = ["domain", "blog", "github"]
+categories = ["tutorials", "guides"]
+tags = ["hugo", "hosting"]
 date = "2016-05-22T16:48:45+05:30"
 description = "Step by step guide on how to add custom domain to github pages and blogs"
-tags = ["add doamin to github page", "add godaddy domain to github page"]
+keywords = "add domain, github page, godaddy domain"
 title = "Adding Domain to Github Pages"
 toc = false
 draft = "false"

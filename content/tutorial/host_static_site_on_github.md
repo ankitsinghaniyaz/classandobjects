@@ -1,8 +1,9 @@
 +++
-categories = ["hugo", "github", "hosting"]
+categories = ["guide", "tutorial", "hugo", "github", "hosting"]
+tags = ["hugo", "hosting"]
 date = "2016-05-21T15:36:40+05:30"
 description = ""
-tags = ["hosting on github", "hugo", "github"]
+keywords = ["hosting on github", "hugo", "github"]
 title = "How to Easily Host a Static website on Github"
 toc = false
 

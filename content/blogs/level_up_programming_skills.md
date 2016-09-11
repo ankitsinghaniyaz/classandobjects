@@ -1,11 +1,11 @@
 +++
-categories = []
+categories = ["blogs"]
 date = "2016-09-09T19:17:43+05:30"
 description = "Do you feel like you are always doing the same thing over and over again? You are in the logic - language loop, read through to know more."
 draft = false
 slug = ""
-tags = ["level up the programming skills", "improve coding",
-"better developer"]
+keywords = "level up your programming skills, improve coding"
+tags = ["programming skills"]
 title = "Level Up the Programming Skills : Language vs Logic"
 toc = false
 

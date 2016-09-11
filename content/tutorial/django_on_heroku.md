@@ -1,13 +1,13 @@
 +++
 categories = ["python", "djnago", "heroku"]
-
+tags = ["python"]
 date = "2016-05-27T11:03:20+05:30"
 
 description = "Step by step guide on how to deploy django application on heroku. This guide talks about creating Procfile, requirement.txt and setting up the toolbelt"
 
 draft = false
 slug = "host_django_app_on_heroku"
-tags = ["how to host django application on heroku", "deploy django application on heroku"]
+keywords = "django application, heroku, deploy, host"
 title = "Step by Step Guide on Deploying Django Application on Heroku"
 toc = false
 

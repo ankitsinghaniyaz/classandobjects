@@ -1,9 +1,9 @@
 +++
 categories = ["r", "analytics", "visualization"]
+tags = ["visualization", "analytics"]
 date = "2016-05-24T21:48:05+05:30"
 description = "Creating interactive graphics and visualizations using Rcharts in R. These sample code snippets shows how to use them."
-tags = ["rcharts tutorial", "interactive visualization in r",
-         "interactive graphs in r"]
+keywords = "rcharts tutorial, interactive visualization in r,   interactive graphs in r"
 title = "Interactive visualization in R using Rcharts"
 toc = false
 draft = false
