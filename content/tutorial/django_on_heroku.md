@@ -7,7 +7,7 @@ description = "Step by step guide on how to deploy django application on heroku.
 
 draft = false
 slug = "host_django_app_on_heroku"
-keywords = "django application, heroku, deploy, host"
+keywords = ["django application", "heroku", "deploy", "Host Djanog app on heroky"]
 title = "Step by Step Guide on Deploying Django Application on Heroku"
 toc = false
 

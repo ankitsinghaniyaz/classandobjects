@@ -5,8 +5,7 @@ date = "2016-09-09T20:12:23+05:30"
 description = "Learning react can be easy if you are well equipped, these are the top 5 things to know when learning react"
 draft = false
 slug = ""
-keywords = "react js, react for beginners, tips and tricks, confusions",
-"things to know about react"]
+keywords = ["react js", "react for beginners", "tips and tricks", "confusions"]
 title = "Things Beginners Find Confusing About React.js"
 toc = false
 
