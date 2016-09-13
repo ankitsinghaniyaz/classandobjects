@@ -10,7 +10,7 @@ title = "Things Beginners Find Confusing About React.js"
 toc = false
 
 +++
-React js is currently the most hyped front-end framework(view) today. I am lucky that at my current workplace I am getting a chance to explore react and rails. I am a Python lover, but I am completely open to learning new technologies. I have seen confusing things in Ruby on Rails which is very opposite to React and Javascript environment. I have pointed out top 5 reasons why React js can be confusing. So let us get started.
+React js is currently the most hyped front-end framework(view) today. I am lucky that at my current workplace I am getting a chance to explore react and rails. I am a Python lover, but I am completely open to learning new technologies. I have seen confusing things in Ruby on Rails which is very opposite to React and Javascript environment. I am trying to list out things every react js beginner should know. I have pointed out top 5 reasons why React js can be confusing. So let us get started.
 
 ## 1. React is just the view layer
 
