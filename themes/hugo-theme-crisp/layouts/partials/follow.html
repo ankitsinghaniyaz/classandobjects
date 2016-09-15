@@ -5,4 +5,39 @@
 	<a href="http://github.com/ankitsinghaniyaz" rel="me"><i class="fa fa-github-square fa-2x"></i></a>
 	<a href="https://plus.google.com/+AnkitSinghaniya" rel="author"><i class="fa fa-google-plus-square fa-2x"></i></a>
 	<a href="{{ .Site.BaseURL }}index.xml" rel="me"><i class="fa fa-rss-square fa-2x"></i></a>
+	<a href="#vex" onclick="subscribe()" rel="me"><i class="fa fa-envelope-square fa-2x"></i></a>
 </div>
+<script>
+function hide (elements) {
+  elements = elements.length ? elements : [elements];
+  for (var index = 0; index < elements.length; index++) {
+    elements[index].style.display = 'none';
+  }
+}
+
+function subscribe() {
+	// hide(document.querySelectorAll('.vex'));
+	vex.defaultOptions.className = 'vex-theme-plain';
+	var vexId = vex.dialog.open({
+    message: 'Enter your email:',
+    input: [
+        '<input name="email" type="text" placeholder="jhondoe@domain.com" required />',
+    ].join(''),
+    buttons: [
+        $.extend({}, vex.dialog.buttons.YES, { text: 'Subscribe' }),
+        $.extend({}, vex.dialog.buttons.NO, { text: 'Back' })
+    ],
+    callback: function (data) {
+        if (!data) {
+            console.log('Cancelled');
+        } else {
+            console.log('email', data.email);
+        }
+    },
+		beforeClose: function () {
+			console.log("before close");
+			hide(document.querySelectorAll('.vex'));
+		}
+	});
+}
+</script>
