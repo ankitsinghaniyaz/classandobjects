@@ -1,4 +1,7 @@
 +++
+aliases = [
+  "/analytics/interactive_visualization_using_rcharts_in_r/"
+]
 categories = ["r", "analytics", "visualization"]
 tags = ["visualization", "analytics"]
 date = "2016-05-24T21:48:05+05:30"

@@ -2,6 +2,7 @@
 title = "Blog Title"
 description = ""
 tags = []
+keywords = []
 date = ""
 categories = []
 toc = false
