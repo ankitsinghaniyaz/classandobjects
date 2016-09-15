@@ -28,16 +28,28 @@ function subscribe() {
         $.extend({}, vex.dialog.buttons.NO, { text: 'Back' })
     ],
     callback: function (data) {
+				// console.log("in call");
         if (!data) {
-            console.log('Cancelled');
-        } else {
-            console.log('email', data.email);
+					// console.log("no data");
+				}
+				else {
+					// console.log("in");
+            var email_value = data.email;
+						var form = document.createElement("form");
+						form.setAttribute('method',"post");
+						form.setAttribute('action', "http://formspree.io/classandobjects@gmail.com");
+
+						var input = document.createElement("input"); //input element, text
+						input.setAttribute('type',"email");
+						input.setAttribute('name',"email");
+						input.value = email_value;
+
+						form.appendChild(input);
+						// console.log("form", form);
+						form.submit();
         }
+				hide(document.querySelectorAll('.vex'));
     },
-		beforeClose: function () {
-			console.log("before close");
-			hide(document.querySelectorAll('.vex'));
-		}
 	});
 }
 </script>
