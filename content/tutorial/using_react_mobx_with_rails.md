@@ -3,20 +3,21 @@ categories = ["tutorial", "guide"]
 keywords = ["using mobx and react with rails", "mobx", "rails"]
 date = "2016-09-15T01:02:27+05:30"
 description = "Step by step guide on how to setup rails project to use mobx and react. This can be a bit tricky, just use my react rails mobx boilerplate and get started"
-draft = true
+draft = false
 slug = ""
 tags = ["react js", "rails", "mobx"]
 title = "How to use React and MobX with Rails 5"
 toc = false
 
 +++
-MobX is the new state management library which packs really well with react. Mobx makes things much simpler to `redux`, which is more famous in react community. I have detailed out the step on how to get started with using mobx with rails 5.
+MobX is the new state management library which packs really well with react. Mobx makes things much simpler to `redux`, which is more famous in react community. I have detailed out the step on how to get started with using mobx and rails 5.
 
 ## Install [react_on_rails gem](https://github.com/shakacode/react_on_rails/blob/master/docs/tutorial.md)
 
 To make mobx functional with rails, I had to drop `react-rails` gem and adopt the `react_on_rails` gem. Setting it up is cumbersome in the beginning but it pays off well in the long run. React on rails site have a detailed guide on how to setup react_on_rails gem, I'll just quickly brush them up.
 
-> The below lines are just for reference, you can directly download the `react-rails-mobx-boilerplate` from my github repo and get started.
+
+> The below lines are just for reference, you can directly download the [react-rails-mobx-boilerplate](https://github.com/ankitsinghaniyaz/react-rails-mobx-boilerplate) from my GitHub repo and get started.
 
 ```
 # adding the gem, add the below line to your gem file
@@ -33,13 +34,17 @@ rails generate react_on_rails:install
 bundle && npm install
 ```
 
-There are few things to know about `react_on_rails` gem, which can be confusing for a starter like me.
+There are few things to know about `react_on_rails` gem, which can be confusing for starters like me.
 
 ```
 # You expose your react module so that it can be available outside
 import ReactOnRails from 'react-on-rails';
+
 # register you component
 ReactOnRails.register({ Counter });
+```
+
+```
 # you should also keep in mind that when creating new .jsx files
 # you should add its path to webpack.config.js entry hash as
 const config = {
@@ -76,3 +81,18 @@ npm install babel-plugin-transform-decorators-legacy --save-dev
 # finally do npm install to install newly added dependencies
 npm install
 ```
+
+## Bring it Up
+
+Now you are all set to bring your system up.
+```bash
+# create all the database if you are using postgresql as database, else skip, you will need to run this step if you use the boilerplate code
+rails db:create # use rake db:create in rails 4 or below
+
+# start the server and webpack client for transpilation
+foreman start -f Procfile.dev
+```
+
+## Conclusion
+
+I hope you were successfully able to get your system up and running. If I missed something or you have some doubts, do let me know in the comments below. Thanks for reading.
