@@ -55,7 +55,7 @@
 					var scrollPercent = (scrollTop) / (docHeight - winHeight);
 					var scrollPercentRounded = Math.round(scrollPercent*100);
 					// console.log("scroll", scrollPercentRounded);
-					if (scrollPercentRounded == 70) {
+					if (scrollPercentRounded > 70 && scrollPercentRounded < 80) {
 						// console.log("inside 70");
 						createSidePopup();
 					}
