@@ -13,8 +13,8 @@ toc = false
 
 Android [toolbar](https://developer.android.com/reference/android/widget/Toolbar.html) is a neat functionality which replaces the old Actionbar. If you want to create a traditional looking, top positioned toolbar then this article is not for you. If you are looking for something in the line of Google plus bottom bar and have the ability to customize it then you should keep reading. Here are few screenshots to demonstrate what I mean.
 
-<img src="/images/tutorial/google_plus.png" alt="google plus bottom toolbar screenshot" title="Google plus bottom bar screenshot" style="width: 300px; padding-right: 30px;"/>
-<img src="/images/tutorial/quoted.png" alt="quoted android app screenshot" title="Quoted Android app screenshot" style="width: 300px"; padding: 20px;"/>
+<img src="/images/tutorial/google_plus.jpg" alt="google plus bottom toolbar screenshot" title="Google plus bottom bar screenshot" style="width: 300px; padding-right: 30px;"/>
+<img src="/images/tutorial/quoted.jpg" alt="quoted android app screenshot" title="Quoted Android app screenshot" style="width: 300px"; padding: 20px;"/>
 
 ## The Layout
 
