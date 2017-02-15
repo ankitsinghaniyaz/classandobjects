@@ -34,7 +34,7 @@ This command will create a `jasmine.json` file, which will look like this:
 {
   // dirctory under which files exists
   "spec_dir": "app/javascript",
-  // nameing convention of the file, i.e. file ending in spec.js
+  // naming convention of the file, i.e. file ending in spec.js
   "spec_files": [
     "**/*[sS]pec.js"
   ],
