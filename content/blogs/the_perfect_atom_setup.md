@@ -85,5 +85,7 @@ apm install linter-eslint
 ```
 
 ## Conclusion
+For someone who is interested this is how my editor looks like:
+<img src="/images/blogs/my_atom_preview.png" alt="Quoted Android App" title="Quoted Android App"/>
 
 If there is anything that you feel I should try, feel free to let me know. My arsenal is always empty for cool technologies. Thanks for reading.
