@@ -6,7 +6,7 @@ draft = false
 keywords = ["use different rails version", "manage rails version ubuntu", "manage gem version with rbenv", "manage gem version with rvm", "use multiple version of rails"]
 slug = ""
 tags = ["rails", "rbenv", "rvm"]
-title = "Using multiple version of rails easily"
+title = "Using Multiple Version of Rails Easily"
 toc = false
 
 +++
