@@ -55,3 +55,7 @@ I think you get the problem. All these options are logically sound and our mind 
 Please see these are the things which I find challenging and believe someone will feel the same. If you are fine with all these work I respect your views and choices. I am completely for the React and I love it, but surely this issues warrant my attention to other notable frameworks like [ember.js](http://emberjs.com/). I will like to try out Ember and see how it fits my style of development. I will soon be doing a post on my choices and how I tackled all these problems in the React ecosystem. Then I will redo the same things with Ember and try to note my experience with the same.
 
 If this post helped you in any way, I would love your appreciation below. Thanks for reading.
+
+## Edit (10th July 2017)
+
+I have recently started [Vue.js](https://vuejs.org/) and I am really loving it. It feels more natural to me when compared to React. It has all the flexibility and modularity of React but without the fatigue. All the standard things required are maintained by the official community themselves. They also have an amazing documentation. If you are willing to try one more time I would really suggest to give Vue a chance. It is worth it. I will soon do a post on Vue too, so stay tuned.
