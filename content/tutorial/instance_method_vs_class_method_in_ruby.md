@@ -1,11 +1,11 @@
 +++
-categories = []
+categories = ['ruby']
 date = "2017-07-10T22:36:48+05:30"
-description = ""
+description = "Have you ever wondered when to use an instance method vs when to use a class method? Here is how to judge"
 draft = false
-keywords = []
+keywords = ['ruby', 'class method vs instance method ruby', 'difference between class and instance method in ruby']
 slug = ""
-tags = []
+tags = ['ruby']
 title = "Understanding the difference between Ruby class method and instance method"
 toc = false
 
