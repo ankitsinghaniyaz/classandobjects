@@ -10,7 +10,7 @@ title = "Using Vue.js in Rails"
 toc = false
 
 +++
-Vue.js is awesome. I'm telling this after having used React for more than a year in production software. If you haven't tried it yet, I highly recommend giving it a try. The developer experience is at the centre. In this guide, we will see how to add Vue to a Rails project. So let's get rolling.
+Vue.js is awesome. I'm telling this after having used React for more than a year in production software. I have written about [my experience creating React SPA here](https://www.classandobjects.com/tutorial/problems_with_react_single_page_app/). If you haven't tried Vue yet, I highly recommend giving it a try. The developer experience is at the center. In this guide, we will see how to add Vue to a Rails project. So let's get rolling.
 
 In this post, we are going to migrate our devise signup page to use Vue. I've chosen it after a lot of thought, as it will enable us to see a lot of power that Vue brings to the table. I'll also use the Webpacker gem. This will allow me to use ES2015 syntax, Vue single file component hot reloading. It's ok if you don't understand all of it. We will cover each topic in detail.
 
