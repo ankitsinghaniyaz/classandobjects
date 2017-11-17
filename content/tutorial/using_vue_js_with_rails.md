@@ -78,7 +78,7 @@ If you see the content of you `app/javascript` you will already have a `packs` f
 
 - **packs** - JS files mapping 1-to-1 to a view file, they follow similar folder structure to the `app/views`
 - **views** - Actual Vue files are stored here, they also follow the similar directory structure
-- **components** - Any reusable component that you will create can go hear
+- **components** - Any reusable component that you will create can go here
 
 We can have more folders in the same level like:
 
