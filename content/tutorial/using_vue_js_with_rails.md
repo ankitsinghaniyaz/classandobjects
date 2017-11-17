@@ -29,7 +29,7 @@ The server side errors and validation
 
 ### Setting Up
 
-I'll assume that you have installed the Webpacker gem. If not here are the brief steps.
+I'll assume that you have installed the [Webpacker](https://github.com/rails/webpacker) gem. If not here are the brief steps.
 
 ```ruby
 # Add webpacker to your Gemfile
