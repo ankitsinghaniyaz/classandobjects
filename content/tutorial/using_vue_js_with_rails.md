@@ -19,7 +19,7 @@ In this post, we are going to migrate our devise signup page to use Vue. I've ch
 First let us see how the end result will look like. Here are a few screenshots.
 
 The first time view
-![Vue Rails Regsitration Form](/images/tutorial/vue-normal.png "Vue Rails Regsitration Form")
+![Vue Rails Registration Form](/images/tutorial/vue-normal.png "Vue Rails Registration Form")
 
 The client side validation
 ![Vue Rails Client Side Validation ](/images/tutorial/vue-validation.png "Vue Rails Client Side Validation")
@@ -74,21 +74,21 @@ app/javascript/
             └── new.vue
 ```
 
-If you see the content of you `app/javascript` you will already have a `packs` folder. This is the path which Webpacker will watch. Later on we can include CSS and JavaScript exported from this folder in any of our views. I've created several other folders which are very self explaintory.
+If you see the content of you `app/javascript` you will already have a `packs` folder. This is the path which Webpacker will watch. Later on we can include CSS and JavaScript exported from this folder in any of our views. I've created several other folders which are very self explanatory.
 
-- **packs** - JS files mapping 1-to-1 to a view file, they follow similar folder strucutre to the `app/views`
+- **packs** - JS files mapping 1-to-1 to a view file, they follow similar folder structure to the `app/views`
 - **views** - Actual Vue files are stored here, they also follow the similar directory structure
 - **components** - Any reusable component that you will create can go hear
 
 We can have more folders in the same level like:
 
 - **images** - to store all the images that will be used in our Vue files
-- **api** - to store all the ajax calling utilites and so on
+- **api** - to store all the ajax calling utilities and so on
 
-So now I expect that your tree structure matches what I've in the view above. I also belive you have [generated your devise views](https://github.com/plataformatec/devise#configuring-views) to be modified. Below is the command on how you can generate it.
+So now I expect that your tree structure matches what I've in the view above. I also believe you have [generated your devise views](https://github.com/plataformatec/devise#configuring-views) to be modified. Below is the command on how you can generate it.
 
 ```bash
-# geenrate devise view
+# generate devise view
 rails generate devise:views
 ```
 
