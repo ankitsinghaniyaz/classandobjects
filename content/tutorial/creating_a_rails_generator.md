@@ -97,7 +97,7 @@ Running via Spring preloader in process 12848
 
 as we can see the specified three files have been generated. Let's checkout their content.
 
-{{< gist ankitsinghaniyaz  66d9515080cd2946d18d5ea3e1898c59>}}
+{{< gist ankitsinghaniyaz  eb805a8d2d6cfcb79f6e561fe993bdf9>}}
 
 And all these files are created perfectly namespaced for us.
 
@@ -105,4 +105,3 @@ And all these files are created perfectly namespaced for us.
 ### Conclusion
 
 I hope it was fun reading this article. If you have any suggestions do let me know in the comments below. I would love to take up the next challenge and put this generator into a gem. Let's see how that goes. Thanks for reading. :)
-
