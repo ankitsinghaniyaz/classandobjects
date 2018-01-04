@@ -107,6 +107,11 @@ Next up we will create the Vue file we imported in the above file. The file is l
 Here is how my `app/views/devise/registrations/new.html.erb` file looks like:
 {{< gist ankitsinghaniyaz 513aa165ff66fefe0b77169a7a1e51f8 >}}
 
+**Update: Adding CSRF.vue file, sorry for the delay**
+Here is how my `app/javascript/components/shared/csrf.vue` file looks like:
+{{< gist ankitsinghaniyaz 35e16da58e970c6d7c58e4af7cc45da3 >}}
+
+
 ### Conclusion
 
 I hope you enjoyed reading this article. If you want me to keep producing more such content, just give me a thumbs up in the comments below. If you have any comments and feedback feel free to let me know. Thanks for reading. :)
