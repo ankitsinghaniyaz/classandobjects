@@ -1,5 +1,5 @@
 +++
-title = "Right Way to Use CSS Varialbes in a Vue, Inspired by Tailwind.css"
+title = "Right Way to Use CSS Varialbes in Vue, Inspired by Tailwind.css"
 description = "CSS variables are not widely supported in all the browsers today. Understanding how to structure and use them in our Vue application can give us super powers to write a more consistent frontend application. I also share how I enable CSS variables in my Vue application inspired by Tailwind.css"
 tags = ["css", "vue"]
 keywords = ["vue css variables", "css variables in vue", "css", "vue", "better design in vue", "tailwind with vue"]
