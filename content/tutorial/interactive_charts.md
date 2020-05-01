@@ -36,7 +36,7 @@ rCharts supports multiple JavaScript charting libraries:
 - [Rickshaw] (http://timelyportfolio.github.io/docs/_build/html/intro/create.html#rickshaw)
 - [xCharts] (http://timelyportfolio.github.io/docs/_build/html/intro/create.html#xcharts)
 
-You can click on any of them to go to their respective examples. They all have their pros and cons. I would suggest you to use NVD3 if you are interested in a graph that has just one type of element eg: Scatter Plot, Line, Bar, etc. If you are interested in more features then you can checkout [creating a scatter plot with regression line]({{< ref "underconstruction/index.md" >}}) and [bar with average line]({{< ref "underconstruction/index.md" >}}). These are the only library which currently support layering.
+You can click on any of them to go to their respective examples. They all have their pros and cons. I would suggest you to use NVD3 if you are interested in a graph that has just one type of element eg: Scatter Plot, Line, Bar, etc. These are the only library which currently support layering.
 
 Below I'll give code and output for using Highcharts and NVD3. Dimple was just updated as I am writing this blog, I'll try to write a separate blog on that.
 
