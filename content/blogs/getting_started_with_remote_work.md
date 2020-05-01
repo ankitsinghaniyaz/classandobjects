@@ -11,7 +11,7 @@ toc = true
 
 +++
 
-I first came across the notion of remote work when I was in college. I'm neither an extrovert not a complete introvert but somewhere in the middle. Right away I knew that remote work is for me and I want to do it. Even when I tried, it was not very easy to land a paid remote job. I had to do a full-time office for the first 20 months of my career and remote work clicked for me when I was going through the worst phase of my personal and professional life. My name is [Ankit](ankit-singhaniya.netlify.com/) and I run [ClassAndObjects.com](https://www.classandobjects.com), I've been doing remote now for more than 3 years and here is my take on it.
+I first came across the notion of remote work when I was in college. I'm neither an extrovert not a complete introvert but somewhere in the middle. Right away I knew that remote work is for me and I want to do it. Even when I tried, it was not very easy to land a paid remote job. I had to do a full-time office for the first 20 months of my career and remote work clicked for me when I was going through the worst phase of my personal and professional life. My name is [Ankit](https://ankit-singhaniya.netlify.com/) and I run [ClassAndObjects.com](https://www.classandobjects.com), I've been doing remote now for more than 3 years and here is my take on it.
 
 Today COVID19 has given us all a taste of remote work and some of us will like to continue doing this after things get back to normal. If you believe remote is not for you I still suggest that you read through this article. As we progress I will clearly bring out what's not great about remote so that you can make your choice with better clarity. So before delaying any further let's get started.
 
