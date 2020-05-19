@@ -1,8 +1,8 @@
 +++
 title = "Set Up Postgres With Rails On Ubuntu 20.04"
-description = "Setting up postgres is a pain everytime I setup a new project. This blog will contain all the information we'll need ever again to configure Postgresql and Rails"
+description = "Set up ruby on rails to work with postgres on a fresh Ubuntu Linux distribution"
 tags = ["rails", "web development"]
-keywords = ["install postgresql on ubuntu", "setup postgres with rails", "postgres on linux"]
+keywords = ["install postgresql on ubuntu", "setup postgres with rails", "postgres on linux","ruby on rails set up with postgres"]
 date = "2020-05-19T21:33:12+05:30"
 categories = ["rails", "web development"]
 toc = false
@@ -11,7 +11,7 @@ draft = false
 +++
 
 
-This is no beginner stuff. Every time I have to do a fresh install of Postgresql and make it work with Ruby on Rails. It is a pain in the ass. I made up my mind that this is going to be the last time I will have trouble doing this. So here we go with every minute details.
+This is no beginner stuff! Every time I have to do a fresh install of Postgresql and make it work with Ruby on Rails. It is a pain in the ass. I made up my mind that this is going to be the last time I will have trouble doing this. So here we go with every minute details.
 
 ## System Specification
 Ubuntu 20.04
