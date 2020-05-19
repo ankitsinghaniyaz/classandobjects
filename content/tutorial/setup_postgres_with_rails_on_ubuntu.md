@@ -1,6 +1,6 @@
 +++
 title = "Set Up Postgres With Rails On Ubuntu 20.04"
-description = "Set up ruby on rails to work with postgres on a fresh Ubuntu Linux distribution"
+description = "Set up Ruby on Rails to work with Postgres on a fresh Ubuntu Linux distribution"
 tags = ["rails", "web development"]
 keywords = ["install postgresql on ubuntu", "setup postgres with rails", "postgres on linux","ruby on rails set up with postgres"]
 date = "2020-05-19T21:33:12+05:30"
