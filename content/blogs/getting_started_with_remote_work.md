@@ -1,6 +1,6 @@
 +++
 categories = []
-date = "2020-09-24T21:33:12+05:30"
+date = "2020-04-24T21:33:12+05:30"
 description = "COVID19 has given us all a taste of remote work and some of us will like to continue doing this after things get back to normal. I've been doing remote now for more than 3 years and here is what you need to know about working remotely"
 draft = false
 keywords = ["remote", "staring remote job", "things to know about remote", "how hard is remote", "challenges in remote work"]
