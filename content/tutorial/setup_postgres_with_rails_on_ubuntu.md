@@ -14,8 +14,9 @@ draft = false
 This is no beginner stuff! Every time I have to do a fresh install of [Postgresql](https://www.postgresql.org/) and make it work with [Ruby on Rails](https://rubyonrails.org/). It is a pain in the ass. I made up my mind that this is going to be the last time I will have trouble doing this. So here we go with every minute details.
 
 ## System Specification
-Ubuntu 20.04
-Postgres 12+
+- Ubuntu 20.04
+- Postgres 12+
+
 NOTE: This is the version of Ubuntu Linux I'm testing it with. Ubuntu is my primary OS. This should work on other Ubuntu versions without any change. 
 
 ## Installing Postgres
