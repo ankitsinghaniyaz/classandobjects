@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>freelance on Class &amp; Objects</title>
+    <link>https://www.classandobjects.com/tags/freelance/</link>
+    <description>Recent content in freelance on Class &amp; Objects</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Sep 2016 23:11:40 +0530</lastBuildDate><atom:link href="https://www.classandobjects.com/tags/freelance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>To Life: Work from home</title>
+      <link>https://www.classandobjects.com/blogs/why_freelance/</link>
+      <pubDate>Thu, 08 Sep 2016 23:11:40 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/blogs/why_freelance/</guid>
+      <description>I may be young, but age is just a number. I have seen life and work. I have been lost and I have been saved. I have travelled from the complete chaos of not knowing where to go and then to the bliss of understanding how everything fits together. I have hopped from language to language and now I understand them all(almost).
+I love to code in Python, given how clean, readable and maintainable it looks.</description>
+    </item>
+    
+  </channel>
+</rss>

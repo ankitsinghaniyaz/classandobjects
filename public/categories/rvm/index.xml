@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rvm on Class &amp; Objects</title>
+    <link>https://www.classandobjects.com/categories/rvm/</link>
+    <description>Recent content in rvm on Class &amp; Objects</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Mar 2017 19:01:30 +0530</lastBuildDate><atom:link href="https://www.classandobjects.com/categories/rvm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Multiple Version of Rails Easily</title>
+      <link>https://www.classandobjects.com/tutorial/use_multiple_version_of_rails_using_rbenv_or_rvm/</link>
+      <pubDate>Fri, 10 Mar 2017 19:01:30 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/use_multiple_version_of_rails_using_rbenv_or_rvm/</guid>
+      <description>Managing rails version on local computer can be a pain. We mostly use rbenv and rvm to manage the ruby version. But it gets difficult to manange version of each gem. In todays world you will want to use docker to control you complete environment. Still, there are cases when you want to try out a version of rails, so here is how you can do that.
+ credit: this post on StackOverflow was how I got inspiration.</description>
+    </item>
+    
+  </channel>
+</rss>

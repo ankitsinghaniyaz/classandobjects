@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <title>Interactive visualization in R using Rcharts - Class &amp; Objects</title>
+
+  
+  
+  <meta name="description" content="Visualization is daydreaming with a purpose ~ Bo Bennett
+ R is good at one thing, analysis. Until now it was sufficient on its own, with its library base, but now the need have changed. We want interactive visualization and JavaScript is ahead in the race. Thanks to this man, Ramnath Vaidya, who created a wonderful library called rCharts that brings JavaScript&rsquo;s graphics into R. As you are reading this you must be familiar with plot and ggplot in R." />
+  <meta name="author" content="" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://www.classandobjects.com/app.min.css" />
+
+  
+  <link rel="preload stylesheet" as="style" href="https://www.classandobjects.com/an-old-hope.min.css" />
+  <script
+    defer
+    src="https://www.classandobjects.com/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/theme.png" />
+
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/twitter.svg" />
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/github.svg" />
+  
+
+  
+  <link rel="icon" href="https://www.classandobjects.com/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://www.classandobjects.com/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.80.0" />
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="Interactive visualization in R using Rcharts" />
+<meta property="og:description" content="Creating interactive graphics and visualizations using Rcharts in R. These sample code snippets shows how to use them." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.classandobjects.com/tutorial/interactive_visualization_using_rcharts_in_r/" />
+<meta property="article:published_time" content="2016-05-24T21:48:05+05:30" />
+<meta property="article:modified_time" content="2016-05-24T21:48:05+05:30" />
+
+  
+  <meta itemprop="name" content="Interactive visualization in R using Rcharts">
+<meta itemprop="description" content="Creating interactive graphics and visualizations using Rcharts in R. These sample code snippets shows how to use them.">
+<meta itemprop="datePublished" content="2016-05-24T21:48:05+05:30" />
+<meta itemprop="dateModified" content="2016-05-24T21:48:05+05:30" />
+<meta itemprop="wordCount" content="531">
+
+
+
+<meta itemprop="keywords" content="visualization,analytics," />
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Interactive visualization in R using Rcharts"/>
+<meta name="twitter:description" content="Creating interactive graphics and visualizations using Rcharts in R. These sample code snippets shows how to use them."/>
+<meta name="twitter:site" content="@https://www.twitter.com/classandobjects"/>
+
+  
+  
+</head>
+
+
+  <body class="not-ready" data-menu="false">
+    <header class="header">
+  
+  <p class="logo">
+    <a class="site-name" href="https://www.classandobjects.com/">Class &amp; Objects</a><a class="btn-dark"></a>
+  </p>
+  
+
+  <script>
+    let bodyClx = document.body.classList;
+    let btnDark = document.querySelector('.btn-dark');
+    let sysDark = window.matchMedia('(prefers-color-scheme: dark)');
+    let darkVal = localStorage.getItem('dark');
+
+    let setDark = (isDark) => {
+      bodyClx[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark ? 'yes' : 'no');
+    };
+
+    setDark(darkVal ? darkVal === 'yes' : sysDark.matches);
+    requestAnimationFrame(() => bodyClx.remove('not-ready'));
+
+    btnDark.addEventListener('click', () => setDark(!bodyClx.contains('dark')));
+    sysDark.addEventListener('change', (event) => setDark(event.matches));
+  </script>
+
+  
+  
+
+  
+  <nav class="social">
+    
+    <a
+      class="twitter"
+      style="--url: url(./twitter.svg)"
+      href="https://twitter.com/classandobjects"
+      target="_blank"
+    ></a>
+    
+    <a
+      class="github"
+      style="--url: url(./github.svg)"
+      href="https://github.com/ankitsinghaniyaz"
+      target="_blank"
+    ></a>
+    
+  </nav>
+  
+</header>
+
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-title">
+    <p>
+      <time>:date_medium</time>
+      
+    </p>
+    <h1>Interactive visualization in R using Rcharts</h1>
+  </header>
+  <section class="post-content"><blockquote>
+<p>Visualization is daydreaming with a purpose ~ Bo Bennett</p>
+</blockquote>
+<p>R is good at one thing, analysis. Until now it was sufficient on its own, with its library base, but now the need have changed. We want interactive visualization and JavaScript is ahead in the race. Thanks to this man, <a href="https://github.com/ramnathv">Ramnath Vaidya</a>, who created a wonderful library called <a href="http://rcharts.io/">rCharts</a> that brings JavaScript&rsquo;s graphics into R. As you are reading this you must be familiar with plot and ggplot in R.
+So let’s explore rCharts without delay.</p>
+<p>rCharts supports multiple JavaScript charting libraries:</p>
+<ul>
+<li>
+<p>[NVD3] (<a href="http://timelyportfolio.github.io/docs/_build/html/intro/create.html#nvd3">http://timelyportfolio.github.io/docs/_build/html/intro/create.html#nvd3</a>)</p>
+<ul>
+<li>Most Interactive</li>
+<li>Multiple layers do not work</li>
+</ul>
+</li>
+<li>
+<p>[Highcharts (Free for non-comercial use)] (<a href="http://timelyportfolio.github.io/docs/_build/html/intro/create.html#highcharts">http://timelyportfolio.github.io/docs/_build/html/intro/create.html#highcharts</a>)</p>
+<ul>
+<li>Better than below</li>
+<li>Supports multiple layers/series</li>
+</ul>
+</li>
+<li>
+<p><a href="http://timelyportfolio.github.io/docs/_build/html/dimple/index.html">Dimple</a></p>
+</li>
+<li>
+<p><a href="http://timelyportfolio.github.io/docs/_build/html/intro/create.html#polycharts">Polycharts (Free for non-comercial use)</a></p>
+</li>
+<li>
+<p>[Morris] (<a href="http://timelyportfolio.github.io/docs/_build/html/intro/create.html#morris">http://timelyportfolio.github.io/docs/_build/html/intro/create.html#morris</a>)</p>
+</li>
+<li>
+<p>[Rickshaw] (<a href="http://timelyportfolio.github.io/docs/_build/html/intro/create.html#rickshaw">http://timelyportfolio.github.io/docs/_build/html/intro/create.html#rickshaw</a>)</p>
+</li>
+<li>
+<p>[xCharts] (<a href="http://timelyportfolio.github.io/docs/_build/html/intro/create.html#xcharts">http://timelyportfolio.github.io/docs/_build/html/intro/create.html#xcharts</a>)</p>
+</li>
+</ul>
+<p>You can click on any of them to go to their respective examples. They all have their pros and cons. I would suggest you to use NVD3 if you are interested in a graph that has just one type of element eg: Scatter Plot, Line, Bar, etc. These are the only library which currently support layering.</p>
+<p>Below I&rsquo;ll give code and output for using Highcharts and NVD3. Dimple was just updated as I am writing this blog, I&rsquo;ll try to write a separate blog on that.</p>
+<h2 id="prerequisite">Prerequisite</h2>
+<p>Install rCharts. This requires devtools to be installed.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">require</span>(devtools)
+<span style="color:#a6e22e">install_github</span>(<span style="color:#e6db74">&#39;rCharts&#39;</span>, <span style="color:#e6db74">&#39;ramnathv&#39;</span>)
+</code></pre></div><h3 id="nvd3">NVD3</h3>
+<p>We will our <code>mtcars</code> data set in all below examples to keep it simple. Visit <a href="http://timelyportfolio.github.io/docs/_build/html/nvd3/create.html">NVD3 documentation</a> for more example, have a look below and you will understand how they work.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(<span style="color:#e6db74">&#34;rCharts&#34;</span>)
+<span style="color:#75715e">#NVD3 is nPlot()</span>
+
+a <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">nPlot</span>(
+	mpg <span style="color:#f92672">~</span> wt,                             <span style="color:#75715e"># y vs x</span>
+	data <span style="color:#f92672">=</span> mtcars,			      <span style="color:#75715e"># data set</span>
+	group <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;cyl&#34;</span>,			      <span style="color:#75715e"># group by</span>
+	type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;scatterChart&#34;</span>)                <span style="color:#75715e"># type of chart</span>
+					      <span style="color:#75715e"># eg:multiBarChart, lineChart, pieChart</span>
+
+   a<span style="color:#f92672">$</span><span style="color:#a6e22e">xAxis</span>(axisLabel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Weight&#34;</span>)
+   a<span style="color:#f92672">$</span><span style="color:#a6e22e">yAxis</span>(axisLabel <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;MPG&#34;</span>)
+
+   a<span style="color:#f92672">$</span><span style="color:#a6e22e">chart</span>(color <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(
+   		<span style="color:#e6db74">&#39;brown&#39;</span>,
+   		<span style="color:#e6db74">&#39;black&#39;</span>,
+	      <span style="color:#e6db74">&#39;#FFAFA&#39;</span>))		       <span style="color:#75715e"># override default colors</span>
+
+a			               <span style="color:#75715e"># prints the graph</span>
+a<span style="color:#f92672">$</span><span style="color:#a6e22e">save</span>(<span style="color:#e6db74">&#34;E:\\temp.html&#34;</span>)	               <span style="color:#75715e"># save it as html</span>
+</code></pre></div><p>Output:
+<img src="https://www.classandobjects.com/images/analytics/nvd_graph.png" alt="nvd3 charts graphics in r"></p>
+<p><a href="http://rcharts.io/viewer/?ec3e1d782fa46be590cb#.Vr1HyPkdD_x">See Interactive Ouput on Github Here</a></p>
+<h3 id="highcharts">Highcharts</h3>
+<p>The example below creates a scatter plot with <code>mtcars</code>. I have tried to use almost all the functions and parameters. If I have missed some, please point it out in the comments below.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">library</span>(<span style="color:#e6db74">&#34;rCharts&#34;</span>)
+<span style="color:#75715e">#Highcharts is hPlot()</span>
+
+a <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">hPlot</span>(
+	x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;wt&#34;</span>,				<span style="color:#75715e">#x axis value</span>
+	y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mpg&#34;</span>,				<span style="color:#75715e">#y axis value</span>
+	data <span style="color:#f92672">=</span> mtcars,			        <span style="color:#75715e">#dataset</span>
+	type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;scatter&#34;</span>,		        <span style="color:#75715e">#type: line, bubble,..</span>
+	group <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;cyl&#34;</span>,		                <span style="color:#75715e">#group by</span>
+	<span style="color:#75715e">#size = &#34;cyl&#34;,			        #can adjust size of bubble etc</span>
+	radius <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>)				<span style="color:#75715e">#size of points</span>
+
+a<span style="color:#f92672">$</span><span style="color:#a6e22e">title</span>(<span style="color:#e6db74">&#34;This is a Title&#34;</span>)
+a<span style="color:#f92672">$</span><span style="color:#a6e22e">subtitle</span>(<span style="color:#e6db74">&#34;This is a subtitle&#34;</span>)
+a<span style="color:#f92672">$</span><span style="color:#a6e22e">credits</span>(text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Created with rCharts&#34;</span>, href <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;rCharts&#34;</span>)
+
+a<span style="color:#f92672">$</span><span style="color:#a6e22e">legend</span>(					<span style="color:#75715e">#use this to modify legend</span>
+  title <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>(
+     text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Number&#34;</span>),		                <span style="color:#75715e">#adds a title to legend</span>
+     align <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;right&#39;</span>, 			        <span style="color:#75715e">#default is at bottom</span>
+     verticalAlign <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;middle&#39;</span>,
+     layout <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;vertical&#39;</span>)
+
+a<span style="color:#f92672">$</span><span style="color:#a6e22e">plotOptions</span>(				        <span style="color:#75715e">#Display all groups as circle</span>
+  scatter <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>(marker <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>(symbol <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;circle&#39;</span>)))
+
+a<span style="color:#f92672">$</span><span style="color:#a6e22e">colors</span>(					<span style="color:#75715e">#add custom colors</span>
+  <span style="color:#e6db74">&#39;rgba(223, 83, 83, .75)&#39;</span>,
+  <span style="color:#e6db74">&#39;rgba(60, 179, 113, .75)&#39;</span>,
+  <span style="color:#e6db74">&#39;rgba(238, 130, 238, .75)&#39;</span>
+)
+
+a					         <span style="color:#75715e">#prints the graph</span>
+a<span style="color:#f92672">$</span><span style="color:#a6e22e">save</span>(<span style="color:#e6db74">&#34;E:\\temp.html&#34;</span>)		                 <span style="color:#75715e">#saves to html</span>
+<span style="color:#75715e">#More complex graphs in next blog!</span>
+</code></pre></div><p>Output:
+<img src="https://www.classandobjects.com/images/analytics/highchart.png" alt="high charts graphics in r">
+<a href="http://rcharts.github.io/viewer/?ecd2a7f0b7abd611ed9a">See Interactive Ouput on Github Here</a></p>
+<p>I hope you liked the blog and the examples proved useful. They have been taken from many different websites and StackExchange. Thank you everyone for reading.</p>
+</section>
+
+  
+  
+  <footer class="post-tags">
+     
+    <a href="https://www.classandobjects.com/tags/visualization">visualization</a>
+     
+    <a href="https://www.classandobjects.com/tags/analytics">analytics</a>
+    
+  </footer>
+  
+
+  
+  
+  
+  <nav class="post-nav">
+    
+    <a class="prev" href="https://www.classandobjects.com/tutorial/python_boggle_solver/"><span>←</span><span>Can you Boggle Solve?</span></a>
+     
+    <a class="next" href="https://www.classandobjects.com/tutorial/adding_custom_domain_to_github_pages/"><span>Adding Domain to Github Pages</span><span>→</span></a>
+    
+  </nav>
+  
+
+  
+  
+</article>
+
+</main>
+
+    <footer class="footer">
+  <p>&copy; 2021 <a href="https://www.classandobjects.com/">Class &amp; Objects</a></p>
+  <p>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</p>
+  <p>
+    <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 5.1</a>
+  </p>
+</footer>
+
+  </body>
+</html>

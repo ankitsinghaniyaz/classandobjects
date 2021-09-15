@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <title>Moment.js Cheatsheet - Class &amp; Objects</title>
+
+  
+  
+  <meta name="description" content="Handling date and time in JavaScript could be a pain. I am a ruby enthusiast and one thing which I deeply love about it, is its date and time helper. They are easy to use and very intuitive. In JavaScript world, moment.js comes for the rescue. It has a lot of functionality but I somehow find its syntax a bit daunting. This post aims to provide a list of few most used methods." />
+  <meta name="author" content="" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://www.classandobjects.com/app.min.css" />
+
+  
+  <link rel="preload stylesheet" as="style" href="https://www.classandobjects.com/an-old-hope.min.css" />
+  <script
+    defer
+    src="https://www.classandobjects.com/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/theme.png" />
+
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/twitter.svg" />
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/github.svg" />
+  
+
+  
+  <link rel="icon" href="https://www.classandobjects.com/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://www.classandobjects.com/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.80.0" />
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="Moment.js Cheatsheet" />
+<meta property="og:description" content="All you need to know about using moment js. Date and Time parsing in javascript can be tricky. Moment js to the rescue. Read this and get started with Moment js" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.classandobjects.com/tutorial/moment-js-cheatsheet/" />
+<meta property="article:published_time" content="2016-11-15T21:31:53+05:30" />
+<meta property="article:modified_time" content="2016-11-15T21:31:53+05:30" />
+
+  
+  <meta itemprop="name" content="Moment.js Cheatsheet">
+<meta itemprop="description" content="All you need to know about using moment js. Date and Time parsing in javascript can be tricky. Moment js to the rescue. Read this and get started with Moment js">
+<meta itemprop="datePublished" content="2016-11-15T21:31:53+05:30" />
+<meta itemprop="dateModified" content="2016-11-15T21:31:53+05:30" />
+<meta itemprop="wordCount" content="409">
+
+
+
+<meta itemprop="keywords" content="javascript,moment js," />
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Moment.js Cheatsheet"/>
+<meta name="twitter:description" content="All you need to know about using moment js. Date and Time parsing in javascript can be tricky. Moment js to the rescue. Read this and get started with Moment js"/>
+<meta name="twitter:site" content="@https://www.twitter.com/classandobjects"/>
+
+  
+  
+</head>
+
+
+  <body class="not-ready" data-menu="false">
+    <header class="header">
+  
+  <p class="logo">
+    <a class="site-name" href="https://www.classandobjects.com/">Class &amp; Objects</a><a class="btn-dark"></a>
+  </p>
+  
+
+  <script>
+    let bodyClx = document.body.classList;
+    let btnDark = document.querySelector('.btn-dark');
+    let sysDark = window.matchMedia('(prefers-color-scheme: dark)');
+    let darkVal = localStorage.getItem('dark');
+
+    let setDark = (isDark) => {
+      bodyClx[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark ? 'yes' : 'no');
+    };
+
+    setDark(darkVal ? darkVal === 'yes' : sysDark.matches);
+    requestAnimationFrame(() => bodyClx.remove('not-ready'));
+
+    btnDark.addEventListener('click', () => setDark(!bodyClx.contains('dark')));
+    sysDark.addEventListener('change', (event) => setDark(event.matches));
+  </script>
+
+  
+  
+
+  
+  <nav class="social">
+    
+    <a
+      class="twitter"
+      style="--url: url(./twitter.svg)"
+      href="https://twitter.com/classandobjects"
+      target="_blank"
+    ></a>
+    
+    <a
+      class="github"
+      style="--url: url(./github.svg)"
+      href="https://github.com/ankitsinghaniyaz"
+      target="_blank"
+    ></a>
+    
+  </nav>
+  
+</header>
+
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-title">
+    <p>
+      <time>:date_medium</time>
+      
+    </p>
+    <h1>Moment.js Cheatsheet</h1>
+  </header>
+  <section class="post-content"><p>Handling date and time in JavaScript could be a pain. I am a ruby enthusiast and one thing which I deeply love about it, is its date and time helper. They are easy to use and very intuitive. In JavaScript world, <a href="www.momentjs.com">moment.js</a> comes for the rescue. It has a lot of functionality but I somehow find its syntax a bit daunting. This post aims to provide a list of few most used methods. It shall also serve as a cheatsheet and reminder to everyone. So let&rsquo;s get started.</p>
+<!-- raw HTML omitted -->
+<h2 id="the-moment">The Moment</h2>
+<p>I will speak less and let the code do the talking.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// returns the current time, same as new Date()
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">moment</span>()
+
+<span style="color:#75715e">// get moment object from string, though we should not use them as they are ambiguous.
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">moment</span>(<span style="color:#e6db74">&#34;10-10-1993&#34;</span>)
+<span style="color:#a6e22e">moment</span>(<span style="color:#e6db74">&#34;01/12/2015&#34;</span>)
+
+<span style="color:#75715e">// instead use, it makes sure that your dates are interpreted correctly.
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">moment</span>(<span style="color:#e6db74">&#34;10-10-1993&#34;</span>, <span style="color:#e6db74">&#34;DD-MM-YYYY&#34;</span>)
+<span style="color:#a6e22e">moment</span>(<span style="color:#e6db74">&#34;01/12/2015&#34;</span>, <span style="color:#e6db74">&#34;DD/MM/YYYY&#34;</span>)
+</code></pre></div><p>Here is a list of few most used parsing tokens:</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<blockquote>
+<p>Tip: lower case tokens are used for time and upper case tokens are used for date.</p>
+</blockquote>
+<h2 id="breaking-the-moment">Breaking The Moment</h2>
+<p>We find ourself most of the time accessing different pieces of information stored in the moment object. It can be <code>date, hour, seconds, etc</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// create the moment object
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">now</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">moment</span>();
+
+<span style="color:#75715e">// to get todays date
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">now</span>.<span style="color:#a6e22e">date</span>()
+<span style="color:#a6e22e">now</span>.<span style="color:#a6e22e">hour</span>()
+<span style="color:#a6e22e">now</span>.<span style="color:#a6e22e">minute</span>()
+<span style="color:#a6e22e">now</span>.<span style="color:#a6e22e">second</span>()
+
+<span style="color:#75715e">// we also have get method on moment
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">now</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;day&#39;</span>) <span style="color:#75715e">// returns day of the week
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">now</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;millisecond&#39;</span>)
+
+<span style="color:#75715e">// get unix time
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">now</span>.<span style="color:#a6e22e">unix</span>()
+
+<span style="color:#75715e">// I have specified the list of all possible vales you can use in get, add and subtract method in the below section.
+</span></code></pre></div><h2 id="play-the-moment">Play the Moment</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">now</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">moment</span>()
+
+<span style="color:#75715e">// clone moment
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">current</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">moment</span>(<span style="color:#a6e22e">now</span>)
+<span style="color:#75715e">// change to utc
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">now</span>.<span style="color:#a6e22e">utc</span>()
+<span style="color:#75715e">// validate the time object
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">now</span>.<span style="color:#a6e22e">isValid</span>()
+
+<span style="color:#75715e">// add value to a time
+</span><span style="color:#75715e">// prototype: moment().add(value, scale)
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">now</span>.<span style="color:#a6e22e">add</span>(<span style="color:#ae81ff">3</span>, <span style="color:#e6db74">&#39;hours&#39;</span>);
+<span style="color:#a6e22e">now</span>.<span style="color:#a6e22e">subtract</span>(<span style="color:#ae81ff">7</span>, <span style="color:#e6db74">&#39;days&#39;</span>)
+
+<span style="color:#75715e">// jumping to some time
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">now</span>.<span style="color:#a6e22e">startOf</span>(<span style="color:#e6db74">&#39;day&#39;</span>)
+<span style="color:#a6e22e">now</span>.<span style="color:#a6e22e">endOf</span>(<span style="color:#e6db74">&#39;month&#39;</span>)
+
+<span style="color:#75715e">// possible fields to use
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">possibleScales</span> <span style="color:#f92672">=</span> [<span style="color:#a6e22e">year</span>, <span style="color:#a6e22e">month</span>, <span style="color:#a6e22e">quarter</span>, <span style="color:#a6e22e">week</span>, <span style="color:#a6e22e">isoWeek</span>, <span style="color:#a6e22e">day</span>, <span style="color:#a6e22e">date</span>, <span style="color:#a6e22e">hour</span>, <span style="color:#a6e22e">minute</span>, <span style="color:#a6e22e">second</span>]
+
+<span style="color:#75715e">// use any available token to format time as you need
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">now</span>.<span style="color:#a6e22e">format</span>(<span style="color:#e6db74">&#39;hh:mm a&#39;</span>)
+</code></pre></div><blockquote>
+<p>moment.js methods like add and subtract mutates the object itself. This can cause an unseen bug if you are not aware!</p>
+</blockquote>
+<h2 id="conclusion">Conclusion</h2>
+<p>Moment.js is very helpful to solve date and time related problems in javascript. It was created to be easy and powerful. With the right exposure we can get our work done easily with <code>momentjs</code>. If you liked the post, please let us know how can we improve. Thanks for reading.</p>
+</section>
+
+  
+  
+  <footer class="post-tags">
+     
+    <a href="https://www.classandobjects.com/tags/javascript">javascript</a>
+     
+    <a href="https://www.classandobjects.com/tags/moment-js">moment js</a>
+    
+  </footer>
+  
+
+  
+  
+  
+  <nav class="post-nav">
+    
+    <a class="prev" href="https://www.classandobjects.com/tutorial/problems_with_react_single_page_app/"><span>←</span><span>Problem With React Single Page App</span></a>
+     
+    <a class="next" href="https://www.classandobjects.com/tutorial/sublime-vs-atom-vs-vscode/"><span>Sublime vs Atom vs VS Code</span><span>→</span></a>
+    
+  </nav>
+  
+
+  
+  
+</article>
+
+</main>
+
+    <footer class="footer">
+  <p>&copy; 2021 <a href="https://www.classandobjects.com/">Class &amp; Objects</a></p>
+  <p>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</p>
+  <p>
+    <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 5.1</a>
+  </p>
+</footer>
+
+  </body>
+</html>

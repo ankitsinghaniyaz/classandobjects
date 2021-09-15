@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <title>Best Way To Create Bottom Toolbar Like Google Plus Android App - Class &amp; Objects</title>
+
+  
+  
+  <meta name="description" content="Android toolbar is a neat functionality which replaces the old Actionbar. If you want to create a traditional looking, top positioned toolbar then this article is not for you. If you are looking for something in the line of Google plus bottom bar and have the ability to customize it then you should keep reading. Here are few screenshots to demonstrate what I mean.
+The Layout Few thing to know before we start, I will not use menu options, it makes the toolbar creation easier but takes away the power to customize." />
+  <meta name="author" content="" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://www.classandobjects.com/app.min.css" />
+
+  
+  <link rel="preload stylesheet" as="style" href="https://www.classandobjects.com/an-old-hope.min.css" />
+  <script
+    defer
+    src="https://www.classandobjects.com/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/theme.png" />
+
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/twitter.svg" />
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/github.svg" />
+  
+
+  
+  <link rel="icon" href="https://www.classandobjects.com/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://www.classandobjects.com/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.80.0" />
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="Best Way To Create Bottom Toolbar Like Google Plus Android App" />
+<meta property="og:description" content="Creating an Android toolbar can be sometimes challenging. Create a bottom toolbar like google plus with button feedback, touch effects and lot more." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.classandobjects.com/tutorial/create_google_plus_like_toolbar_android/" />
+<meta property="article:published_time" content="2016-09-20T21:46:00+05:30" />
+<meta property="article:modified_time" content="2016-09-20T21:46:00+05:30" />
+
+  
+  <meta itemprop="name" content="Best Way To Create Bottom Toolbar Like Google Plus Android App">
+<meta itemprop="description" content="Creating an Android toolbar can be sometimes challenging. Create a bottom toolbar like google plus with button feedback, touch effects and lot more.">
+<meta itemprop="datePublished" content="2016-09-20T21:46:00+05:30" />
+<meta itemprop="dateModified" content="2016-09-20T21:46:00+05:30" />
+<meta itemprop="wordCount" content="351">
+
+
+
+<meta itemprop="keywords" content="Android," />
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Best Way To Create Bottom Toolbar Like Google Plus Android App"/>
+<meta name="twitter:description" content="Creating an Android toolbar can be sometimes challenging. Create a bottom toolbar like google plus with button feedback, touch effects and lot more."/>
+<meta name="twitter:site" content="@https://www.twitter.com/classandobjects"/>
+
+  
+  
+</head>
+
+
+  <body class="not-ready" data-menu="false">
+    <header class="header">
+  
+  <p class="logo">
+    <a class="site-name" href="https://www.classandobjects.com/">Class &amp; Objects</a><a class="btn-dark"></a>
+  </p>
+  
+
+  <script>
+    let bodyClx = document.body.classList;
+    let btnDark = document.querySelector('.btn-dark');
+    let sysDark = window.matchMedia('(prefers-color-scheme: dark)');
+    let darkVal = localStorage.getItem('dark');
+
+    let setDark = (isDark) => {
+      bodyClx[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark ? 'yes' : 'no');
+    };
+
+    setDark(darkVal ? darkVal === 'yes' : sysDark.matches);
+    requestAnimationFrame(() => bodyClx.remove('not-ready'));
+
+    btnDark.addEventListener('click', () => setDark(!bodyClx.contains('dark')));
+    sysDark.addEventListener('change', (event) => setDark(event.matches));
+  </script>
+
+  
+  
+
+  
+  <nav class="social">
+    
+    <a
+      class="twitter"
+      style="--url: url(./twitter.svg)"
+      href="https://twitter.com/classandobjects"
+      target="_blank"
+    ></a>
+    
+    <a
+      class="github"
+      style="--url: url(./github.svg)"
+      href="https://github.com/ankitsinghaniyaz"
+      target="_blank"
+    ></a>
+    
+  </nav>
+  
+</header>
+
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-title">
+    <p>
+      <time>:date_medium</time>
+      
+    </p>
+    <h1>Best Way To Create Bottom Toolbar Like Google Plus Android App</h1>
+  </header>
+  <section class="post-content"><p>Android <a href="https://developer.android.com/reference/android/widget/Toolbar.html">toolbar</a> is a neat functionality which replaces the old Actionbar. If you want to create a traditional looking, top positioned toolbar then this article is not for you. If you are looking for something in the line of Google plus bottom bar and have the ability to customize it then you should keep reading. Here are few screenshots to demonstrate what I mean.</p>
+<!-- raw HTML omitted -->
+<h2 id="the-layout">The Layout</h2>
+<p>Few thing to know before we start, I will not use <code>menu</code> options, it makes the toolbar creation easier but takes away the power to customize. I am also using <code>svg</code> imported images as my buttons. This allows me to alter their size on the go without loosing the quality. I will share the code snippets directly and explain as I go, so let us dive into it.</p>
+<script type="application/javascript" src="https://gist.github.com/ankitsinghaniyaz/9f36098bc29446e46ea2bd89b1d15664.js"></script>
+
+<h2 id="adding-background-to-image-view-buttons">Adding Background To Image View Buttons</h2>
+<p>As you will see above in the button level <code>LinerLayout</code>, we have a background. You will need to create few drawable files as I will show below. If you do not specify this, the effect which you see when you touch a button will be absent. In some cases when you use svg or png images they may not even appear proper. Here is what you need to put into your drawable folder.</p>
+<script type="application/javascript" src="https://gist.github.com/ankitsinghaniyaz/e2e3677bb1a6babc0ff881a6ad26387f.js"></script>
+
+<h2 id="adding-touch-feedback-on-click">Adding Touch Feedback on Click</h2>
+<p>You may also want to enable a little haptic touch feedback. This can be done easily. Make sure you <code>hapticFeedbackEnabled=&quot;true&quot;</code> in your button and wherever you are listening to the button, just add the following line.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span>  <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">toggleFont</span><span style="color:#f92672">(</span>View view<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+  <span style="color:#75715e">// this line will enable haptic feedback
+</span><span style="color:#75715e"></span>  view<span style="color:#f92672">.</span><span style="color:#a6e22e">performHapticFeedback</span><span style="color:#f92672">(</span>HapticFeedbackConstants<span style="color:#f92672">.</span><span style="color:#a6e22e">VIRTUAL_KEY</span><span style="color:#f92672">);</span>
+  Log<span style="color:#f92672">.</span><span style="color:#a6e22e">d</span><span style="color:#f92672">(</span>TAG<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;toggleFont&#34;</span><span style="color:#f92672">);</span>
+  <span style="color:#75715e">//... do more
+</span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
+</code></pre></div><p>You can try out this feature on my live app <a href="https://play.google.com/store/apps/details?id=com.classandobjects.quoted">Quoted</a>, which helps you <em>explore and share quotes</em>.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>As you may see implementing a bottom toolbar in android with all functionality is easy. It is just that we have to hunt for information and gather it. I hope you find this article informative if yes do not forget to subscribe. If you have any doubt feel free to leave comments below or email me. Thanks for reading.</p>
+</section>
+
+  
+  
+  <footer class="post-tags">
+     
+    <a href="https://www.classandobjects.com/tags/android">Android</a>
+    
+  </footer>
+  
+
+  
+  
+  
+  <nav class="post-nav">
+    
+    <a class="prev" href="https://www.classandobjects.com/tutorial/sublime-vs-atom-vs-vscode/"><span>←</span><span>Sublime vs Atom vs VS Code</span></a>
+     
+    <a class="next" href="https://www.classandobjects.com/tutorial/add_subscribe_button_on_static_site/"><span>Add Subscribe Button to Your Website, also Add a Scroll Triggered Subscribe Box</span><span>→</span></a>
+    
+  </nav>
+  
+
+  
+  
+</article>
+
+</main>
+
+    <footer class="footer">
+  <p>&copy; 2021 <a href="https://www.classandobjects.com/">Class &amp; Objects</a></p>
+  <p>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</p>
+  <p>
+    <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 5.1</a>
+  </p>
+</footer>
+
+  </body>
+</html>

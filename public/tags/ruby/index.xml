@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ruby on Class &amp; Objects</title>
+    <link>https://www.classandobjects.com/tags/ruby/</link>
+    <description>Recent content in ruby on Class &amp; Objects</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Jul 2017 23:04:59 +0530</lastBuildDate><atom:link href="https://www.classandobjects.com/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>4 ways to pass parameters to a method in Ruby</title>
+      <link>https://www.classandobjects.com/tutorial/different_ways_to_pass_parameter_to_method_ruby/</link>
+      <pubDate>Mon, 10 Jul 2017 23:04:59 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/different_ways_to_pass_parameter_to_method_ruby/</guid>
+      <description>Recently I have been dreaming and talking a lot about methods. Here are few cool things which I discovered on my way to get better at Ruby. I&amp;rsquo;ll talk about different ways in which we can pass parameters to a method. Continue to find out how many of them did you knew already. You can read my difference between class methods and instance methods for some more fun.
+The common method def full_name(first, last) &amp;#34;#{first}#{last}&amp;#34; end full_name(&amp;#39;sam&amp;#39;, &amp;#39;smith&amp;#39;) =&amp;gt; &amp;#34;sam smith&amp;#34; Named parameters def parse(name: &amp;#39;Jhon&amp;#39;, hero: &amp;#39;superman&amp;#39;) &amp;#34;I am #{name}, the #{hero}&amp;#34; end parse =&amp;gt; &amp;#34;I am Jhon, the superman&amp;#34; parse(name: &amp;#39;Harry Potter&amp;#39;, hero: &amp;#39;wizard&amp;#39;) =&amp;gt; &amp;#34;I am Harry Potter, the wizard&amp;#34; parse(name: &amp;#39;Luffy&amp;#39;, food: &amp;#39;meat&amp;#39;) # ArgumentError: unknown keyword: food Any number of unnamed parameters def attributes(*args) args.</description>
+    </item>
+    
+    <item>
+      <title>Understanding the difference between Ruby class method and instance method</title>
+      <link>https://www.classandobjects.com/tutorial/instance_method_vs_class_method_in_ruby/</link>
+      <pubDate>Mon, 10 Jul 2017 22:36:48 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/instance_method_vs_class_method_in_ruby/</guid>
+      <description>Though this is a very simple concept. In my early days of using Ruby, I was always confused about which one to use when and why. I came up with the following way to identify if a method should be a class method or an instance method. I hope this will help you also clear the confusion.
+Class Method I think of class methods like function which is going to deal with a collection of Object.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <title>Using Vue.js in Rails - Class &amp; Objects</title>
+
+  
+  
+  <meta name="description" content="Vue.js is awesome. I&rsquo;m telling this after having used React for more than a year in production software. I have written about my experience creating React SPA here. If you haven&rsquo;t tried Vue yet, I highly recommend giving it a try. The developer experience is at the center. In this guide, we will see how to add Vue to a Rails project. So let&rsquo;s get rolling.
+In this post, we are going to migrate our devise signup page to use Vue." />
+  <meta name="author" content="" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://www.classandobjects.com/app.min.css" />
+
+  
+  <link rel="preload stylesheet" as="style" href="https://www.classandobjects.com/an-old-hope.min.css" />
+  <script
+    defer
+    src="https://www.classandobjects.com/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/theme.png" />
+
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/twitter.svg" />
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/github.svg" />
+  
+
+  
+  <link rel="icon" href="https://www.classandobjects.com/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://www.classandobjects.com/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.80.0" />
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="Using Vue.js in Rails" />
+<meta property="og:description" content="Choosing a JavaScript framework can be challenging. This blog will help you integrate Vue.js in your Rails project. Vue.js is easy to learn and has a good developer experience." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.classandobjects.com/tutorial/using_vue_js_with_rails/" />
+<meta property="article:published_time" content="2017-11-16T10:58:41+05:30" />
+<meta property="article:modified_time" content="2017-11-16T10:58:41+05:30" />
+
+  
+  <meta itemprop="name" content="Using Vue.js in Rails">
+<meta itemprop="description" content="Choosing a JavaScript framework can be challenging. This blog will help you integrate Vue.js in your Rails project. Vue.js is easy to learn and has a good developer experience.">
+<meta itemprop="datePublished" content="2017-11-16T10:58:41+05:30" />
+<meta itemprop="dateModified" content="2017-11-16T10:58:41+05:30" />
+<meta itemprop="wordCount" content="686">
+
+
+
+<meta itemprop="keywords" content="rails,vue,javascript," />
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Using Vue.js in Rails"/>
+<meta name="twitter:description" content="Choosing a JavaScript framework can be challenging. This blog will help you integrate Vue.js in your Rails project. Vue.js is easy to learn and has a good developer experience."/>
+<meta name="twitter:site" content="@https://www.twitter.com/classandobjects"/>
+
+  
+  
+</head>
+
+
+  <body class="not-ready" data-menu="false">
+    <header class="header">
+  
+  <p class="logo">
+    <a class="site-name" href="https://www.classandobjects.com/">Class &amp; Objects</a><a class="btn-dark"></a>
+  </p>
+  
+
+  <script>
+    let bodyClx = document.body.classList;
+    let btnDark = document.querySelector('.btn-dark');
+    let sysDark = window.matchMedia('(prefers-color-scheme: dark)');
+    let darkVal = localStorage.getItem('dark');
+
+    let setDark = (isDark) => {
+      bodyClx[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark ? 'yes' : 'no');
+    };
+
+    setDark(darkVal ? darkVal === 'yes' : sysDark.matches);
+    requestAnimationFrame(() => bodyClx.remove('not-ready'));
+
+    btnDark.addEventListener('click', () => setDark(!bodyClx.contains('dark')));
+    sysDark.addEventListener('change', (event) => setDark(event.matches));
+  </script>
+
+  
+  
+
+  
+  <nav class="social">
+    
+    <a
+      class="twitter"
+      style="--url: url(./twitter.svg)"
+      href="https://twitter.com/classandobjects"
+      target="_blank"
+    ></a>
+    
+    <a
+      class="github"
+      style="--url: url(./github.svg)"
+      href="https://github.com/ankitsinghaniyaz"
+      target="_blank"
+    ></a>
+    
+  </nav>
+  
+</header>
+
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-title">
+    <p>
+      <time>:date_medium</time>
+      
+    </p>
+    <h1>Using Vue.js in Rails</h1>
+  </header>
+  <section class="post-content"><p>Vue.js is awesome. I&rsquo;m telling this after having used React for more than a year in production software. I have written about <a href="https://www.classandobjects.com/tutorial/problems_with_react_single_page_app/">my experience creating React SPA here</a>. If you haven&rsquo;t tried Vue yet, I highly recommend giving it a try. The developer experience is at the center. In this guide, we will see how to add Vue to a Rails project. So let&rsquo;s get rolling.</p>
+<p>In this post, we are going to migrate our devise signup page to use Vue. I&rsquo;ve chosen it after a lot of thought, as it will enable us to see a lot of power that Vue brings to the table. I&rsquo;ll also use the Webpacker gem. This will allow me to use ES2015 syntax, Vue single file component and hot reloading. It&rsquo;s ok if you don&rsquo;t understand all of it. We will cover each topic in detail.</p>
+<h3 id="what-we-will-build">What we will build</h3>
+<p>First let us see how the end result will look like. Here are a few screenshots.</p>
+<p>The first time view
+<img src="https://www.classandobjects.com/images/tutorial/vue-normal.png" alt="Vue Rails Registration Form" title="Vue Rails Registration Form"></p>
+<p>The client side validation
+<img src="https://www.classandobjects.com/images/tutorial/vue-validation.png" alt="Vue Rails Client Side Validation " title="Vue Rails Client Side Validation"></p>
+<p>The server side errors and validation
+<img src="https://www.classandobjects.com/images/tutorial/vue-errors.png" alt="Vue Rails Server Side Validation " title="Vue Rails Server Side Validation"></p>
+<h3 id="setting-up">Setting Up</h3>
+<p>I&rsquo;ll assume that you have installed the <a href="https://github.com/rails/webpacker">Webpacker</a> gem. If not here are the brief steps.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#75715e"># Add webpacker to your Gemfile</span>
+gem <span style="color:#e6db74">&#39;webpacker&#39;</span>, <span style="color:#e6db74">&#39;~&gt; 3.0&#39;</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># on your terminal</span>
+bundle
+bundle exec rails webpacker:install
+
+<span style="color:#75715e"># OR (on rails version &lt; 5.0)</span>
+bundle exec rake webpacker:install
+
+<span style="color:#75715e"># Intalling vue</span>
+<span style="color:#75715e"># Rails 5.1+ new application</span>
+rails new myapp --webpack<span style="color:#f92672">=</span>vue
+
+<span style="color:#75715e"># existing project</span>
+bundle exec rails webpacker:install:vue
+</code></pre></div><p>The gem has very good documentation which you would want to refer for more details. So now that we are off doing our setup let&rsquo;s do some real work.</p>
+<h3 id="the-file-structure">The File Structure</h3>
+<p>So all the Vue code we write will go in <code>app/javascript</code> note that it is different from our <code>assets/javascript</code>. As we already said that we are going to move our devise signup flow to use Vue. Here are a few files and folders that I&rsquo;ve created to get started. There are many different ways to do this, I find these way most intuitive. I will also explain what each folder is supposed to mean.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml"><span style="color:#ae81ff">app/javascript/</span>
+<span style="color:#ae81ff">├── components</span>
+<span style="color:#ae81ff">│   ├── App.vue</span>
+<span style="color:#ae81ff">│   └── shared</span>
+<span style="color:#ae81ff">│       └── csrf.vue</span>
+<span style="color:#ae81ff">├── packs</span>
+<span style="color:#ae81ff">│   ├── devise</span>
+<span style="color:#ae81ff">│   │   └── registrations</span>
+<span style="color:#ae81ff">│   │       └── new.js</span>
+<span style="color:#ae81ff">└── views</span>
+    <span style="color:#ae81ff">├── devise</span>
+        <span style="color:#ae81ff">└── registrations</span>
+            <span style="color:#ae81ff">└── new.vue</span>
+</code></pre></div><p>If you see the content of you <code>app/javascript</code> you will already have a <code>packs</code> folder. This is the path which Webpacker will watch. Later on we can include CSS and JavaScript exported from this folder in any of our views. I&rsquo;ve created several other folders which are very self explanatory.</p>
+<ul>
+<li><strong>packs</strong> - JS files mapping 1-to-1 to a view file, they follow similar folder structure to the <code>app/views</code></li>
+<li><strong>views</strong> - Actual Vue files are stored here, they also follow the similar directory structure</li>
+<li><strong>components</strong> - Any reusable component that you will create can go here</li>
+</ul>
+<p>We can have more folders in the same level like:</p>
+<ul>
+<li><strong>images</strong> - to store all the images that will be used in our Vue files</li>
+<li><strong>api</strong> - to store all the ajax calling utilities and so on</li>
+</ul>
+<p>So now I expect that your tree structure matches what I&rsquo;ve in the view above. I also believe you have <a href="https://github.com/plataformatec/devise#configuring-views">generated your devise views</a> to be modified. Below is the command on how you can generate it.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># generate devise view</span>
+rails generate devise:views
+</code></pre></div><h3 id="the-real-code">The Real Code</h3>
+<p>We will now see code that will actually use Vue. I will try to annotate my source code for easy following.</p>
+<p>Here is how my <code>app/javascript/packs/registrations/new.js</code> will look like:
+<script type="application/javascript" src="https://gist.github.com/ankitsinghaniyaz/8180556e8f1d45b203f611cb948b7d25.js"></script>
+</p>
+<p>Next up we will create the Vue file we imported in the above file. The file is located at
+<code>app/javascript/views/devise/registrations/new.vue</code>. Here is how it looks like.
+<script type="application/javascript" src="https://gist.github.com/ankitsinghaniyaz/4b79bba2d24ff8585846ec428c999f61.js"></script>
+</p>
+<p>Here is how my <code>app/views/devise/registrations/new.html.erb</code> file looks like:
+<script type="application/javascript" src="https://gist.github.com/ankitsinghaniyaz/513aa165ff66fefe0b77169a7a1e51f8.js"></script>
+</p>
+<p><strong>Update: Adding CSRF.vue file, sorry for the delay</strong>
+Here is how my <code>app/javascript/components/shared/csrf.vue</code> file looks like:
+<script type="application/javascript" src="https://gist.github.com/ankitsinghaniyaz/35e16da58e970c6d7c58e4af7cc45da3.js"></script>
+</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>I hope you enjoyed reading this article. If you want me to keep producing more such content, just give me a thumbs up in the comments below. If you have any comments and feedback feel free to let me know. Thanks for reading. :)</p>
+</section>
+
+  
+  
+  <footer class="post-tags">
+     
+    <a href="https://www.classandobjects.com/tags/rails">rails</a>
+     
+    <a href="https://www.classandobjects.com/tags/vue">vue</a>
+     
+    <a href="https://www.classandobjects.com/tags/javascript">javascript</a>
+    
+  </footer>
+  
+
+  
+  
+  
+  <nav class="post-nav">
+    
+    <a class="prev" href="https://www.classandobjects.com/tutorial/creating_a_rails_generator/"><span>←</span><span>Creating a Generator in Rails for Vue files</span></a>
+     
+    <a class="next" href="https://www.classandobjects.com/tutorial/different_ways_to_pass_parameter_to_method_ruby/"><span>4 ways to pass parameters to a method in Ruby</span><span>→</span></a>
+    
+  </nav>
+  
+
+  
+  
+</article>
+
+</main>
+
+    <footer class="footer">
+  <p>&copy; 2021 <a href="https://www.classandobjects.com/">Class &amp; Objects</a></p>
+  <p>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</p>
+  <p>
+    <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 5.1</a>
+  </p>
+</footer>
+
+  </body>
+</html>

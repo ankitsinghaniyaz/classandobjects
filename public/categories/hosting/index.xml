@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hosting on Class &amp; Objects</title>
+    <link>https://www.classandobjects.com/categories/hosting/</link>
+    <description>Recent content in hosting on Class &amp; Objects</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 21 May 2016 15:36:40 +0530</lastBuildDate><atom:link href="https://www.classandobjects.com/categories/hosting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Easily Host a Static website on Github</title>
+      <link>https://www.classandobjects.com/tutorial/host_static_site_on_github/</link>
+      <pubDate>Sat, 21 May 2016 15:36:40 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/host_static_site_on_github/</guid>
+      <description>This post shows, how you can easily host your static website on Github. We are using Hugo static site generator. You can use anything similar.
+Initial Setup I believe that you already have setup your hugo project, refer the link in case you want to start a project. Then open your config.toml file and modify the baseUrl as:
+baseurl = &amp;quot;http://{username}.github.io/&amp;quot;
+replace {username} with your username.
+Repository for Project Files This step is not mandatory, but still you want to do this.</description>
+    </item>
+    
+  </channel>
+</rss>

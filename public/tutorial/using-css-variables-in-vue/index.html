@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <title>Right Way to Use CSS Varialbes in Vue, Inspired by Tailwind.css - Class &amp; Objects</title>
+
+  
+  
+  <meta name="description" content="I can never emphasise enough on how Vue makes my life easy but I definitely want to work more in Vue if I&rsquo;m doing frontend development. One issue that I face when building Vue applications using single file components(SFC) is about sharing the common style across components. There is no easy way to do this and most of you will be fine doing a copy paste of the styles across the components." />
+  <meta name="author" content="" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://www.classandobjects.com/app.min.css" />
+
+  
+  <link rel="preload stylesheet" as="style" href="https://www.classandobjects.com/an-old-hope.min.css" />
+  <script
+    defer
+    src="https://www.classandobjects.com/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/theme.png" />
+
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/twitter.svg" />
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/github.svg" />
+  
+
+  
+  <link rel="icon" href="https://www.classandobjects.com/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://www.classandobjects.com/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.80.0" />
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="Right Way to Use CSS Varialbes in Vue, Inspired by Tailwind.css" />
+<meta property="og:description" content="CSS variables are not widely supported in all the browsers today. Understanding how to structure and use them in our Vue application can give us super powers to write a more consistent frontend application. I also share how I enable CSS variables in my Vue application inspired by Tailwind.css" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.classandobjects.com/tutorial/using-css-variables-in-vue/" />
+<meta property="article:published_time" content="2019-03-29T09:59:20+05:30" />
+<meta property="article:modified_time" content="2019-03-29T09:59:20+05:30" />
+
+  
+  <meta itemprop="name" content="Right Way to Use CSS Varialbes in Vue, Inspired by Tailwind.css">
+<meta itemprop="description" content="CSS variables are not widely supported in all the browsers today. Understanding how to structure and use them in our Vue application can give us super powers to write a more consistent frontend application. I also share how I enable CSS variables in my Vue application inspired by Tailwind.css">
+<meta itemprop="datePublished" content="2019-03-29T09:59:20+05:30" />
+<meta itemprop="dateModified" content="2019-03-29T09:59:20+05:30" />
+<meta itemprop="wordCount" content="451">
+
+
+
+<meta itemprop="keywords" content="css,vue," />
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Right Way to Use CSS Varialbes in Vue, Inspired by Tailwind.css"/>
+<meta name="twitter:description" content="CSS variables are not widely supported in all the browsers today. Understanding how to structure and use them in our Vue application can give us super powers to write a more consistent frontend application. I also share how I enable CSS variables in my Vue application inspired by Tailwind.css"/>
+<meta name="twitter:site" content="@https://www.twitter.com/classandobjects"/>
+
+  
+  
+</head>
+
+
+  <body class="not-ready" data-menu="false">
+    <header class="header">
+  
+  <p class="logo">
+    <a class="site-name" href="https://www.classandobjects.com/">Class &amp; Objects</a><a class="btn-dark"></a>
+  </p>
+  
+
+  <script>
+    let bodyClx = document.body.classList;
+    let btnDark = document.querySelector('.btn-dark');
+    let sysDark = window.matchMedia('(prefers-color-scheme: dark)');
+    let darkVal = localStorage.getItem('dark');
+
+    let setDark = (isDark) => {
+      bodyClx[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark ? 'yes' : 'no');
+    };
+
+    setDark(darkVal ? darkVal === 'yes' : sysDark.matches);
+    requestAnimationFrame(() => bodyClx.remove('not-ready'));
+
+    btnDark.addEventListener('click', () => setDark(!bodyClx.contains('dark')));
+    sysDark.addEventListener('change', (event) => setDark(event.matches));
+  </script>
+
+  
+  
+
+  
+  <nav class="social">
+    
+    <a
+      class="twitter"
+      style="--url: url(./twitter.svg)"
+      href="https://twitter.com/classandobjects"
+      target="_blank"
+    ></a>
+    
+    <a
+      class="github"
+      style="--url: url(./github.svg)"
+      href="https://github.com/ankitsinghaniyaz"
+      target="_blank"
+    ></a>
+    
+  </nav>
+  
+</header>
+
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-title">
+    <p>
+      <time>:date_medium</time>
+      
+    </p>
+    <h1>Right Way to Use CSS Varialbes in Vue, Inspired by Tailwind.css</h1>
+  </header>
+  <section class="post-content"><p>I can never emphasise enough on how Vue makes my life easy but I definitely want to work more in Vue if I&rsquo;m doing frontend development. One issue that I face when building Vue applications using single file components(SFC) is about sharing the common style across components. There is no easy way to do this and most of you will be fine doing a copy paste of the styles across the components.</p>
+<p>Another cool project that I like is <a href="http://tailwindcss.com/">tailwind css</a>. I like the idea of how we can have CSS utility classes and build things fast. If I were to summarize my take away from using this library they would be:</p>
+<h4 id="negetives">Negetives</h4>
+<ul>
+<li>memory overload - a lot of too and fro to guess/find the class names.</li>
+<li>reduced readability - I like my markup to very concise and readable but with such extended list of classes on a single tag they tend to run out of my viewport and wrap around, which is something I detest.</li>
+<li>costly extractions - In Vue generally most of my CSS is scoped so I can leave the utility class names as is or extract them as tailwind suggest, this operation looks costly to me.</li>
+</ul>
+<h4 id="positives">Positives</h4>
+<ul>
+<li>uniformity - the idea of having a standardized set of values used across the app. I more often than not end up using arbitrary values for padding, margin, the colour which is not a good thing for a long term project. The idea of having specific tweakable values which can be used app-wide is such a blessing.</li>
+<li>fast prototyping - once you get the hang of class names you can do things very fast</li>
+</ul>
+<p>So from here, I know that I want the uniformity aspect of the code but I also want the ability to write idiomatic BEM based class names. So how do we do this?</p>
+<p>I started out by extracting the very well defined constants in the <code>tailwind.js</code> file as CSS variables. Now I access these variables throughout the application. To make it work with the view we will need to follow the following steps.</p>
+<ol>
+<li>Create a file <code>src/assets/css/constants.css</code></li>
+<li>Copy the content of <a href="https://gist.github.com/ankitsinghaniyaz/382ac9a5cb8c6a97cc731ff5cf14c704">this gist</a> to the above CSS file.</li>
+<li>Import the CSS file like in you <code>main.js</code> file like <code>import '@/assets/css/constants.css'</code></li>
+<li>Now all the variables defined in the constants file are available in all our components. Really neat!</li>
+</ol>
+<p>Here is an example of how my styles section of a component will look like:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">movie__header</span> {
+  <span style="color:#66d9ef">margin</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span>spacing<span style="color:#ae81ff">-4</span>);
+  <span style="color:#66d9ef">color</span>: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span><span style="color:#66d9ef">grey</span><span style="color:#f92672">--</span>darker);
+}
+</code></pre></div><p>So now we can use these CSS variables in any component and have our app use standard measures. I hope you like the post. Do let me know your thoughts in the comments. Thanks for reading. :)</p>
+</section>
+
+  
+  
+  <footer class="post-tags">
+     
+    <a href="https://www.classandobjects.com/tags/css">css</a>
+     
+    <a href="https://www.classandobjects.com/tags/vue">vue</a>
+    
+  </footer>
+  
+
+  
+  
+  
+  <nav class="post-nav">
+    
+    <a class="prev" href="https://www.classandobjects.com/tutorial/set_up_ruby_on_rails_with_postgres/"><span>←</span><span>Set Up Postgres With Rails On Ubuntu 20.04</span></a>
+     
+    <a class="next" href="https://www.classandobjects.com/tutorial/creating_a_rails_generator/"><span>Creating a Generator in Rails for Vue files</span><span>→</span></a>
+    
+  </nav>
+  
+
+  
+  
+</article>
+
+</main>
+
+    <footer class="footer">
+  <p>&copy; 2021 <a href="https://www.classandobjects.com/">Class &amp; Objects</a></p>
+  <p>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</p>
+  <p>
+    <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 5.1</a>
+  </p>
+</footer>
+
+  </body>
+</html>

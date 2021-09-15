@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>moment js on Class &amp; Objects</title>
+    <link>https://www.classandobjects.com/tags/moment-js/</link>
+    <description>Recent content in moment js on Class &amp; Objects</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Nov 2016 21:31:53 +0530</lastBuildDate><atom:link href="https://www.classandobjects.com/tags/moment-js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Moment.js Cheatsheet</title>
+      <link>https://www.classandobjects.com/tutorial/moment-js-cheatsheet/</link>
+      <pubDate>Tue, 15 Nov 2016 21:31:53 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/moment-js-cheatsheet/</guid>
+      <description>Handling date and time in JavaScript could be a pain. I am a ruby enthusiast and one thing which I deeply love about it, is its date and time helper. They are easy to use and very intuitive. In JavaScript world, moment.js comes for the rescue. It has a lot of functionality but I somehow find its syntax a bit daunting. This post aims to provide a list of few most used methods.</description>
+    </item>
+    
+  </channel>
+</rss>

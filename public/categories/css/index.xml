@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>css on Class &amp; Objects</title>
+    <link>https://www.classandobjects.com/categories/css/</link>
+    <description>Recent content in css on Class &amp; Objects</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Mar 2019 09:59:20 +0530</lastBuildDate><atom:link href="https://www.classandobjects.com/categories/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Right Way to Use CSS Varialbes in Vue, Inspired by Tailwind.css</title>
+      <link>https://www.classandobjects.com/tutorial/using-css-variables-in-vue/</link>
+      <pubDate>Fri, 29 Mar 2019 09:59:20 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/using-css-variables-in-vue/</guid>
+      <description>I can never emphasise enough on how Vue makes my life easy but I definitely want to work more in Vue if I&amp;rsquo;m doing frontend development. One issue that I face when building Vue applications using single file components(SFC) is about sharing the common style across components. There is no easy way to do this and most of you will be fine doing a copy paste of the styles across the components.</description>
+    </item>
+    
+  </channel>
+</rss>

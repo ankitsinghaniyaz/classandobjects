@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>atom on Class &amp; Objects</title>
+    <link>https://www.classandobjects.com/tags/atom/</link>
+    <description>Recent content in atom on Class &amp; Objects</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Mar 2017 19:02:13 +0530</lastBuildDate><atom:link href="https://www.classandobjects.com/tags/atom/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Perfect Atom Setup</title>
+      <link>https://www.classandobjects.com/blogs/the_perfect_atom_setup/</link>
+      <pubDate>Fri, 10 Mar 2017 19:02:13 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/blogs/the_perfect_atom_setup/</guid>
+      <description>I love my editor, Atom. I have tried most of them out there and still, I always come back to this one. It is not perfect but I find my peace in its imperfection. Here are few things I do to make my Atom awesome.
+Making it beautiful I am a connoisseur when it comes to beauty. If you want me hooked, be beautiful. I love beautiful code and here is what I do to make my editor look beautiful.</description>
+    </item>
+    
+  </channel>
+</rss>

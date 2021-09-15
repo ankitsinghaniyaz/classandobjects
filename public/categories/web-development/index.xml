@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>web development on Class &amp; Objects</title>
+    <link>https://www.classandobjects.com/categories/web-development/</link>
+    <description>Recent content in web development on Class &amp; Objects</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.classandobjects.com/categories/web-development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Set Up MySQL With Rails On Ubuntu 20.04</title>
+      <link>https://www.classandobjects.com/tutorial/set_up_ruby_on_rails_with_mysql/</link>
+      <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/set_up_ruby_on_rails_with_mysql/</guid>
+      <description>I did another post on how every time I install Postgres it&amp;rsquo;s a pain. Jus that you don&amp;rsquo;t think that MySQL is any easy. I&amp;rsquo;m noting down my struggles just as I tried setting up another Rails project which used MySQL.
+System Specification  Ubuntu 20.04 MySQL 8+  NOTE: This is the version of Ubuntu Linux I&amp;rsquo;m testing it with. Ubuntu is my primary OS. This should work on other Ubuntu versions without any change.</description>
+    </item>
+    
+    <item>
+      <title>Set Up Postgres With Rails On Ubuntu 20.04</title>
+      <link>https://www.classandobjects.com/tutorial/set_up_ruby_on_rails_with_postgres/</link>
+      <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/set_up_ruby_on_rails_with_postgres/</guid>
+      <description>This is no beginner stuff! Every time I have to do a fresh install of Postgresql and make it work with Ruby on Rails. It is a pain in the ass. I made up my mind that this is going to be the last time I will have trouble doing this. So here we go with every minute details.
+System Specification  Ubuntu 20.04 Postgres 12+  NOTE: This is the version of Ubuntu Linux I&amp;rsquo;m testing it with.</description>
+    </item>
+    
+  </channel>
+</rss>

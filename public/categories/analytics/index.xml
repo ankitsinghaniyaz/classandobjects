@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>analytics on Class &amp; Objects</title>
+    <link>https://www.classandobjects.com/categories/analytics/</link>
+    <description>Recent content in analytics on Class &amp; Objects</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 May 2016 21:48:05 +0530</lastBuildDate><atom:link href="https://www.classandobjects.com/categories/analytics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Interactive visualization in R using Rcharts</title>
+      <link>https://www.classandobjects.com/tutorial/interactive_visualization_using_rcharts_in_r/</link>
+      <pubDate>Tue, 24 May 2016 21:48:05 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/interactive_visualization_using_rcharts_in_r/</guid>
+      <description>Visualization is daydreaming with a purpose ~ Bo Bennett
+ R is good at one thing, analysis. Until now it was sufficient on its own, with its library base, but now the need have changed. We want interactive visualization and JavaScript is ahead in the race. Thanks to this man, Ramnath Vaidya, who created a wonderful library called rCharts that brings JavaScript&amp;rsquo;s graphics into R. As you are reading this you must be familiar with plot and ggplot in R.</description>
+    </item>
+    
+  </channel>
+</rss>

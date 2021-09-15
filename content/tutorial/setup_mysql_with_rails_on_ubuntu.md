@@ -1,9 +1,10 @@
 +++
 title = "Set Up MySQL With Rails On Ubuntu 20.04"
 description = "Set up Ruby on Rails to work with MySQL on a fresh Ubuntu Linux distribution"
+date = "2020-05-19"
 tags = ["rails", "web development"]
 keywords = ["install MySQL on ubuntu", "setup MySQL with rails", "MySQL on linux","ruby on rails set up with MySQL"]
-date = "2020-05-19T21:33:12+05:30"
+author="Ankit Singhaniya"
 categories = ["rails", "web development"]
 toc = false
 slug = "set_up_ruby_on_rails_with_mysql"

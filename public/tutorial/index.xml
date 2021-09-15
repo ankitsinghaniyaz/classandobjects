@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorials on Class &amp; Objects</title>
+    <link>https://www.classandobjects.com/tutorial/</link>
+    <description>Recent content in Tutorials on Class &amp; Objects</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.classandobjects.com/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Set Up MySQL With Rails On Ubuntu 20.04</title>
+      <link>https://www.classandobjects.com/tutorial/set_up_ruby_on_rails_with_mysql/</link>
+      <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/set_up_ruby_on_rails_with_mysql/</guid>
+      <description>I did another post on how every time I install Postgres it&amp;rsquo;s a pain. Jus that you don&amp;rsquo;t think that MySQL is any easy. I&amp;rsquo;m noting down my struggles just as I tried setting up another Rails project which used MySQL.
+System Specification  Ubuntu 20.04 MySQL 8+  NOTE: This is the version of Ubuntu Linux I&amp;rsquo;m testing it with. Ubuntu is my primary OS. This should work on other Ubuntu versions without any change.</description>
+    </item>
+    
+    <item>
+      <title>Set Up Postgres With Rails On Ubuntu 20.04</title>
+      <link>https://www.classandobjects.com/tutorial/set_up_ruby_on_rails_with_postgres/</link>
+      <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/set_up_ruby_on_rails_with_postgres/</guid>
+      <description>This is no beginner stuff! Every time I have to do a fresh install of Postgresql and make it work with Ruby on Rails. It is a pain in the ass. I made up my mind that this is going to be the last time I will have trouble doing this. So here we go with every minute details.
+System Specification  Ubuntu 20.04 Postgres 12+  NOTE: This is the version of Ubuntu Linux I&amp;rsquo;m testing it with.</description>
+    </item>
+    
+    <item>
+      <title>Right Way to Use CSS Varialbes in Vue, Inspired by Tailwind.css</title>
+      <link>https://www.classandobjects.com/tutorial/using-css-variables-in-vue/</link>
+      <pubDate>Fri, 29 Mar 2019 09:59:20 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/using-css-variables-in-vue/</guid>
+      <description>I can never emphasise enough on how Vue makes my life easy but I definitely want to work more in Vue if I&amp;rsquo;m doing frontend development. One issue that I face when building Vue applications using single file components(SFC) is about sharing the common style across components. There is no easy way to do this and most of you will be fine doing a copy paste of the styles across the components.</description>
+    </item>
+    
+    <item>
+      <title>Creating a Generator in Rails for Vue files</title>
+      <link>https://www.classandobjects.com/tutorial/creating_a_rails_generator/</link>
+      <pubDate>Fri, 17 Nov 2017 10:58:41 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/creating_a_rails_generator/</guid>
+      <description>When learning Rails we all learn about generators. I still remember when I saw it for the first time. I just fell in love with it. Writing a single command can create useful files and directories for me. Until recently I never had a chance to create a generator. Yesterday I did a blog on using Vue.js with Rails and I saw that I had to create a few files every time I wanted to add Vue to a view.</description>
+    </item>
+    
+    <item>
+      <title>Using Vue.js in Rails</title>
+      <link>https://www.classandobjects.com/tutorial/using_vue_js_with_rails/</link>
+      <pubDate>Thu, 16 Nov 2017 10:58:41 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/using_vue_js_with_rails/</guid>
+      <description>Vue.js is awesome. I&amp;rsquo;m telling this after having used React for more than a year in production software. I have written about my experience creating React SPA here. If you haven&amp;rsquo;t tried Vue yet, I highly recommend giving it a try. The developer experience is at the center. In this guide, we will see how to add Vue to a Rails project. So let&amp;rsquo;s get rolling.
+In this post, we are going to migrate our devise signup page to use Vue.</description>
+    </item>
+    
+    <item>
+      <title>4 ways to pass parameters to a method in Ruby</title>
+      <link>https://www.classandobjects.com/tutorial/different_ways_to_pass_parameter_to_method_ruby/</link>
+      <pubDate>Mon, 10 Jul 2017 23:04:59 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/different_ways_to_pass_parameter_to_method_ruby/</guid>
+      <description>Recently I have been dreaming and talking a lot about methods. Here are few cool things which I discovered on my way to get better at Ruby. I&amp;rsquo;ll talk about different ways in which we can pass parameters to a method. Continue to find out how many of them did you knew already. You can read my difference between class methods and instance methods for some more fun.
+The common method def full_name(first, last) &amp;#34;#{first}#{last}&amp;#34; end full_name(&amp;#39;sam&amp;#39;, &amp;#39;smith&amp;#39;) =&amp;gt; &amp;#34;sam smith&amp;#34; Named parameters def parse(name: &amp;#39;Jhon&amp;#39;, hero: &amp;#39;superman&amp;#39;) &amp;#34;I am #{name}, the #{hero}&amp;#34; end parse =&amp;gt; &amp;#34;I am Jhon, the superman&amp;#34; parse(name: &amp;#39;Harry Potter&amp;#39;, hero: &amp;#39;wizard&amp;#39;) =&amp;gt; &amp;#34;I am Harry Potter, the wizard&amp;#34; parse(name: &amp;#39;Luffy&amp;#39;, food: &amp;#39;meat&amp;#39;) # ArgumentError: unknown keyword: food Any number of unnamed parameters def attributes(*args) args.</description>
+    </item>
+    
+    <item>
+      <title>Understanding the difference between Ruby class method and instance method</title>
+      <link>https://www.classandobjects.com/tutorial/instance_method_vs_class_method_in_ruby/</link>
+      <pubDate>Mon, 10 Jul 2017 22:36:48 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/instance_method_vs_class_method_in_ruby/</guid>
+      <description>Though this is a very simple concept. In my early days of using Ruby, I was always confused about which one to use when and why. I came up with the following way to identify if a method should be a class method or an instance method. I hope this will help you also clear the confusion.
+Class Method I think of class methods like function which is going to deal with a collection of Object.</description>
+    </item>
+    
+    <item>
+      <title>Using Webpack and Yarn with Rails 5</title>
+      <link>https://www.classandobjects.com/tutorial/use_webpack_and_yarn_with_rails/</link>
+      <pubDate>Fri, 10 Mar 2017 19:02:43 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/use_webpack_and_yarn_with_rails/</guid>
+      <description>Rails is awesome, agreed? Everyone understood that JavaScript is coming huge and there has to be a community-specific way to integrate React, Angular or Vue with a rails project.
+There have been partial successful attempts like like react-rails gem, react-on-rails, webpack-rails, etc to help user bring JS in. Still, they all lacked somewhere. So here comes all new Rails 5.1 with webpack and yarn integrated.
+You don&amp;rsquo;t need to wait for 5.</description>
+    </item>
+    
+    <item>
+      <title>Using Multiple Version of Rails Easily</title>
+      <link>https://www.classandobjects.com/tutorial/use_multiple_version_of_rails_using_rbenv_or_rvm/</link>
+      <pubDate>Fri, 10 Mar 2017 19:01:30 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/use_multiple_version_of_rails_using_rbenv_or_rvm/</guid>
+      <description>Managing rails version on local computer can be a pain. We mostly use rbenv and rvm to manage the ruby version. But it gets difficult to manange version of each gem. In todays world you will want to use docker to control you complete environment. Still, there are cases when you want to try out a version of rails, so here is how you can do that.
+ credit: this post on StackOverflow was how I got inspiration.</description>
+    </item>
+    
+    <item>
+      <title>Problem With React Single Page App</title>
+      <link>https://www.classandobjects.com/tutorial/problems_with_react_single_page_app/</link>
+      <pubDate>Sat, 26 Nov 2016 01:35:47 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/problems_with_react_single_page_app/</guid>
+      <description>If you are planning to create a single page app maybe you have heard people recommending React as an option. React is amazing and I am currently using React in almost all the projects. As you may have also heard that React is just the view layer so that means you will have to make choices. The choice about the state management, styling, routing, app structure, naming conventions and much more.</description>
+    </item>
+    
+    <item>
+      <title>Moment.js Cheatsheet</title>
+      <link>https://www.classandobjects.com/tutorial/moment-js-cheatsheet/</link>
+      <pubDate>Tue, 15 Nov 2016 21:31:53 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/moment-js-cheatsheet/</guid>
+      <description>Handling date and time in JavaScript could be a pain. I am a ruby enthusiast and one thing which I deeply love about it, is its date and time helper. They are easy to use and very intuitive. In JavaScript world, moment.js comes for the rescue. It has a lot of functionality but I somehow find its syntax a bit daunting. This post aims to provide a list of few most used methods.</description>
+    </item>
+    
+    <item>
+      <title>Sublime vs Atom vs VS Code</title>
+      <link>https://www.classandobjects.com/tutorial/sublime-vs-atom-vs-vscode/</link>
+      <pubDate>Fri, 11 Nov 2016 21:14:48 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/sublime-vs-atom-vs-vscode/</guid>
+      <description>As a software enthusiast, there is nothing which I love more than new technology. I keep my eyes open for phones, laptops and editors. Yes, you got it right. A programmer spends most of his time looking at the screen and from that most of the time staring at the jumble of words known as code. I like fast, good looking and easy to use editors. According to me Sublime Text, Atom and Visual Studio Code are the best options right now.</description>
+    </item>
+    
+    <item>
+      <title>Best Way To Create Bottom Toolbar Like Google Plus Android App</title>
+      <link>https://www.classandobjects.com/tutorial/create_google_plus_like_toolbar_android/</link>
+      <pubDate>Tue, 20 Sep 2016 21:46:00 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/create_google_plus_like_toolbar_android/</guid>
+      <description>Android toolbar is a neat functionality which replaces the old Actionbar. If you want to create a traditional looking, top positioned toolbar then this article is not for you. If you are looking for something in the line of Google plus bottom bar and have the ability to customize it then you should keep reading. Here are few screenshots to demonstrate what I mean.
+The Layout Few thing to know before we start, I will not use menu options, it makes the toolbar creation easier but takes away the power to customize.</description>
+    </item>
+    
+    <item>
+      <title>Add Subscribe Button to Your Website, also Add a Scroll Triggered Subscribe Box</title>
+      <link>https://www.classandobjects.com/tutorial/add_subscribe_button_on_static_site/</link>
+      <pubDate>Fri, 16 Sep 2016 22:35:37 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/add_subscribe_button_on_static_site/</guid>
+      <description>Subscribe button is a useful feature to have on any website. It helps you create loyal audience base and helps your users get amazing content from the blogs they love. It can be quite easy to integrate one on a WordPress site or a website with a backend. In this article, I will show you how to add a subscribe button to any static website using formspree.io, Vex js and javascript.</description>
+    </item>
+    
+    <item>
+      <title>How to use React and MobX with Rails 5</title>
+      <link>https://www.classandobjects.com/tutorial/using_react_mobx_with_rails/</link>
+      <pubDate>Thu, 15 Sep 2016 01:02:27 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/using_react_mobx_with_rails/</guid>
+      <description>MobX is the new state management library which packs really well with react. Mobx makes things much simpler to redux, which is more famous in react community. I have detailed out the step on how to get started with using mobx and rails 5.
+Install react_on_rails gem To make mobx functional with rails, I had to drop react-rails gem and adopt the react_on_rails gem. Setting it up is cumbersome in the beginning but it pays off well in the long run.</description>
+    </item>
+    
+    <item>
+      <title>Things Beginners Find Confusing About React.js</title>
+      <link>https://www.classandobjects.com/tutorial/confusing_things_in_react/</link>
+      <pubDate>Fri, 09 Sep 2016 20:12:23 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/confusing_things_in_react/</guid>
+      <description>React js is currently the most hyped front-end framework(view) today. I am lucky that at my current workplace I am getting a chance to explore react and rails. I am a Python lover, but I am completely open to learning new technologies. I have seen confusing things in Ruby on Rails which is very opposite to React and Javascript environment. I am trying to list out things every react js beginner should know.</description>
+    </item>
+    
+    <item>
+      <title>Step by Step Guide on Deploying Django Application on Heroku</title>
+      <link>https://www.classandobjects.com/tutorial/host_django_app_on_heroku/</link>
+      <pubDate>Fri, 27 May 2016 11:03:20 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/host_django_app_on_heroku/</guid>
+      <description>This guide describe how to deploy Django application on Heroku, gracefully! Yes, you heard it right. Heroku was mostly build with Ruby in mind but now it supports Python applications too. There are some points which are not mentioned in other blogs and Heroku official docs. I will try to describe all the process in detail here, so that you have a good experience deploying you apps. Lets get started!</description>
+    </item>
+    
+    <item>
+      <title>Can you Boggle Solve?</title>
+      <link>https://www.classandobjects.com/tutorial/python_boggle_solver/</link>
+      <pubDate>Fri, 27 May 2016 00:36:36 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/python_boggle_solver/</guid>
+      <description>Boggle is a word game designed by Allan Turoff and originally distributed by Parker Brothers. The game is played using a plastic grid of lettered dice, in which players attempt to find words in sequences of adjacent letters&amp;hellip; Wikipedia
+Problem Statement This problem is also said as Jigsaw Crossword Puzzle. You are given a board containing MxN cells, each letter containing an alphabet of the English language. The goal of the program is to traverse through different cells to find a given word such that the following conditions are satisfied.</description>
+    </item>
+    
+    <item>
+      <title>Interactive visualization in R using Rcharts</title>
+      <link>https://www.classandobjects.com/tutorial/interactive_visualization_using_rcharts_in_r/</link>
+      <pubDate>Tue, 24 May 2016 21:48:05 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/interactive_visualization_using_rcharts_in_r/</guid>
+      <description>Visualization is daydreaming with a purpose ~ Bo Bennett
+ R is good at one thing, analysis. Until now it was sufficient on its own, with its library base, but now the need have changed. We want interactive visualization and JavaScript is ahead in the race. Thanks to this man, Ramnath Vaidya, who created a wonderful library called rCharts that brings JavaScript&amp;rsquo;s graphics into R. As you are reading this you must be familiar with plot and ggplot in R.</description>
+    </item>
+    
+    <item>
+      <title>Adding Domain to Github Pages</title>
+      <link>https://www.classandobjects.com/tutorial/adding_custom_domain_to_github_pages/</link>
+      <pubDate>Sun, 22 May 2016 16:48:45 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/adding_custom_domain_to_github_pages/</guid>
+      <description>A domain which shows what you do can add credibility to your blog. In this tutorial we are going to add custom domain to our github page. You may also want to host a website on github. You can have domain with godaddy, hostgator, namecheap, etc. The steps remains the same. I will point out any peculiarity, if they exist. So, lets get started.
+Configuring Github There should be a way for github to know what is the name of your domain.</description>
+    </item>
+    
+    <item>
+      <title>How to Easily Host a Static website on Github</title>
+      <link>https://www.classandobjects.com/tutorial/host_static_site_on_github/</link>
+      <pubDate>Sat, 21 May 2016 15:36:40 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/host_static_site_on_github/</guid>
+      <description>This post shows, how you can easily host your static website on Github. We are using Hugo static site generator. You can use anything similar.
+Initial Setup I believe that you already have setup your hugo project, refer the link in case you want to start a project. Then open your config.toml file and modify the baseUrl as:
+baseurl = &amp;quot;http://{username}.github.io/&amp;quot;
+replace {username} with your username.
+Repository for Project Files This step is not mandatory, but still you want to do this.</description>
+    </item>
+    
+  </channel>
+</rss>

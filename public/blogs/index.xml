@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Class &amp; Objects</title>
+    <link>https://www.classandobjects.com/blogs/</link>
+    <description>Recent content in Blogs on Class &amp; Objects</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 24 Apr 2020 21:33:12 +0530</lastBuildDate><atom:link href="https://www.classandobjects.com/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How To Start Working Remotely?</title>
+      <link>https://www.classandobjects.com/blogs/getting_started_with_remote_work/</link>
+      <pubDate>Fri, 24 Apr 2020 21:33:12 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/blogs/getting_started_with_remote_work/</guid>
+      <description>I first came across the notion of remote work when I was in college. I&amp;rsquo;m neither an extrovert not a complete introvert but somewhere in the middle. Right away I knew that remote work is for me and I want to do it. Even when I tried, it was not very easy to land a paid remote job. I had to do a full-time office for the first 20 months of my career and remote work clicked for me when I was going through the worst phase of my personal and professional life.</description>
+    </item>
+    
+    <item>
+      <title>The Perfect Atom Setup</title>
+      <link>https://www.classandobjects.com/blogs/the_perfect_atom_setup/</link>
+      <pubDate>Fri, 10 Mar 2017 19:02:13 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/blogs/the_perfect_atom_setup/</guid>
+      <description>I love my editor, Atom. I have tried most of them out there and still, I always come back to this one. It is not perfect but I find my peace in its imperfection. Here are few things I do to make my Atom awesome.
+Making it beautiful I am a connoisseur when it comes to beauty. If you want me hooked, be beautiful. I love beautiful code and here is what I do to make my editor look beautiful.</description>
+    </item>
+    
+    <item>
+      <title>Best Quotes App on Android</title>
+      <link>https://www.classandobjects.com/blogs/best_quotes_app_android/</link>
+      <pubDate>Sat, 24 Sep 2016 21:33:12 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/blogs/best_quotes_app_android/</guid>
+      <description>If you are looking for motivation and inspiration, there is no other thing in the world like a Quote. Timeless words which will always mean something and bring out the best in you. Here are my listing for best quotes app on Android Play Store.
+[Quoted: Quotes With Images] (https://play.google.com/store/apps/details?id=com.classandobjects.quoted) This app lets you explore quotes and images. You can then easily save, share and use this images as wallpaper.</description>
+    </item>
+    
+    <item>
+      <title>Level Up the Programming Skills : Language vs Logic</title>
+      <link>https://www.classandobjects.com/blogs/level_up_programming_skills/</link>
+      <pubDate>Fri, 09 Sep 2016 19:17:43 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/blogs/level_up_programming_skills/</guid>
+      <description>Learning the language of computers can be both interesting and daunting. You may be either starting your career or are a seasoned developer, the chances are too likely that you are having trouble hitting the right balance between language and logical skills. In this article, I will try to find out what is the right balance to keep levelling up our programming skills.
+In the current education system, most of the times, we tend to focus too much on the logical aspect of the programming.</description>
+    </item>
+    
+    <item>
+      <title>To Life: Work from home</title>
+      <link>https://www.classandobjects.com/blogs/why_freelance/</link>
+      <pubDate>Thu, 08 Sep 2016 23:11:40 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/blogs/why_freelance/</guid>
+      <description>I may be young, but age is just a number. I have seen life and work. I have been lost and I have been saved. I have travelled from the complete chaos of not knowing where to go and then to the bliss of understanding how everything fits together. I have hopped from language to language and now I understand them all(almost).
+I love to code in Python, given how clean, readable and maintainable it looks.</description>
+    </item>
+    
+    <item>
+      <title>Why Hugo is best for blogging? You should use it too!</title>
+      <link>https://www.classandobjects.com/blogs/why_hugo/</link>
+      <pubDate>Wed, 18 May 2016 19:45:15 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/blogs/why_hugo/</guid>
+      <description>Just like any blogger, I also wanted to start my own blog. I had many doubts. What is my niche? Will people read my blog? Which platform to use for blogging? I do not know if I have found my answers, but for the last one it is HUGO. Yes, I searched for different blogging platforms and all had their own set of drawbacks. Here are few reasons for not selecting them :</description>
+    </item>
+    
+  </channel>
+</rss>

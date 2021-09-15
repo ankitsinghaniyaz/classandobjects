@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>heroku on Class &amp; Objects</title>
+    <link>https://www.classandobjects.com/categories/heroku/</link>
+    <description>Recent content in heroku on Class &amp; Objects</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 May 2016 11:03:20 +0530</lastBuildDate><atom:link href="https://www.classandobjects.com/categories/heroku/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Step by Step Guide on Deploying Django Application on Heroku</title>
+      <link>https://www.classandobjects.com/tutorial/host_django_app_on_heroku/</link>
+      <pubDate>Fri, 27 May 2016 11:03:20 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/host_django_app_on_heroku/</guid>
+      <description>This guide describe how to deploy Django application on Heroku, gracefully! Yes, you heard it right. Heroku was mostly build with Ruby in mind but now it supports Python applications too. There are some points which are not mentioned in other blogs and Heroku official docs. I will try to describe all the process in detail here, so that you have a good experience deploying you apps. Lets get started!</description>
+    </item>
+    
+  </channel>
+</rss>

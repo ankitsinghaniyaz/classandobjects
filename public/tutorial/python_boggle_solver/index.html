@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <title>Can you Boggle Solve? - Class &amp; Objects</title>
+
+  
+  
+  <meta name="description" content="Boggle is a word game designed by Allan Turoff and originally distributed by Parker Brothers. The game is played using a plastic grid of lettered dice, in which players attempt to find words in sequences of adjacent letters&hellip; Wikipedia
+Problem Statement This problem is also said as Jigsaw Crossword Puzzle. You are given a board containing MxN cells, each letter containing an alphabet of the English language. The goal of the program is to traverse through different cells to find a given word such that the following conditions are satisfied." />
+  <meta name="author" content="" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://www.classandobjects.com/app.min.css" />
+
+  
+  <link rel="preload stylesheet" as="style" href="https://www.classandobjects.com/an-old-hope.min.css" />
+  <script
+    defer
+    src="https://www.classandobjects.com/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/theme.png" />
+
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/twitter.svg" />
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/github.svg" />
+  
+
+  
+  <link rel="icon" href="https://www.classandobjects.com/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://www.classandobjects.com/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.80.0" />
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="Can you Boggle Solve?" />
+<meta property="og:description" content="Boggle is a grid of alphabets from which you have to find out recurring counts of given word." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.classandobjects.com/tutorial/python_boggle_solver/" />
+<meta property="article:published_time" content="2016-05-27T00:36:36+05:30" />
+<meta property="article:modified_time" content="2016-05-27T00:36:36+05:30" />
+
+  
+  <meta itemprop="name" content="Can you Boggle Solve?">
+<meta itemprop="description" content="Boggle is a grid of alphabets from which you have to find out recurring counts of given word.">
+<meta itemprop="datePublished" content="2016-05-27T00:36:36+05:30" />
+<meta itemprop="dateModified" content="2016-05-27T00:36:36+05:30" />
+<meta itemprop="wordCount" content="540">
+
+
+
+<meta itemprop="keywords" content="algorithms," />
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Can you Boggle Solve?"/>
+<meta name="twitter:description" content="Boggle is a grid of alphabets from which you have to find out recurring counts of given word."/>
+<meta name="twitter:site" content="@https://www.twitter.com/classandobjects"/>
+
+  
+  
+</head>
+
+
+  <body class="not-ready" data-menu="false">
+    <header class="header">
+  
+  <p class="logo">
+    <a class="site-name" href="https://www.classandobjects.com/">Class &amp; Objects</a><a class="btn-dark"></a>
+  </p>
+  
+
+  <script>
+    let bodyClx = document.body.classList;
+    let btnDark = document.querySelector('.btn-dark');
+    let sysDark = window.matchMedia('(prefers-color-scheme: dark)');
+    let darkVal = localStorage.getItem('dark');
+
+    let setDark = (isDark) => {
+      bodyClx[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark ? 'yes' : 'no');
+    };
+
+    setDark(darkVal ? darkVal === 'yes' : sysDark.matches);
+    requestAnimationFrame(() => bodyClx.remove('not-ready'));
+
+    btnDark.addEventListener('click', () => setDark(!bodyClx.contains('dark')));
+    sysDark.addEventListener('change', (event) => setDark(event.matches));
+  </script>
+
+  
+  
+
+  
+  <nav class="social">
+    
+    <a
+      class="twitter"
+      style="--url: url(./twitter.svg)"
+      href="https://twitter.com/classandobjects"
+      target="_blank"
+    ></a>
+    
+    <a
+      class="github"
+      style="--url: url(./github.svg)"
+      href="https://github.com/ankitsinghaniyaz"
+      target="_blank"
+    ></a>
+    
+  </nav>
+  
+</header>
+
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-title">
+    <p>
+      <time>:date_medium</time>
+      
+    </p>
+    <h1>Can you Boggle Solve?</h1>
+  </header>
+  <section class="post-content"><p>Boggle is a word game designed by Allan Turoff and originally distributed by Parker Brothers. The game is played using a plastic grid of lettered dice, in which players attempt to find words in sequences of adjacent letters&hellip; <a href="https://en.wikipedia.org/wiki/Boggle">Wikipedia</a></p>
+<h2 id="problem-statement">Problem Statement</h2>
+<p>This problem is also <em>said as</em> <strong>Jigsaw Crossword Puzzle</strong>. You are given a board containing MxN cells, each letter containing an alphabet of the English language.
+The goal of the program is to traverse through different cells to find a given word such that the following conditions are satisfied.</p>
+<ol>
+<li>
+<p>The letters of the word must be formed by traveling through a series of adjacent cells. i.e, the next letter in the word can be in any of the eight cells surrounding it.</p>
+</li>
+<li>
+<p>If there is a path drawn as the letters of the words are discovered, the path must not cross over itself.</p>
+</li>
+<li>
+<p>The word should not use multiple instances of the same cell.</p>
+</li>
+</ol>
+<p><strong>Result</strong> should be the number of times the given word occurs!</p>
+<p><img src="https://www.classandobjects.com/images/algorithms/boggle_case.png" alt="crossover image" title="Img 1">
+<img src="https://www.classandobjects.com/images/algorithms/boggle_reuse.png" alt="reuse image" title="Img 2"></p>
+<p><strong>Paths made using <code>pink</code> are invalid</strong></p>
+<p><strong>The Input:</strong></p>
+<pre><code>findme - (the word to be found)
+M - (the number of rows)
+N - (the number of columns)
+a b c d e … (n elements)
+.
+.
+.
+.(m rows)
+z y s x o …
+</code></pre><p><strong>Input Format:</strong></p>
+<pre><code>'word'
+
+5 x 3
+
+r a y x d
+w e t r o
+o r d o z
+</code></pre><p><strong>Output Format:</strong></p>
+<pre><code>output : 1
+</code></pre><blockquote>
+<p>DIY : It is highly recommended to try solving it without looking ahead!</p>
+</blockquote>
+<h2 id="algorithm--pseudo-code">Algorithm / Pseudo Code</h2>
+<p>This part describes the algorithm or pseudo code for boggle solver.</p>
+<ul>
+<li><strong>Step 1:</strong> Take all required inputs</li>
+<li><strong>Step 2:</strong> We know that we can move to <strong>8</strong> adjacent cells. So we will try to <code>generate a tree starting with every letter in the grid</code> as root</li>
+<li><strong>Step 3:</strong> Add all adjacent letters as the child. Note that some cases can have less than eight child.</li>
+<li><strong>Step 4:</strong> We should take care of the infinite loop. If we keep adding every element then the tree never terminates. We need a way to reduce our space with every addition. So that in a straight path the <code>character</code> at same <code>index</code> is not repeated. In technical term the above process is known as <code>DFS</code>.</li>
+<li><strong>Step 5:</strong> After every addition check if the word is found.</li>
+<li><strong>Step 6:</strong> If the word is found check if that word has crossover(think on it)? If <code>no</code> then increment the value of your matches.</li>
+<li><strong>Step 7:</strong> After exhausting the search for all the node print out the result!</li>
+</ul>
+<blockquote>
+<p>DIY : This should give you some hint! Follow these steps and try building the code you started!</p>
+</blockquote>
+<h2 id="code">Code</h2>
+<blockquote>
+<p>It is OK to fail. It is not OK to give up!</p>
+</blockquote>
+<p>You tried and you found it difficult, it is find. I have also found problems difficult. What I do it try to solve them, if I cannot, I see how others have done it. Then I make sure that next time I can do it for sure!</p>
+<p>I have commented out most of the portions of my code. I have also left it unoptimized for better readability. If you find any line difficult to grasp, feel free to comment below. Here is the code:</p>
+<script type="application/javascript" src="https://gist.github.com/ankitsinghaniyaz/d3c14f4f586432a26cacab8a7866465a.js"></script>
+
+</section>
+
+  
+  
+  <footer class="post-tags">
+     
+    <a href="https://www.classandobjects.com/tags/algorithms">algorithms</a>
+    
+  </footer>
+  
+
+  
+  
+  
+  <nav class="post-nav">
+    
+    <a class="prev" href="https://www.classandobjects.com/tutorial/host_django_app_on_heroku/"><span>←</span><span>Step by Step Guide on Deploying Django Application on Heroku</span></a>
+     
+    <a class="next" href="https://www.classandobjects.com/tutorial/interactive_visualization_using_rcharts_in_r/"><span>Interactive visualization in R using Rcharts</span><span>→</span></a>
+    
+  </nav>
+  
+
+  
+  
+</article>
+
+</main>
+
+    <footer class="footer">
+  <p>&copy; 2021 <a href="https://www.classandobjects.com/">Class &amp; Objects</a></p>
+  <p>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</p>
+  <p>
+    <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 5.1</a>
+  </p>
+</footer>
+
+  </body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <title>4 ways to pass parameters to a method in Ruby - Class &amp; Objects</title>
+
+  
+  
+  <meta name="description" content="Recently I have been dreaming and talking a lot about methods. Here are few cool things which I discovered on my way to get better at Ruby. I&rsquo;ll talk about different ways in which we can pass parameters to a method. Continue to find out how many of them did you knew already. You can read my difference between class methods and instance methods for some more fun.
+The common method def full_name(first, last) &#34;#{first}#{last}&#34; end full_name(&#39;sam&#39;, &#39;smith&#39;) =&gt; &#34;sam smith&#34; Named parameters def parse(name: &#39;Jhon&#39;, hero: &#39;superman&#39;) &#34;I am #{name}, the #{hero}&#34; end parse =&gt; &#34;I am Jhon, the superman&#34; parse(name: &#39;Harry Potter&#39;, hero: &#39;wizard&#39;) =&gt; &#34;I am Harry Potter, the wizard&#34; parse(name: &#39;Luffy&#39;, food: &#39;meat&#39;) # ArgumentError: unknown keyword: food Any number of unnamed parameters def attributes(*args) args." />
+  <meta name="author" content="" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://www.classandobjects.com/app.min.css" />
+
+  
+  <link rel="preload stylesheet" as="style" href="https://www.classandobjects.com/an-old-hope.min.css" />
+  <script
+    defer
+    src="https://www.classandobjects.com/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/theme.png" />
+
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/twitter.svg" />
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/github.svg" />
+  
+
+  
+  <link rel="icon" href="https://www.classandobjects.com/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://www.classandobjects.com/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.80.0" />
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="4 ways to pass parameters to a method in Ruby" />
+<meta property="og:description" content="There are many ways to define a method in Ruby. Read for youself and find out which one is best for you." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.classandobjects.com/tutorial/different_ways_to_pass_parameter_to_method_ruby/" />
+<meta property="article:published_time" content="2017-07-10T23:04:59+05:30" />
+<meta property="article:modified_time" content="2017-07-10T23:04:59+05:30" />
+
+  
+  <meta itemprop="name" content="4 ways to pass parameters to a method in Ruby">
+<meta itemprop="description" content="There are many ways to define a method in Ruby. Read for youself and find out which one is best for you.">
+<meta itemprop="datePublished" content="2017-07-10T23:04:59+05:30" />
+<meta itemprop="dateModified" content="2017-07-10T23:04:59+05:30" />
+<meta itemprop="wordCount" content="211">
+
+
+
+<meta itemprop="keywords" content="ruby," />
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="4 ways to pass parameters to a method in Ruby"/>
+<meta name="twitter:description" content="There are many ways to define a method in Ruby. Read for youself and find out which one is best for you."/>
+<meta name="twitter:site" content="@https://www.twitter.com/classandobjects"/>
+
+  
+  
+</head>
+
+
+  <body class="not-ready" data-menu="false">
+    <header class="header">
+  
+  <p class="logo">
+    <a class="site-name" href="https://www.classandobjects.com/">Class &amp; Objects</a><a class="btn-dark"></a>
+  </p>
+  
+
+  <script>
+    let bodyClx = document.body.classList;
+    let btnDark = document.querySelector('.btn-dark');
+    let sysDark = window.matchMedia('(prefers-color-scheme: dark)');
+    let darkVal = localStorage.getItem('dark');
+
+    let setDark = (isDark) => {
+      bodyClx[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark ? 'yes' : 'no');
+    };
+
+    setDark(darkVal ? darkVal === 'yes' : sysDark.matches);
+    requestAnimationFrame(() => bodyClx.remove('not-ready'));
+
+    btnDark.addEventListener('click', () => setDark(!bodyClx.contains('dark')));
+    sysDark.addEventListener('change', (event) => setDark(event.matches));
+  </script>
+
+  
+  
+
+  
+  <nav class="social">
+    
+    <a
+      class="twitter"
+      style="--url: url(./twitter.svg)"
+      href="https://twitter.com/classandobjects"
+      target="_blank"
+    ></a>
+    
+    <a
+      class="github"
+      style="--url: url(./github.svg)"
+      href="https://github.com/ankitsinghaniyaz"
+      target="_blank"
+    ></a>
+    
+  </nav>
+  
+</header>
+
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-title">
+    <p>
+      <time>:date_medium</time>
+      
+    </p>
+    <h1>4 ways to pass parameters to a method in Ruby</h1>
+  </header>
+  <section class="post-content"><p>Recently I have been dreaming and talking a lot about methods. Here are few cool things which I discovered on my way to get better at Ruby. I&rsquo;ll talk about different ways in which we can pass parameters to a method. Continue to find out how many of them did you knew already. You can read my <a href="https://www.classandobjects.com/tutorial/instance_method_vs_class_method_in_ruby/">difference between class methods and instance methods</a> for some more fun.</p>
+<h2 id="the-common-method">The common method</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">full_name</span>(first, last)
+  <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">#{</span>first<span style="color:#e6db74">}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">#{</span>last<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#66d9ef">end</span>
+
+full_name(<span style="color:#e6db74">&#39;sam&#39;</span>, <span style="color:#e6db74">&#39;smith&#39;</span>)
+<span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#34;sam smith&#34;</span>
+</code></pre></div><h2 id="named-parameters">Named parameters</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">parse</span>(name: <span style="color:#e6db74">&#39;Jhon&#39;</span>, <span style="color:#e6db74">hero</span>: <span style="color:#e6db74">&#39;superman&#39;</span>)
+  <span style="color:#e6db74">&#34;I am </span><span style="color:#e6db74">#{</span>name<span style="color:#e6db74">}</span><span style="color:#e6db74">, the </span><span style="color:#e6db74">#{</span>hero<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#66d9ef">end</span>
+
+parse
+<span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#34;I am Jhon, the superman&#34;</span>
+
+parse(name: <span style="color:#e6db74">&#39;Harry Potter&#39;</span>, <span style="color:#e6db74">hero</span>: <span style="color:#e6db74">&#39;wizard&#39;</span>)
+<span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#34;I am Harry Potter, the wizard&#34;</span>
+
+parse(name: <span style="color:#e6db74">&#39;Luffy&#39;</span>, <span style="color:#e6db74">food</span>: <span style="color:#e6db74">&#39;meat&#39;</span>)
+<span style="color:#75715e"># ArgumentError: unknown keyword: food</span>
+</code></pre></div><h2 id="any-number-of-unnamed-parameters">Any number of unnamed parameters</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">attributes</span>(<span style="color:#f92672">*</span>args)
+ args<span style="color:#f92672">.</span>join(<span style="color:#e6db74">&#39;, &#39;</span>)
+<span style="color:#66d9ef">end</span>
+
+attributes(<span style="color:#e6db74">&#39;hi&#39;</span>, <span style="color:#e6db74">&#39;how&#39;</span>, <span style="color:#e6db74">&#39;are&#39;</span>, <span style="color:#e6db74">&#39;you&#39;</span>)
+<span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#34;hi, how, are, you&#34;</span>
+</code></pre></div><h2 id="any-number-of-named-parameters">Any number of named parameters</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fields</span>(args <span style="color:#f92672">=</span> {})
+  args<span style="color:#f92672">.</span>each <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>k,v<span style="color:#f92672">|</span>
+    puts k, v
+  <span style="color:#66d9ef">end</span>
+<span style="color:#66d9ef">end</span>
+
+fields(name: <span style="color:#e6db74">&#39;adf&#39;</span>, <span style="color:#e6db74">fasd</span>: <span style="color:#e6db74">&#39;fasd&#39;</span>)
+name
+adf
+fasd
+fasd
+<span style="color:#f92672">=&gt;</span> {<span style="color:#e6db74">:name</span><span style="color:#f92672">=&gt;</span><span style="color:#e6db74">&#34;adf&#34;</span>, <span style="color:#e6db74">:fasd</span><span style="color:#f92672">=&gt;</span><span style="color:#e6db74">&#34;fasd&#34;</span>}
+
+</code></pre></div><h2 id="conclusion">Conclusion</h2>
+<p>We can do mix and match of all these different ways of sending params and create a very robust method. I hope you find this helpful. If I missed somthing do let me know in the comments below. Thanks for reading.</p>
+</section>
+
+  
+  
+  <footer class="post-tags">
+     
+    <a href="https://www.classandobjects.com/tags/ruby">ruby</a>
+    
+  </footer>
+  
+
+  
+  
+  
+  <nav class="post-nav">
+    
+    <a class="prev" href="https://www.classandobjects.com/tutorial/using_vue_js_with_rails/"><span>←</span><span>Using Vue.js in Rails</span></a>
+     
+    <a class="next" href="https://www.classandobjects.com/tutorial/instance_method_vs_class_method_in_ruby/"><span>Understanding the difference between Ruby class method and instance method</span><span>→</span></a>
+    
+  </nav>
+  
+
+  
+  
+</article>
+
+</main>
+
+    <footer class="footer">
+  <p>&copy; 2021 <a href="https://www.classandobjects.com/">Class &amp; Objects</a></p>
+  <p>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</p>
+  <p>
+    <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 5.1</a>
+  </p>
+</footer>
+
+  </body>
+</html>

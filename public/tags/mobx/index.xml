@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mobx on Class &amp; Objects</title>
+    <link>https://www.classandobjects.com/tags/mobx/</link>
+    <description>Recent content in mobx on Class &amp; Objects</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Sep 2016 01:02:27 +0530</lastBuildDate><atom:link href="https://www.classandobjects.com/tags/mobx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to use React and MobX with Rails 5</title>
+      <link>https://www.classandobjects.com/tutorial/using_react_mobx_with_rails/</link>
+      <pubDate>Thu, 15 Sep 2016 01:02:27 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/using_react_mobx_with_rails/</guid>
+      <description>MobX is the new state management library which packs really well with react. Mobx makes things much simpler to redux, which is more famous in react community. I have detailed out the step on how to get started with using mobx and rails 5.
+Install react_on_rails gem To make mobx functional with rails, I had to drop react-rails gem and adopt the react_on_rails gem. Setting it up is cumbersome in the beginning but it pays off well in the long run.</description>
+    </item>
+    
+  </channel>
+</rss>

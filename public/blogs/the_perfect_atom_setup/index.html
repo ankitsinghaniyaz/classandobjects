@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <title>The Perfect Atom Setup - Class &amp; Objects</title>
+
+  
+  
+  <meta name="description" content="I love my editor, Atom. I have tried most of them out there and still, I always come back to this one. It is not perfect but I find my peace in its imperfection. Here are few things I do to make my Atom awesome.
+Making it beautiful I am a connoisseur when it comes to beauty. If you want me hooked, be beautiful. I love beautiful code and here is what I do to make my editor look beautiful." />
+  <meta name="author" content="" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://www.classandobjects.com/app.min.css" />
+
+  
+  <link rel="preload stylesheet" as="style" href="https://www.classandobjects.com/an-old-hope.min.css" />
+  <script
+    defer
+    src="https://www.classandobjects.com/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/theme.png" />
+
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/twitter.svg" />
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/github.svg" />
+  
+
+  
+  <link rel="icon" href="https://www.classandobjects.com/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://www.classandobjects.com/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.80.0" />
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="The Perfect Atom Setup" />
+<meta property="og:description" content="If you love atom like me, this is how you can enhance it to be your best companion." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.classandobjects.com/blogs/the_perfect_atom_setup/" />
+<meta property="article:published_time" content="2017-03-10T19:02:13+05:30" />
+<meta property="article:modified_time" content="2017-03-10T19:02:13+05:30" />
+
+  
+  <meta itemprop="name" content="The Perfect Atom Setup">
+<meta itemprop="description" content="If you love atom like me, this is how you can enhance it to be your best companion.">
+<meta itemprop="datePublished" content="2017-03-10T19:02:13+05:30" />
+<meta itemprop="dateModified" content="2017-03-10T19:02:13+05:30" />
+<meta itemprop="wordCount" content="436">
+
+
+
+<meta itemprop="keywords" content="editor,atom," />
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The Perfect Atom Setup"/>
+<meta name="twitter:description" content="If you love atom like me, this is how you can enhance it to be your best companion."/>
+<meta name="twitter:site" content="@https://www.twitter.com/classandobjects"/>
+
+  
+  
+</head>
+
+
+  <body class="not-ready" data-menu="false">
+    <header class="header">
+  
+  <p class="logo">
+    <a class="site-name" href="https://www.classandobjects.com/">Class &amp; Objects</a><a class="btn-dark"></a>
+  </p>
+  
+
+  <script>
+    let bodyClx = document.body.classList;
+    let btnDark = document.querySelector('.btn-dark');
+    let sysDark = window.matchMedia('(prefers-color-scheme: dark)');
+    let darkVal = localStorage.getItem('dark');
+
+    let setDark = (isDark) => {
+      bodyClx[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark ? 'yes' : 'no');
+    };
+
+    setDark(darkVal ? darkVal === 'yes' : sysDark.matches);
+    requestAnimationFrame(() => bodyClx.remove('not-ready'));
+
+    btnDark.addEventListener('click', () => setDark(!bodyClx.contains('dark')));
+    sysDark.addEventListener('change', (event) => setDark(event.matches));
+  </script>
+
+  
+  
+
+  
+  <nav class="social">
+    
+    <a
+      class="twitter"
+      style="--url: url(./twitter.svg)"
+      href="https://twitter.com/classandobjects"
+      target="_blank"
+    ></a>
+    
+    <a
+      class="github"
+      style="--url: url(./github.svg)"
+      href="https://github.com/ankitsinghaniyaz"
+      target="_blank"
+    ></a>
+    
+  </nav>
+  
+</header>
+
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-title">
+    <p>
+      <time>:date_medium</time>
+      
+    </p>
+    <h1>The Perfect Atom Setup</h1>
+  </header>
+  <section class="post-content"><!-- raw HTML omitted -->
+<p>I love my editor, Atom. I have tried most of them out there and still, I always come back to this one. It is not perfect but I find my peace in its imperfection. Here are few things I do to make my Atom awesome.</p>
+<h2 id="making-it-beautiful">Making it beautiful</h2>
+<p>I am a connoisseur when it comes to beauty. If you want me hooked, be beautiful. I love beautiful code and here is what I do to make my editor look beautiful.</p>
+<h3 id="ui-theme">UI theme</h3>
+<p>I use <a href="https://atom.io/themes/atom-material-ui">Atom Material UI</a>, there are people who may not like this theme but I perfectly adore this.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">apm install atom-material-ui
+</code></pre></div><h3 id="syntax-theme">Syntax Theme</h3>
+<p>This is the most important things you can have in your editor, the right syntax colouring can do magic. This can increase your productivity, reduce eye strain and make the work enjoyable. I take my eyes very seriously so should you. I use <a href="https://atom.io/themes/spacegray-atom-dark-syntax">Spacegray Atom Dark Syntax</a>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">apm install spacegray-atom-dark-syntax
+</code></pre></div><p>The syntax highlighting in VS Code is better than Atom, but that is a discussion for another day.</p>
+<h3 id="font-face">Font Face</h3>
+<p>The font I personally use is <a href="https://github.com/adobe-fonts/source-code-pro">Source Code Pro</a>, I also like to use <a href="https://github.com/tonsky/FiraCode">Fira Code</a> for its symbol translations.</p>
+<h2 id="making-it-powerful">Making it powerful</h2>
+<p>Atom is modular in structure and everything can be added as a package. Here are few packages I use to speed up my workflow.</p>
+<h3 id="auto-close-html">Auto close HTML</h3>
+<p>This is a huge time saver, helps me <a href="https://atom.io/packages/autoclose-html">autoclose HTML tags</a>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">apm install autoclose-html
+</code></pre></div><h3 id="fold-function">Fold Function</h3>
+<p>If you have ever navigated a huge codebase you know how many functions it can have and this package helps <a href="https://atom.io/packages/fold-functions">fold functions</a> and just see their prototype.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">apm install fold-functions
+</code></pre></div><h3 id="minimap">Minimap</h3>
+<p>This seems like a useless plugin, but I miss it when it&rsquo;s not there. I use it to <a href="https://atom.io/packages/minimap">scroll and navigate</a> the codebase.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">apm install minimap
+</code></pre></div><h3 id="highlight-selected">Highlight Selected</h3>
+<p>This is a must have. Most of the editor has this built in, but we can always install the extension in the atom and make it work. It helps me <a href="https://atom.io/packages/highlight-selected">highlight a word and find all its instances</a>.</p>
+<p>I also install a version which shows <a href="https://atom.io/packages/minimap-highlight-selected">highlighted words</a> in minimap too.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">apm install highlight-selected
+apm install minimap-highlight-selected
+</code></pre></div><h2 id="linting">Linting</h2>
+<p>I use Ruby and JavaScript most of the times and my projects have linting configured, so I like to see the error as I code. So I use <a href="https://atom.io/packages/linter-ruby">ruby lint</a> and <a href="https://atom.io/packages/linter-eslint">eslint</a>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">apm install linter-ruby
+apm install linter-eslint
+</code></pre></div><h2 id="conclusion">Conclusion</h2>
+<p>For someone who is interested this is how my editor looks like:
+<!-- raw HTML omitted --></p>
+<p>If there is anything that you feel I should try, feel free to let me know. My arsenal is always empty for cool technologies. Thanks for reading.</p>
+</section>
+
+  
+  
+  <footer class="post-tags">
+     
+    <a href="https://www.classandobjects.com/tags/editor">editor</a>
+     
+    <a href="https://www.classandobjects.com/tags/atom">atom</a>
+    
+  </footer>
+  
+
+  
+  
+  
+
+  
+  
+</article>
+
+</main>
+
+    <footer class="footer">
+  <p>&copy; 2021 <a href="https://www.classandobjects.com/">Class &amp; Objects</a></p>
+  <p>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</p>
+  <p>
+    <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 5.1</a>
+  </p>
+</footer>
+
+  </body>
+</html>

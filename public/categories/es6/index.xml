@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ES6 on Class &amp; Objects</title>
+    <link>https://www.classandobjects.com/categories/es6/</link>
+    <description>Recent content in ES6 on Class &amp; Objects</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 11 Feb 2017 15:22:23 +0530</lastBuildDate><atom:link href="https://www.classandobjects.com/categories/es6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to configure Jasmine test with React, ES6 and Webpack</title>
+      <link>https://www.classandobjects.com/test_using_jasmine_react_es6_webpack/</link>
+      <pubDate>Sat, 11 Feb 2017 15:22:23 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/test_using_jasmine_react_es6_webpack/</guid>
+      <description>If you created your app using react_create_app, congrats! You saved you saved yourself some time. You now have jest up and running correctly. But chances are you configured your Webpack and now you want to configure Jasmine to test your components and do unit testing. Let&amp;rsquo;s see how can we do that:
+Installing Jasmine To run your test cases and access jasmine from the command line you will want to install jasmine globally.</description>
+    </item>
+    
+  </channel>
+</rss>

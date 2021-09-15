@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <title>Add Subscribe Button to Your Website, also Add a Scroll Triggered Subscribe Box - Class &amp; Objects</title>
+
+  
+  
+  <meta name="description" content="Subscribe button is a useful feature to have on any website. It helps you create loyal audience base and helps your users get amazing content from the blogs they love. It can be quite easy to integrate one on a WordPress site or a website with a backend. In this article, I will show you how to add a subscribe button to any static website using formspree.io, Vex js and javascript." />
+  <meta name="author" content="" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://www.classandobjects.com/app.min.css" />
+
+  
+  <link rel="preload stylesheet" as="style" href="https://www.classandobjects.com/an-old-hope.min.css" />
+  <script
+    defer
+    src="https://www.classandobjects.com/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/theme.png" />
+
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/twitter.svg" />
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/github.svg" />
+  
+
+  
+  <link rel="icon" href="https://www.classandobjects.com/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://www.classandobjects.com/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.80.0" />
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="Add Subscribe Button to Your Website, also Add a Scroll Triggered Subscribe Box" />
+<meta property="og:description" content="Subscribe button are crucial to engage your loyal audience. Create a subscribe button for your static site. Also add a on scroll pop up for subscribers." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.classandobjects.com/tutorial/add_subscribe_button_on_static_site/" />
+<meta property="article:published_time" content="2016-09-16T22:35:37+05:30" />
+<meta property="article:modified_time" content="2016-09-16T22:35:37+05:30" />
+
+  
+  <meta itemprop="name" content="Add Subscribe Button to Your Website, also Add a Scroll Triggered Subscribe Box">
+<meta itemprop="description" content="Subscribe button are crucial to engage your loyal audience. Create a subscribe button for your static site. Also add a on scroll pop up for subscribers.">
+<meta itemprop="datePublished" content="2016-09-16T22:35:37+05:30" />
+<meta itemprop="dateModified" content="2016-09-16T22:35:37+05:30" />
+<meta itemprop="wordCount" content="819">
+
+
+
+<meta itemprop="keywords" content="javascript,blogging,hugo," />
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Add Subscribe Button to Your Website, also Add a Scroll Triggered Subscribe Box"/>
+<meta name="twitter:description" content="Subscribe button are crucial to engage your loyal audience. Create a subscribe button for your static site. Also add a on scroll pop up for subscribers."/>
+<meta name="twitter:site" content="@https://www.twitter.com/classandobjects"/>
+
+  
+  
+</head>
+
+
+  <body class="not-ready" data-menu="false">
+    <header class="header">
+  
+  <p class="logo">
+    <a class="site-name" href="https://www.classandobjects.com/">Class &amp; Objects</a><a class="btn-dark"></a>
+  </p>
+  
+
+  <script>
+    let bodyClx = document.body.classList;
+    let btnDark = document.querySelector('.btn-dark');
+    let sysDark = window.matchMedia('(prefers-color-scheme: dark)');
+    let darkVal = localStorage.getItem('dark');
+
+    let setDark = (isDark) => {
+      bodyClx[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark ? 'yes' : 'no');
+    };
+
+    setDark(darkVal ? darkVal === 'yes' : sysDark.matches);
+    requestAnimationFrame(() => bodyClx.remove('not-ready'));
+
+    btnDark.addEventListener('click', () => setDark(!bodyClx.contains('dark')));
+    sysDark.addEventListener('change', (event) => setDark(event.matches));
+  </script>
+
+  
+  
+
+  
+  <nav class="social">
+    
+    <a
+      class="twitter"
+      style="--url: url(./twitter.svg)"
+      href="https://twitter.com/classandobjects"
+      target="_blank"
+    ></a>
+    
+    <a
+      class="github"
+      style="--url: url(./github.svg)"
+      href="https://github.com/ankitsinghaniyaz"
+      target="_blank"
+    ></a>
+    
+  </nav>
+  
+</header>
+
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-title">
+    <p>
+      <time>:date_medium</time>
+      
+    </p>
+    <h1>Add Subscribe Button to Your Website, also Add a Scroll Triggered Subscribe Box</h1>
+  </header>
+  <section class="post-content"><p>Subscribe button is a useful feature to have on any website. It helps you create loyal audience base and helps your users get amazing content from the blogs they love. It can be quite easy to integrate one on a WordPress site or a website with a backend. In this article, I will show you how to add a subscribe button to any static website using <a href="www.formspree.io">formspree.io</a>, <a href="https://github.com/hubspot/vex">Vex js</a> and javascript. I will also show how you can add a subscribe box(popup) when a user has scrolled the page. I am using Hugo as my static site generator, the process is exactly the same for any static site. So let&rsquo;s get started.</p>
+<h2 id="setup-vex-js">Setup Vex js</h2>
+<p>I did my little research and found out Vex js is the best dialogue(popup) creator library. It is <strong>light, good looking and has zero dependencies</strong>, and that is all we need. First, you will need to <a href="http://github.hubspot.com/vex/api/themes/">select a theme</a>, visit the link to see examples of all the themes which you can use. Select the one you like and download it from here. Also download <code>vex-theme-bottom-right-corner</code>, if you want to do a subscribe popup after scrolling your page. You will need to <a href="https://github.com/HubSpot/vex/tree/master/dist/js">download vex.combined.min.js</a> from this link. Make sure you have one theme CSS file and one Vex combined js file. Now you will want to store this file to your static directory, where you have your Javascript and CSS.</p>
+<blockquote>
+<p>NOTE: Skip to the next step if you are not using HUGO.</p>
+</blockquote>
+<p>In case of Hugo, I will put it under the themes as follow:</p>
+<pre><code>/themes
+  /theme-name
+    /js
+      vex.combined.min.js
+    /css
+      vex-theme-name.css
+</code></pre><h2 id="add-a-subscribe-button">Add a subscribe button</h2>
+<p>Now, after having set up Vex, we want a form to be shown to the user when  they click the Subscribe button.</p>
+<pre><code>
+&lt;!-- for normal HTML --&gt;
+&lt;!-- include css and js like this --&gt;
+&lt;script src=&quot;path/to/myscripts.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;path/to/mystyle.css&quot;&gt;
+&lt;!-- most of the times they are included in the `footer` partial in Hugo. --&gt;
+</code></pre><pre><code>&lt;!-- Add this button in your html file --&gt;
+&lt;button onclick=&quot;subscribe()&quot;&gt;Subscribe&lt;/button&gt;
+
+&lt;script&gt;
+function hide (elements) {
+  elements = elements.length ? elements : [elements];
+  for (var index = 0; index &lt; elements.length; index++) {
+    elements[index].style.display = 'none';
+  }
+}
+
+function subscribe() {
+    // replace vex-theme-plain with the name of your theme
+    vex.defaultOptions.className = 'vex-theme-plain';
+    var vexId = vex.dialog.open({
+    message: 'Get latest updates, enter your email:',
+    input: [
+        '&lt;input name=&quot;email&quot; type=&quot;text&quot; placeholder=&quot;jhondoe@domain.com&quot; required /&gt;',
+    ].join(''),
+    buttons: [
+        $.extend({}, vex.dialog.buttons.YES, { text: 'Subscribe' }),
+        $.extend({}, vex.dialog.buttons.NO, { text: 'Back' })
+    ],
+    callback: function (data) {
+        if (!data) {
+                }
+                else {
+            var email_value = data.email;
+                        var form = document.createElement(&quot;form&quot;);
+                        form.setAttribute('method',&quot;post&quot;);
+                        //replace below email with your email
+                        form.setAttribute('action', &quot;http://formspree.io/classandobjects@gmail.com&quot;);
+
+                        var input = document.createElement(&quot;input&quot;); //input element, text
+                        input.setAttribute('type',&quot;email&quot;);
+                        input.setAttribute('name',&quot;email&quot;);
+                        input.value = email_value;
+
+                        form.appendChild(input);
+                        form.submit();
+        }
+                // In most cases you wont need the below line, but after clicking submit or cancel if the box does not closes for some reason, you will want to uncommnet the line below.
+                // hide(document.querySelectorAll('.vex'));
+    },
+    });
+}
+&lt;/script&gt;
+</code></pre><p>In the above example just replace <a href="mailto:classandobects@gmail.com">classandobects@gmail.com</a> with you own email address and the theme name with your selected Vex theme. This should be enough to get you started. Formspree.io allow you to get 1000 emails for free and is fairly easy to use. Until now you have implemented a subscribe option like the one you get when you click the <code>envelope</code> icon on your left.</p>
+<blockquote>
+<p>TIP: You will have to verify the first email you get via formspree.io</p>
+</blockquote>
+<h2 id="bonus-adding-a-subscribe-form-on-scroll">Bonus, Adding a subscribe form on scroll</h2>
+<p>Try scrolling below on this site and as you reach around <strong>70%</strong>, you get a popup to subscribe. You should continue this step if you want to implement something similar to this.</p>
+<blockquote>
+<p>NOTE: <code>jQuery</code> is a requirement for this step. There are high chances that you are already using jQuery.</p>
+</blockquote>
+<pre><code>&lt;script&gt;
+  function createSidePopup() {
+    if (document.querySelectorAll('.vex').length == 0) {
+        vex.defaultOptions.className = 'vex-theme-bottom-right-corner';
+        var vexId = vex.dialog.open({
+        message: 'Why not subscribe for more! Email Please',
+        input: [
+            '&lt;input name=&quot;email&quot; type=&quot;text&quot; placeholder=&quot;jhondoe@domain.com&quot; required /&gt;',
+        ].join(''),
+        buttons: [
+            $.extend({}, vex.dialog.buttons.YES, { text: 'Subscribe' }),
+            $.extend({}, vex.dialog.buttons.NO, { text: 'Back' })
+        ],
+        callback: function (data) {
+            if (!data) {
+                    }
+                    else {
+                var email_value = data.email;
+                            var form = document.createElement(&quot;form&quot;);
+                            form.setAttribute('method',&quot;post&quot;);
+                            form.setAttribute('action', &quot;http://formspree.io/classandobjects@gmail.com&quot;);
+
+                            var input = document.createElement(&quot;input&quot;);
+                            input.setAttribute('type',&quot;email&quot;);
+                            input.setAttribute('name',&quot;email&quot;);
+                            input.value = email_value;
+
+                            form.appendChild(input);
+                            form.submit();
+            }
+                    hide(document.querySelectorAll('.vex'));
+        },
+        });
+    }
+}
+
+function onScrollSubscribePopup () {
+    {{ if .IsPage }}
+    $(document).ready(function() {
+        $(window).scroll(function(e){
+            var scrollTop = $(window).scrollTop();
+            var docHeight = $(document).height();
+            var winHeight = $(window).height();
+            var scrollPercent = (scrollTop) / (docHeight - winHeight);
+            var scrollPercentRounded = Math.round(scrollPercent*100);
+            if (scrollPercentRounded &gt; 70 &amp;&amp; scrollPercentRounded &lt;     80) {
+                createSidePopup();
+            }
+        });
+    });
+    {{ end }}
+}
+&lt;/script&gt;
+</code></pre><p>The code to calculate the scroll percentage has been taken from this <a href="https://codepen.io/achudars/pen/Cpast">codepen</a>.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>I believe this post was helpful for creating a subscribe button. If you find any issue with the above code or need any help do let me know in the comments below. Thanks for reading!</p>
+</section>
+
+  
+  
+  <footer class="post-tags">
+     
+    <a href="https://www.classandobjects.com/tags/javascript">javascript</a>
+     
+    <a href="https://www.classandobjects.com/tags/blogging">blogging</a>
+     
+    <a href="https://www.classandobjects.com/tags/hugo">hugo</a>
+    
+  </footer>
+  
+
+  
+  
+  
+  <nav class="post-nav">
+    
+    <a class="prev" href="https://www.classandobjects.com/tutorial/create_google_plus_like_toolbar_android/"><span>←</span><span>Best Way To Create Bottom Toolbar Like Google Plus Android App</span></a>
+     
+    <a class="next" href="https://www.classandobjects.com/tutorial/using_react_mobx_with_rails/"><span>How to use React and MobX with Rails 5</span><span>→</span></a>
+    
+  </nav>
+  
+
+  
+  
+</article>
+
+</main>
+
+    <footer class="footer">
+  <p>&copy; 2021 <a href="https://www.classandobjects.com/">Class &amp; Objects</a></p>
+  <p>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</p>
+  <p>
+    <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 5.1</a>
+  </p>
+</footer>
+
+  </body>
+</html>

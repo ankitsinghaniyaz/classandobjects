@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <title>How to Easily Host a Static website on Github - Class &amp; Objects</title>
+
+  
+  
+  <meta name="description" content="This post shows, how you can easily host your static website on Github. We are using Hugo static site generator. You can use anything similar.
+Initial Setup I believe that you already have setup your hugo project, refer the link in case you want to start a project. Then open your config.toml file and modify the baseUrl as:
+baseurl = &quot;http://{username}.github.io/&quot;
+replace {username} with your username.
+Repository for Project Files This step is not mandatory, but still you want to do this." />
+  <meta name="author" content="" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://www.classandobjects.com/app.min.css" />
+
+  
+  <link rel="preload stylesheet" as="style" href="https://www.classandobjects.com/an-old-hope.min.css" />
+  <script
+    defer
+    src="https://www.classandobjects.com/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/theme.png" />
+
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/twitter.svg" />
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/github.svg" />
+  
+
+  
+  <link rel="icon" href="https://www.classandobjects.com/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://www.classandobjects.com/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.80.0" />
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="How to Easily Host a Static website on Github" />
+<meta property="og:description" content="This post shows, how you can easily host your static website on Github. We are using Hugo static site generator. You can use anything similar.
+Initial Setup I believe that you already have setup your hugo project, refer the link in case you want to start a project. Then open your config.toml file and modify the baseUrl as:
+baseurl = &quot;http://{username}.github.io/&quot;
+replace {username} with your username.
+Repository for Project Files This step is not mandatory, but still you want to do this." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.classandobjects.com/tutorial/host_static_site_on_github/" />
+<meta property="article:published_time" content="2016-05-21T15:36:40+05:30" />
+<meta property="article:modified_time" content="2016-05-21T15:36:40+05:30" />
+
+  
+  <meta itemprop="name" content="How to Easily Host a Static website on Github">
+<meta itemprop="description" content="This post shows, how you can easily host your static website on Github. We are using Hugo static site generator. You can use anything similar.
+Initial Setup I believe that you already have setup your hugo project, refer the link in case you want to start a project. Then open your config.toml file and modify the baseUrl as:
+baseurl = &quot;http://{username}.github.io/&quot;
+replace {username} with your username.
+Repository for Project Files This step is not mandatory, but still you want to do this.">
+<meta itemprop="datePublished" content="2016-05-21T15:36:40+05:30" />
+<meta itemprop="dateModified" content="2016-05-21T15:36:40+05:30" />
+<meta itemprop="wordCount" content="578">
+
+
+
+<meta itemprop="keywords" content="hugo,hosting," />
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How to Easily Host a Static website on Github"/>
+<meta name="twitter:description" content="This post shows, how you can easily host your static website on Github. We are using Hugo static site generator. You can use anything similar.
+Initial Setup I believe that you already have setup your hugo project, refer the link in case you want to start a project. Then open your config.toml file and modify the baseUrl as:
+baseurl = &quot;http://{username}.github.io/&quot;
+replace {username} with your username.
+Repository for Project Files This step is not mandatory, but still you want to do this."/>
+<meta name="twitter:site" content="@https://www.twitter.com/classandobjects"/>
+
+  
+  
+</head>
+
+
+  <body class="not-ready" data-menu="false">
+    <header class="header">
+  
+  <p class="logo">
+    <a class="site-name" href="https://www.classandobjects.com/">Class &amp; Objects</a><a class="btn-dark"></a>
+  </p>
+  
+
+  <script>
+    let bodyClx = document.body.classList;
+    let btnDark = document.querySelector('.btn-dark');
+    let sysDark = window.matchMedia('(prefers-color-scheme: dark)');
+    let darkVal = localStorage.getItem('dark');
+
+    let setDark = (isDark) => {
+      bodyClx[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark ? 'yes' : 'no');
+    };
+
+    setDark(darkVal ? darkVal === 'yes' : sysDark.matches);
+    requestAnimationFrame(() => bodyClx.remove('not-ready'));
+
+    btnDark.addEventListener('click', () => setDark(!bodyClx.contains('dark')));
+    sysDark.addEventListener('change', (event) => setDark(event.matches));
+  </script>
+
+  
+  
+
+  
+  <nav class="social">
+    
+    <a
+      class="twitter"
+      style="--url: url(./twitter.svg)"
+      href="https://twitter.com/classandobjects"
+      target="_blank"
+    ></a>
+    
+    <a
+      class="github"
+      style="--url: url(./github.svg)"
+      href="https://github.com/ankitsinghaniyaz"
+      target="_blank"
+    ></a>
+    
+  </nav>
+  
+</header>
+
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-title">
+    <p>
+      <time>:date_medium</time>
+      
+    </p>
+    <h1>How to Easily Host a Static website on Github</h1>
+  </header>
+  <section class="post-content"><p>This post shows, how you can easily host your static website on Github. We are using Hugo static site generator. You can use anything similar.</p>
+<h2 id="initial-setup">Initial Setup</h2>
+<p>I believe that you already have <a href="https://gohugo.io/overview/quickstart/">setup your hugo project</a>, refer the link in case you want to start a project. Then open your <code>config.toml</code> file and modify the <strong>baseUrl</strong> as:</p>
+<p><code>baseurl = &quot;http://{username}.github.io/&quot;</code></p>
+<p>replace {username} with your username.</p>
+<h2 id="repository-for-project-files">Repository for Project Files</h2>
+<p>This step is not mandatory, but still you want to do this. Creating a repository for you content will help you monitor how your site advanced. It will also help you correct changes in case you do something wrong(which is bound to happen).</p>
+<p>Create a new repository on Github with same name as your project. Then <code>cd</code> inside the directory and issue following commands:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git init
+git add -A
+git commit -m <span style="color:#e6db74">&#34;init : setup project&#34;</span>
+git remote add origin &lt;project name&gt;
+git push -u origin master
+</code></pre></div><p>These commands will also be displayed to you when you create the repository on Github.</p>
+<blockquote>
+<p>Note : Make sure you are inside the project directory, before issuing the commands.</p>
+</blockquote>
+<h2 id="repository-for-web-pages">Repository for Web Pages</h2>
+<p>We will now create another repository to hold our static website. Create a new repository on GitHub with name as <code>{username}.github.io</code>. Replace the {username} with you Github username.</p>
+<p>After this create a new directory parallel to your project directory. Name it as you find appropriate. I name it same as the project directory with some extra suffix. This helps in keeping them close. like
+<code>github</code> and <code>github_pages</code>. Move into this new directory and do as following:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git init
+git add -A
+git commit -m <span style="color:#e6db74">&#34;init : setup project&#34;</span>
+git remote add origin <span style="color:#f92672">{</span>username<span style="color:#f92672">}</span>.github.io
+git push -u origin master
+</code></pre></div><h2 id="generate-static-site">Generate Static Site</h2>
+<p>We are all set-up. We will create our website which will be visible to everyone.
+Move into your project directory and run following commands:</p>
+<pre><code>hugo -d ../github_pages [-t theme_name]
+</code></pre><blockquote>
+<p>Note : Change directory name to match yours.</p>
+</blockquote>
+<p><code>-d</code> flag tells where should hugo dumb the site</p>
+<p><code>-t</code> flag is optional, you can specify a theme name you are using.</p>
+<p>So, Now we have our website ready. All we need to do is host them and make it available to everyone.</p>
+<h2 id="bring-it-live">Bring It Live</h2>
+<p>To get our site live we have to move into our <code>github_pages</code> directory and push it up to Github.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git add -A
+git push
+</code></pre></div><p>You can now view you website at <strong><a href="http://www.yourusername.github.io">www.yourusername.github.io</a></strong></p>
+<h2 id="automate-it">Automate It</h2>
+<p>We do not want to repeat commands every time we make some changes. So in my <code>github</code> project directory I create a new file called <code>deploy.sh</code> and add following lines to it.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e"># Build the project.</span>
+hugo -d ../classandobjectspage
+
+<span style="color:#75715e"># Change directory</span>
+cd ../classandobjectspage
+
+<span style="color:#75715e"># Add changes to git.</span>
+git add -A
+
+<span style="color:#75715e"># Commit changes.</span>
+msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rebuilding site `date`&#34;</span>
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $# -eq <span style="color:#ae81ff">1</span> <span style="color:#f92672">]</span>
+  <span style="color:#66d9ef">then</span> msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
+<span style="color:#66d9ef">fi</span>
+git commit -m <span style="color:#e6db74">&#34;</span>$msg<span style="color:#e6db74">&#34;</span>
+
+<span style="color:#75715e"># Push source and build repos.</span>
+git push
+</code></pre></div><p>Now you can just run <code>bash deploy.sh &quot;your message&quot;</code>. This will do all the above tasks we did manually.</p>
+<h2 id="custom-domain">Custom Domain</h2>
+<p>Adding a domain to your website is optional. You can read <a href="http://classandobjects.com/hugo/adding_custom_domain_to_github_pages/">how to add domain to my github page</a>.</p>
+<h2 id="finally">Finally</h2>
+<p>I tried to show every step I took in hosting my website. My experience was not good with the available documentation, but I hope that this will help you all. If you find anything missing or not mentioned, do let me know in the comments below! Thanks for reading&hellip;</p>
+</section>
+
+  
+  
+  <footer class="post-tags">
+     
+    <a href="https://www.classandobjects.com/tags/hugo">hugo</a>
+     
+    <a href="https://www.classandobjects.com/tags/hosting">hosting</a>
+    
+  </footer>
+  
+
+  
+  
+  
+  <nav class="post-nav">
+    
+    <a class="prev" href="https://www.classandobjects.com/tutorial/adding_custom_domain_to_github_pages/"><span>←</span><span>Adding Domain to Github Pages</span></a>
+     
+  </nav>
+  
+
+  
+  
+</article>
+
+</main>
+
+    <footer class="footer">
+  <p>&copy; 2021 <a href="https://www.classandobjects.com/">Class &amp; Objects</a></p>
+  <p>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</p>
+  <p>
+    <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 5.1</a>
+  </p>
+</footer>
+
+  </body>
+</html>

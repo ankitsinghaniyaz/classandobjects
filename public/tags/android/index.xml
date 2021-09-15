@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android on Class &amp; Objects</title>
+    <link>https://www.classandobjects.com/tags/android/</link>
+    <description>Recent content in Android on Class &amp; Objects</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Sep 2016 21:46:00 +0530</lastBuildDate><atom:link href="https://www.classandobjects.com/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Best Way To Create Bottom Toolbar Like Google Plus Android App</title>
+      <link>https://www.classandobjects.com/tutorial/create_google_plus_like_toolbar_android/</link>
+      <pubDate>Tue, 20 Sep 2016 21:46:00 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/create_google_plus_like_toolbar_android/</guid>
+      <description>Android toolbar is a neat functionality which replaces the old Actionbar. If you want to create a traditional looking, top positioned toolbar then this article is not for you. If you are looking for something in the line of Google plus bottom bar and have the ability to customize it then you should keep reading. Here are few screenshots to demonstrate what I mean.
+The Layout Few thing to know before we start, I will not use menu options, it makes the toolbar creation easier but takes away the power to customize.</description>
+    </item>
+    
+  </channel>
+</rss>

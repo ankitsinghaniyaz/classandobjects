@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <title>The zen of form validation (React) - Class &amp; Objects</title>
+
+  
+  
+  <meta name="description" content="Form validation is complex! With react, it gets even more complicated. In the traditional web, there are inputs and we specify the type, max, min, etc which are validated when the user submits the form. In a slightly more UX focused app you will use jQuery and it&rsquo;s plugin to give the feedback as user types and interacts with the system. You can see all types of validations happening throughout the web and here are my conclusion after doing some research." />
+  <meta name="author" content="" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://www.classandobjects.com/app.min.css" />
+
+  
+  <link rel="preload stylesheet" as="style" href="https://www.classandobjects.com/an-old-hope.min.css" />
+  <script
+    defer
+    src="https://www.classandobjects.com/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/theme.png" />
+
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/twitter.svg" />
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/github.svg" />
+  
+
+  
+  <link rel="icon" href="https://www.classandobjects.com/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://www.classandobjects.com/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.80.0" />
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="The zen of form validation (React)" />
+<meta property="og:description" content="There are so many ways to validate form and inputs. What is the right way to do it? Validation gets even more complicated with React js, here is what I do" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.classandobjects.com/right_form_validation_in_react/" />
+<meta property="article:published_time" content="2017-02-16T00:13:56+05:30" />
+<meta property="article:modified_time" content="2017-02-16T00:13:56+05:30" />
+
+  
+  <meta itemprop="name" content="The zen of form validation (React)">
+<meta itemprop="description" content="There are so many ways to validate form and inputs. What is the right way to do it? Validation gets even more complicated with React js, here is what I do">
+<meta itemprop="datePublished" content="2017-02-16T00:13:56+05:30" />
+<meta itemprop="dateModified" content="2017-02-16T00:13:56+05:30" />
+<meta itemprop="wordCount" content="533">
+
+
+
+<meta itemprop="keywords" content="validation,javascript,react," />
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The zen of form validation (React)"/>
+<meta name="twitter:description" content="There are so many ways to validate form and inputs. What is the right way to do it? Validation gets even more complicated with React js, here is what I do"/>
+<meta name="twitter:site" content="@https://www.twitter.com/classandobjects"/>
+
+  
+  
+</head>
+
+
+  <body class="not-ready" data-menu="false">
+    <header class="header">
+  
+  <p class="logo">
+    <a class="site-name" href="https://www.classandobjects.com/">Class &amp; Objects</a><a class="btn-dark"></a>
+  </p>
+  
+
+  <script>
+    let bodyClx = document.body.classList;
+    let btnDark = document.querySelector('.btn-dark');
+    let sysDark = window.matchMedia('(prefers-color-scheme: dark)');
+    let darkVal = localStorage.getItem('dark');
+
+    let setDark = (isDark) => {
+      bodyClx[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark ? 'yes' : 'no');
+    };
+
+    setDark(darkVal ? darkVal === 'yes' : sysDark.matches);
+    requestAnimationFrame(() => bodyClx.remove('not-ready'));
+
+    btnDark.addEventListener('click', () => setDark(!bodyClx.contains('dark')));
+    sysDark.addEventListener('change', (event) => setDark(event.matches));
+  </script>
+
+  
+  
+
+  
+  <nav class="social">
+    
+    <a
+      class="twitter"
+      style="--url: url(./twitter.svg)"
+      href="https://twitter.com/classandobjects"
+      target="_blank"
+    ></a>
+    
+    <a
+      class="github"
+      style="--url: url(./github.svg)"
+      href="https://github.com/ankitsinghaniyaz"
+      target="_blank"
+    ></a>
+    
+  </nav>
+  
+</header>
+
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-title">
+    <p>
+      <time>:date_medium</time>
+      
+    </p>
+    <h1>The zen of form validation (React)</h1>
+  </header>
+  <section class="post-content"><p>Form validation is complex! With react, it gets even more complicated. In the traditional web, there are inputs and we specify the type, max, min, etc which are validated when the user submits the form. In a slightly more UX focused app you will use <code>jQuery</code> and it&rsquo;s plugin to give the feedback as user types and interacts with the system. You can see all types of validations happening throughout the web and here are my conclusion after doing some research. I will also share how I plan to solve this excruciating pain in React.</p>
+<p>These are few distilled rules that I come to rely upon which can be followed. They may look very simple but difficult to get right. Here they are:</p>
+<blockquote>
+<p>TL;DR;</p>
+</blockquote>
+<ol>
+<li>Validate field only when they are touched</li>
+<li>If a field is changing there should be some delay before you validate.</li>
+<li>When submit is attempted then validate all</li>
+<li>Show error above/beside the input, also highlight the input in question.</li>
+</ol>
+<p>If we are to follow these few rules then we can easily nail down validation. I will quickly and briefly describe them.</p>
+<h3 id="validate-only-when-a-field-is-touched">Validate only when a field is touched</h3>
+<p>Let&rsquo;s say you have few fields and all are empty by default. Do you like to see all the fields marked as red before you even do anything? NO! So we should only validate fields which user has touched once. By touch I mean not just clicked in the input, it means he/she actually tries to change the value even once. Then we can keep doing validation continuously.</p>
+<h3 id="delay-before-you-validate">Delay before you validate</h3>
+<p>I bet you have seen this, click on a field called as <code>email</code>, type the first character and you see an error, this is not a valid email. You just started and you know it&rsquo;s not complete yet. Give some time before you show error in these cases.</p>
+<h3 id="validate-all-fields-on-submit">Validate all fields on submit</h3>
+<p>Validation on submit is the only way you can validate required fields. It is only when the end user tries to submit the form you will know that he left out the required field(s). Other times we can safely assume that he is still filling in the form.</p>
+<h3 id="show-error-message-abovebeside-and-highlight-the-input-in-question">Show error message above/beside and highlight the input in question</h3>
+<p>This is the goal why we are reading this post. The user doesn&rsquo;t fill in something or fills in the wrong information. We want to avoid that. So we need to show <code>meaningful</code> and <code>well-located</code> error messages. According to my reading, people say showing the error on top of the input in question is ideal, but I&rsquo;m not sure on this one. All I am saying is error should be shown as close to the input as possible. Also highlighting the input is a plus to get users attention.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>If you follow these steps you are bound to nail form validation and UX for your application. I am also trying to solve the same problem with React, as you may know, that form validation in React is a pain. In the next article, I&rsquo;ll talk about how can we follow these rules and do the right things in react. I hope you liked the article, thanks for reading!</p>
+</section>
+
+  
+  
+  <footer class="post-tags">
+     
+    <a href="https://www.classandobjects.com/tags/validation">validation</a>
+     
+    <a href="https://www.classandobjects.com/tags/javascript">javascript</a>
+     
+    <a href="https://www.classandobjects.com/tags/react">react</a>
+    
+  </footer>
+  
+
+  
+  
+  
+
+  
+  
+</article>
+
+</main>
+
+    <footer class="footer">
+  <p>&copy; 2021 <a href="https://www.classandobjects.com/">Class &amp; Objects</a></p>
+  <p>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</p>
+  <p>
+    <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 5.1</a>
+  </p>
+</footer>
+
+  </body>
+</html>

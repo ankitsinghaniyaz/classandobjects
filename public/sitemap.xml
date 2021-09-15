@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://www.classandobjects.com/</loc>
+    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/</loc>
+    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/rails/</loc>
+    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/rails/</loc>
+    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tutorial/set_up_ruby_on_rails_with_mysql/</loc>
+    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tutorial/set_up_ruby_on_rails_with_postgres/</loc>
+    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/</loc>
+    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tutorial/</loc>
+    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/web-development/</loc>
+    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/web-development/</loc>
+    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/blogs/</loc>
+    <lastmod>2020-04-24T21:33:12+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/blogs/getting_started_with_remote_work/</loc>
+    <lastmod>2020-04-24T21:33:12+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/remote/</loc>
+    <lastmod>2020-04-24T21:33:12+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/css/</loc>
+    <lastmod>2019-03-29T09:59:20+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/css/</loc>
+    <lastmod>2019-03-29T09:59:20+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tutorial/using-css-variables-in-vue/</loc>
+    <lastmod>2019-03-29T09:59:20+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/vue/</loc>
+    <lastmod>2019-03-29T09:59:20+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/vue/</loc>
+    <lastmod>2019-03-29T09:59:20+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tutorial/creating_a_rails_generator/</loc>
+    <lastmod>2017-11-17T10:58:41+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/javascript/</loc>
+    <lastmod>2017-11-16T10:58:41+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/javascript/</loc>
+    <lastmod>2017-11-16T10:58:41+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tutorial/using_vue_js_with_rails/</loc>
+    <lastmod>2017-11-16T10:58:41+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tutorial/different_ways_to_pass_parameter_to_method_ruby/</loc>
+    <lastmod>2017-07-10T23:04:59+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/ruby/</loc>
+    <lastmod>2017-07-10T23:04:59+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/ruby/</loc>
+    <lastmod>2017-07-10T23:04:59+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tutorial/instance_method_vs_class_method_in_ruby/</loc>
+    <lastmod>2017-07-10T22:36:48+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tutorial/use_webpack_and_yarn_with_rails/</loc>
+    <lastmod>2017-03-10T19:02:43+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/atom/</loc>
+    <lastmod>2017-03-10T19:02:13+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/atom/</loc>
+    <lastmod>2017-03-10T19:02:13+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/editor/</loc>
+    <lastmod>2017-03-10T19:02:13+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/editor/</loc>
+    <lastmod>2017-03-10T19:02:13+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/blogs/the_perfect_atom_setup/</loc>
+    <lastmod>2017-03-10T19:02:13+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/rbenv/</loc>
+    <lastmod>2017-03-10T19:01:30+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/rbenv/</loc>
+    <lastmod>2017-03-10T19:01:30+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/rvm/</loc>
+    <lastmod>2017-03-10T19:01:30+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/rvm/</loc>
+    <lastmod>2017-03-10T19:01:30+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tutorial/use_multiple_version_of_rails_using_rbenv_or_rvm/</loc>
+    <lastmod>2017-03-10T19:01:30+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/react/</loc>
+    <lastmod>2017-02-16T00:13:56+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/react/</loc>
+    <lastmod>2017-02-16T00:13:56+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/right_form_validation_in_react/</loc>
+    <lastmod>2017-02-16T00:13:56+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/validation/</loc>
+    <lastmod>2017-02-16T00:13:56+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/validation/</loc>
+    <lastmod>2017-02-16T00:13:56+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/es6/</loc>
+    <lastmod>2017-02-11T15:22:23+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/es6/</loc>
+    <lastmod>2017-02-11T15:22:23+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/test_using_jasmine_react_es6_webpack/</loc>
+    <lastmod>2017-02-11T15:22:23+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/jasmine/</loc>
+    <lastmod>2017-02-11T15:22:23+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/jasmine/</loc>
+    <lastmod>2017-02-11T15:22:23+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/webpack/</loc>
+    <lastmod>2017-02-11T15:22:23+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/webpack/</loc>
+    <lastmod>2017-02-11T15:22:23+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tutorial/problems_with_react_single_page_app/</loc>
+    <lastmod>2016-11-26T01:35:47+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/cheatsheet/</loc>
+    <lastmod>2016-11-15T21:31:53+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/moment-js/</loc>
+    <lastmod>2016-11-15T21:31:53+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tutorial/moment-js-cheatsheet/</loc>
+    <lastmod>2016-11-15T21:31:53+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tutorial/sublime-vs-atom-vs-vscode/</loc>
+    <lastmod>2016-11-11T21:14:48+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/tools/</loc>
+    <lastmod>2016-11-11T21:14:48+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/tools/</loc>
+    <lastmod>2016-11-11T21:14:48+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/best-of-something/</loc>
+    <lastmod>2016-09-24T21:33:12+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/blogs/best_quotes_app_android/</loc>
+    <lastmod>2016-09-24T21:33:12+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/blogs/</loc>
+    <lastmod>2016-09-24T21:33:12+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/android/</loc>
+    <lastmod>2016-09-20T21:46:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tutorial/create_google_plus_like_toolbar_android/</loc>
+    <lastmod>2016-09-20T21:46:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/guide/</loc>
+    <lastmod>2016-09-20T21:46:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/tutorial/</loc>
+    <lastmod>2016-09-20T21:46:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tutorial/add_subscribe_button_on_static_site/</loc>
+    <lastmod>2016-09-16T22:35:37+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/blogging/</loc>
+    <lastmod>2016-09-16T22:35:37+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/hugo/</loc>
+    <lastmod>2016-09-16T22:35:37+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tutorial/using_react_mobx_with_rails/</loc>
+    <lastmod>2016-09-15T01:02:27+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/mobx/</loc>
+    <lastmod>2016-09-15T01:02:27+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/react-js/</loc>
+    <lastmod>2016-09-15T01:02:27+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/react-js/</loc>
+    <lastmod>2016-09-09T20:12:23+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tutorial/confusing_things_in_react/</loc>
+    <lastmod>2016-09-09T20:12:23+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/blogs/</loc>
+    <lastmod>2016-09-09T19:17:43+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/blogs/level_up_programming_skills/</loc>
+    <lastmod>2016-09-09T19:17:43+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/programming-skills/</loc>
+    <lastmod>2016-09-09T19:17:43+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/freelance/</loc>
+    <lastmod>2016-09-08T23:11:40+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/blogs/why_freelance/</loc>
+    <lastmod>2016-09-08T23:11:40+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/djnago/</loc>
+    <lastmod>2016-05-27T11:03:20+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/heroku/</loc>
+    <lastmod>2016-05-27T11:03:20+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/python/</loc>
+    <lastmod>2016-05-27T11:03:20+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/python/</loc>
+    <lastmod>2016-05-27T11:03:20+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tutorial/host_django_app_on_heroku/</loc>
+    <lastmod>2016-05-27T11:03:20+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/algorithms/</loc>
+    <lastmod>2016-05-27T00:36:36+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/algorithms/</loc>
+    <lastmod>2016-05-27T00:36:36+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tutorial/python_boggle_solver/</loc>
+    <lastmod>2016-05-27T00:36:36+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/problem-solving/</loc>
+    <lastmod>2016-05-27T00:36:36+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/analytics/</loc>
+    <lastmod>2016-05-24T21:48:05+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/analytics/</loc>
+    <lastmod>2016-05-24T21:48:05+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tutorial/interactive_visualization_using_rcharts_in_r/</loc>
+    <lastmod>2016-05-24T21:48:05+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/r/</loc>
+    <lastmod>2016-05-24T21:48:05+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/visualization/</loc>
+    <lastmod>2016-05-24T21:48:05+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/visualization/</loc>
+    <lastmod>2016-05-24T21:48:05+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tutorial/adding_custom_domain_to_github_pages/</loc>
+    <lastmod>2016-05-22T16:48:45+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/guides/</loc>
+    <lastmod>2016-05-22T16:48:45+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tags/hosting/</loc>
+    <lastmod>2016-05-22T16:48:45+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/tutorials/</loc>
+    <lastmod>2016-05-22T16:48:45+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/github/</loc>
+    <lastmod>2016-05-21T15:36:40+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/hosting/</loc>
+    <lastmod>2016-05-21T15:36:40+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/tutorial/host_static_site_on_github/</loc>
+    <lastmod>2016-05-21T15:36:40+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/categories/hugo/</loc>
+    <lastmod>2016-05-21T15:36:40+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/blogs/why_hugo/</loc>
+    <lastmod>2016-05-18T19:45:15+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.classandobjects.com/about/</loc>
+    <lastmod>1993-10-05T14:02:37+02:00</lastmod>
+  </url>
+  
+</urlset>

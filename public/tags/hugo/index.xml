@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on Class &amp; Objects</title>
+    <link>https://www.classandobjects.com/tags/hugo/</link>
+    <description>Recent content in hugo on Class &amp; Objects</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 16 Sep 2016 22:35:37 +0530</lastBuildDate><atom:link href="https://www.classandobjects.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add Subscribe Button to Your Website, also Add a Scroll Triggered Subscribe Box</title>
+      <link>https://www.classandobjects.com/tutorial/add_subscribe_button_on_static_site/</link>
+      <pubDate>Fri, 16 Sep 2016 22:35:37 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/add_subscribe_button_on_static_site/</guid>
+      <description>Subscribe button is a useful feature to have on any website. It helps you create loyal audience base and helps your users get amazing content from the blogs they love. It can be quite easy to integrate one on a WordPress site or a website with a backend. In this article, I will show you how to add a subscribe button to any static website using formspree.io, Vex js and javascript.</description>
+    </item>
+    
+    <item>
+      <title>Adding Domain to Github Pages</title>
+      <link>https://www.classandobjects.com/tutorial/adding_custom_domain_to_github_pages/</link>
+      <pubDate>Sun, 22 May 2016 16:48:45 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/adding_custom_domain_to_github_pages/</guid>
+      <description>A domain which shows what you do can add credibility to your blog. In this tutorial we are going to add custom domain to our github page. You may also want to host a website on github. You can have domain with godaddy, hostgator, namecheap, etc. The steps remains the same. I will point out any peculiarity, if they exist. So, lets get started.
+Configuring Github There should be a way for github to know what is the name of your domain.</description>
+    </item>
+    
+    <item>
+      <title>How to Easily Host a Static website on Github</title>
+      <link>https://www.classandobjects.com/tutorial/host_static_site_on_github/</link>
+      <pubDate>Sat, 21 May 2016 15:36:40 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/host_static_site_on_github/</guid>
+      <description>This post shows, how you can easily host your static website on Github. We are using Hugo static site generator. You can use anything similar.
+Initial Setup I believe that you already have setup your hugo project, refer the link in case you want to start a project. Then open your config.toml file and modify the baseUrl as:
+baseurl = &amp;quot;http://{username}.github.io/&amp;quot;
+replace {username} with your username.
+Repository for Project Files This step is not mandatory, but still you want to do this.</description>
+    </item>
+    
+  </channel>
+</rss>

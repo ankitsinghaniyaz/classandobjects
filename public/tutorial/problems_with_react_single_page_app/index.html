@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <title>Problem With React Single Page App - Class &amp; Objects</title>
+
+  
+  
+  <meta name="description" content="If you are planning to create a single page app maybe you have heard people recommending React as an option. React is amazing and I am currently using React in almost all the projects. As you may have also heard that React is just the view layer so that means you will have to make choices. The choice about the state management, styling, routing, app structure, naming conventions and much more." />
+  <meta name="author" content="" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://www.classandobjects.com/app.min.css" />
+
+  
+  <link rel="preload stylesheet" as="style" href="https://www.classandobjects.com/an-old-hope.min.css" />
+  <script
+    defer
+    src="https://www.classandobjects.com/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/theme.png" />
+
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/twitter.svg" />
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/github.svg" />
+  
+
+  
+  <link rel="icon" href="https://www.classandobjects.com/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://www.classandobjects.com/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.80.0" />
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="Problem With React Single Page App" />
+<meta property="og:description" content="React is awesome, but the choices to create a single page app with react has challenges. Here I share the issues I faced when creating a react SPA." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.classandobjects.com/tutorial/problems_with_react_single_page_app/" />
+<meta property="article:published_time" content="2016-11-26T01:35:47+05:30" />
+<meta property="article:modified_time" content="2016-11-26T01:35:47+05:30" />
+
+  
+  <meta itemprop="name" content="Problem With React Single Page App">
+<meta itemprop="description" content="React is awesome, but the choices to create a single page app with react has challenges. Here I share the issues I faced when creating a react SPA.">
+<meta itemprop="datePublished" content="2016-11-26T01:35:47+05:30" />
+<meta itemprop="dateModified" content="2016-11-26T01:35:47+05:30" />
+<meta itemprop="wordCount" content="969">
+
+
+
+<meta itemprop="keywords" content="javascript,react," />
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Problem With React Single Page App"/>
+<meta name="twitter:description" content="React is awesome, but the choices to create a single page app with react has challenges. Here I share the issues I faced when creating a react SPA."/>
+<meta name="twitter:site" content="@https://www.twitter.com/classandobjects"/>
+
+  
+  
+</head>
+
+
+  <body class="not-ready" data-menu="false">
+    <header class="header">
+  
+  <p class="logo">
+    <a class="site-name" href="https://www.classandobjects.com/">Class &amp; Objects</a><a class="btn-dark"></a>
+  </p>
+  
+
+  <script>
+    let bodyClx = document.body.classList;
+    let btnDark = document.querySelector('.btn-dark');
+    let sysDark = window.matchMedia('(prefers-color-scheme: dark)');
+    let darkVal = localStorage.getItem('dark');
+
+    let setDark = (isDark) => {
+      bodyClx[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark ? 'yes' : 'no');
+    };
+
+    setDark(darkVal ? darkVal === 'yes' : sysDark.matches);
+    requestAnimationFrame(() => bodyClx.remove('not-ready'));
+
+    btnDark.addEventListener('click', () => setDark(!bodyClx.contains('dark')));
+    sysDark.addEventListener('change', (event) => setDark(event.matches));
+  </script>
+
+  
+  
+
+  
+  <nav class="social">
+    
+    <a
+      class="twitter"
+      style="--url: url(./twitter.svg)"
+      href="https://twitter.com/classandobjects"
+      target="_blank"
+    ></a>
+    
+    <a
+      class="github"
+      style="--url: url(./github.svg)"
+      href="https://github.com/ankitsinghaniyaz"
+      target="_blank"
+    ></a>
+    
+  </nav>
+  
+</header>
+
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-title">
+    <p>
+      <time>:date_medium</time>
+      
+    </p>
+    <h1>Problem With React Single Page App</h1>
+  </header>
+  <section class="post-content"><p>If you are planning to create a single page app maybe you have heard people recommending React as an option. React is amazing and I am currently using React in almost all the projects. As you may have also heard that React is just the view layer so that means you will have to make choices. The choice about the state management, styling, routing,  app structure, naming conventions and much more. These choices could be fun and intimidating at the same time. I am writing this article to outline my challenges and discovery trying to create single page app using React Js.</p>
+<!-- raw HTML omitted -->
+<h2 id="the-beginning">The Beginning</h2>
+<p>When I started the project I was sure that my project will be on React. I asked myself how do you start a new React project? The first crossroad was about using ES2015. I knew this was coming to all the browsers still I had to make a choice. Recently facebook has introduced a CLI for React called as React-Create-App, which will do the most recommended setup for you. I assume that you are using this CLI tool to scaffold your project. If you indeed used it, congratulations. You saved yourself the pain of setting these things:</p>
+<ul>
+<li>EsLint (Helps you follow some rules and ease error identification)</li>
+<li>Babel (Polyfill for ES6 and JSX syntax)</li>
+<li>Webpack (Handle bundling and running babel)</li>
+<li><a href="https://facebook.github.io/jest/">Jest</a> (Testing)</li>
+</ul>
+<p>I still  think I haven&rsquo;t mentioned all the things that scaffolding did for you. If instead, you tread on the manual path, you will have to educate yourself about setting up webpack and babel. Differentiate testing frameworks like enzyme and jest. This knowledge is not bad, but it comes in the way of what you actually want to achieve. So this was just setting up the view layer. Let&rsquo;s move on.</p>
+<h2 id="state-mangement">State Mangement</h2>
+<p>The state is the cool thing in react, which is monitored by React and whenever a state changes the view is updated automagically. Now I asked myself how will I want to manage my states? I was presented with few answers. The idealist in me said Redux, the minimalist said React States, the optimist said <a href="https://mobxjs.github.io/mobx/">MobX</a>. What do you choose???</p>
+<p>If your app is simple you can just get away with React states and never know other libraries ever existed, but if it has some complex state management you may want to consider the others. Redux is the most famous, widely used and mature. If you are building something critical then Redux can give you powerful debugging and testing abilities. If you just want to avoid boilerplate code associated with Redux and want to get the React Magic in state management also, then MobX may be the right things.</p>
+<p>After some blogs, few video lessons and a few sample projects. I decided to go with MobX, so that I have power when I need and I can avoid boilerplate as much as I can. With this checkpoint passed, you are 75% done with the setup.</p>
+<blockquote>
+<p>P.S. I am Rubyist, so boilerplate? NOOO!</p>
+</blockquote>
+<h2 id="routing">Routing</h2>
+<p><a href="https://github.com/ReactTraining/react-router">React-Routers</a> is the defacto way of routing with React. It also has a simple API and easy to learn. Though there are concepts like Hash History and Browser History. In short, HashHistory is ugly and not to be used in production but easier to setup. The opposite is true for BrowserHistory. In order to use this good looking, preferred BrowserHistory you have to configure the server to return the root page for anything requested. This again feels like a lot of work to me as it should have been easily available out of the box.</p>
+<h2 id="css-inline-vs-class">CSS Inline vs Class</h2>
+<p>I am pretty sure that your app will have some form of styling. So again you will have to spend time digging through discussion and forums deciding what kind of styling you prefer. This may not be a big deal but it takes time and impact the way you structure your project.</p>
+<h2 id="application-structure-file-name-conventions">Application Structure, File Name Conventions</h2>
+<p>Again not a difficult part but I like to follow some well-defined conventions so that I do not have to overload my brain with deciding where to place my files and how will I want to name them. Like my <code>&lt;Toolbar /&gt;</code> should live in <code>toolbar.jsx</code> , <code>toolbarComponent.js</code>, <code>Toolbar.componet.js</code>, &hellip;.</p>
+<p>I think you get the problem. All these options are logically sound and our mind seems to adapt and learn more patterns as we advance in the project. Some time later I may feel bad about the names I chose a few months back.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Please see these are the things which I find challenging and believe someone will feel the same. If you are fine with all these work I respect your views and choices. I am completely for the React and I love it, but surely this issues warrant my attention to other notable frameworks like <a href="http://emberjs.com/">ember.js</a>. I will like to try out Ember and see how it fits my style of development. I will soon be doing a post on my choices and how I tackled all these problems in the React ecosystem. Then I will redo the same things with Ember and try to note my experience with the same.</p>
+<p>If this post helped you in any way, I would love your appreciation below. Thanks for reading.</p>
+<h2 id="edit-10th-july-2017">Edit (10th July 2017)</h2>
+<p>I have recently started <a href="https://vuejs.org/">Vue.js</a> and I am really loving it. It feels more natural to me when compared to React. It has all the flexibility and modularity of React but without the fatigue. All the standard things required are maintained by the official community themselves. They also have an amazing documentation. If you are willing to try one more time I would really suggest to give Vue a chance. It is worth it. I will soon do a post on Vue too, so stay tuned.</p>
+</section>
+
+  
+  
+  <footer class="post-tags">
+     
+    <a href="https://www.classandobjects.com/tags/javascript">javascript</a>
+     
+    <a href="https://www.classandobjects.com/tags/react">react</a>
+    
+  </footer>
+  
+
+  
+  
+  
+  <nav class="post-nav">
+    
+    <a class="prev" href="https://www.classandobjects.com/tutorial/use_multiple_version_of_rails_using_rbenv_or_rvm/"><span>←</span><span>Using Multiple Version of Rails Easily</span></a>
+     
+    <a class="next" href="https://www.classandobjects.com/tutorial/moment-js-cheatsheet/"><span>Moment.js Cheatsheet</span><span>→</span></a>
+    
+  </nav>
+  
+
+  
+  
+</article>
+
+</main>
+
+    <footer class="footer">
+  <p>&copy; 2021 <a href="https://www.classandobjects.com/">Class &amp; Objects</a></p>
+  <p>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</p>
+  <p>
+    <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 5.1</a>
+  </p>
+</footer>
+
+  </body>
+</html>

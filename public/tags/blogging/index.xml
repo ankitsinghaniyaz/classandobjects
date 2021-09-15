@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blogging on Class &amp; Objects</title>
+    <link>https://www.classandobjects.com/tags/blogging/</link>
+    <description>Recent content in blogging on Class &amp; Objects</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 16 Sep 2016 22:35:37 +0530</lastBuildDate><atom:link href="https://www.classandobjects.com/tags/blogging/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add Subscribe Button to Your Website, also Add a Scroll Triggered Subscribe Box</title>
+      <link>https://www.classandobjects.com/tutorial/add_subscribe_button_on_static_site/</link>
+      <pubDate>Fri, 16 Sep 2016 22:35:37 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/add_subscribe_button_on_static_site/</guid>
+      <description>Subscribe button is a useful feature to have on any website. It helps you create loyal audience base and helps your users get amazing content from the blogs they love. It can be quite easy to integrate one on a WordPress site or a website with a backend. In this article, I will show you how to add a subscribe button to any static website using formspree.io, Vex js and javascript.</description>
+    </item>
+    
+    <item>
+      <title>Why Hugo is best for blogging? You should use it too!</title>
+      <link>https://www.classandobjects.com/blogs/why_hugo/</link>
+      <pubDate>Wed, 18 May 2016 19:45:15 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/blogs/why_hugo/</guid>
+      <description>Just like any blogger, I also wanted to start my own blog. I had many doubts. What is my niche? Will people read my blog? Which platform to use for blogging? I do not know if I have found my answers, but for the last one it is HUGO. Yes, I searched for different blogging platforms and all had their own set of drawbacks. Here are few reasons for not selecting them :</description>
+    </item>
+    
+  </channel>
+</rss>

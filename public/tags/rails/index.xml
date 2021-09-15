@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rails on Class &amp; Objects</title>
+    <link>https://www.classandobjects.com/tags/rails/</link>
+    <description>Recent content in rails on Class &amp; Objects</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.classandobjects.com/tags/rails/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Set Up MySQL With Rails On Ubuntu 20.04</title>
+      <link>https://www.classandobjects.com/tutorial/set_up_ruby_on_rails_with_mysql/</link>
+      <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/set_up_ruby_on_rails_with_mysql/</guid>
+      <description>I did another post on how every time I install Postgres it&amp;rsquo;s a pain. Jus that you don&amp;rsquo;t think that MySQL is any easy. I&amp;rsquo;m noting down my struggles just as I tried setting up another Rails project which used MySQL.
+System Specification  Ubuntu 20.04 MySQL 8+  NOTE: This is the version of Ubuntu Linux I&amp;rsquo;m testing it with. Ubuntu is my primary OS. This should work on other Ubuntu versions without any change.</description>
+    </item>
+    
+    <item>
+      <title>Set Up Postgres With Rails On Ubuntu 20.04</title>
+      <link>https://www.classandobjects.com/tutorial/set_up_ruby_on_rails_with_postgres/</link>
+      <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/set_up_ruby_on_rails_with_postgres/</guid>
+      <description>This is no beginner stuff! Every time I have to do a fresh install of Postgresql and make it work with Ruby on Rails. It is a pain in the ass. I made up my mind that this is going to be the last time I will have trouble doing this. So here we go with every minute details.
+System Specification  Ubuntu 20.04 Postgres 12+  NOTE: This is the version of Ubuntu Linux I&amp;rsquo;m testing it with.</description>
+    </item>
+    
+    <item>
+      <title>Creating a Generator in Rails for Vue files</title>
+      <link>https://www.classandobjects.com/tutorial/creating_a_rails_generator/</link>
+      <pubDate>Fri, 17 Nov 2017 10:58:41 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/creating_a_rails_generator/</guid>
+      <description>When learning Rails we all learn about generators. I still remember when I saw it for the first time. I just fell in love with it. Writing a single command can create useful files and directories for me. Until recently I never had a chance to create a generator. Yesterday I did a blog on using Vue.js with Rails and I saw that I had to create a few files every time I wanted to add Vue to a view.</description>
+    </item>
+    
+    <item>
+      <title>Using Vue.js in Rails</title>
+      <link>https://www.classandobjects.com/tutorial/using_vue_js_with_rails/</link>
+      <pubDate>Thu, 16 Nov 2017 10:58:41 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/using_vue_js_with_rails/</guid>
+      <description>Vue.js is awesome. I&amp;rsquo;m telling this after having used React for more than a year in production software. I have written about my experience creating React SPA here. If you haven&amp;rsquo;t tried Vue yet, I highly recommend giving it a try. The developer experience is at the center. In this guide, we will see how to add Vue to a Rails project. So let&amp;rsquo;s get rolling.
+In this post, we are going to migrate our devise signup page to use Vue.</description>
+    </item>
+    
+    <item>
+      <title>Using Webpack and Yarn with Rails 5</title>
+      <link>https://www.classandobjects.com/tutorial/use_webpack_and_yarn_with_rails/</link>
+      <pubDate>Fri, 10 Mar 2017 19:02:43 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/use_webpack_and_yarn_with_rails/</guid>
+      <description>Rails is awesome, agreed? Everyone understood that JavaScript is coming huge and there has to be a community-specific way to integrate React, Angular or Vue with a rails project.
+There have been partial successful attempts like like react-rails gem, react-on-rails, webpack-rails, etc to help user bring JS in. Still, they all lacked somewhere. So here comes all new Rails 5.1 with webpack and yarn integrated.
+You don&amp;rsquo;t need to wait for 5.</description>
+    </item>
+    
+    <item>
+      <title>Using Multiple Version of Rails Easily</title>
+      <link>https://www.classandobjects.com/tutorial/use_multiple_version_of_rails_using_rbenv_or_rvm/</link>
+      <pubDate>Fri, 10 Mar 2017 19:01:30 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/use_multiple_version_of_rails_using_rbenv_or_rvm/</guid>
+      <description>Managing rails version on local computer can be a pain. We mostly use rbenv and rvm to manage the ruby version. But it gets difficult to manange version of each gem. In todays world you will want to use docker to control you complete environment. Still, there are cases when you want to try out a version of rails, so here is how you can do that.
+ credit: this post on StackOverflow was how I got inspiration.</description>
+    </item>
+    
+    <item>
+      <title>How to use React and MobX with Rails 5</title>
+      <link>https://www.classandobjects.com/tutorial/using_react_mobx_with_rails/</link>
+      <pubDate>Thu, 15 Sep 2016 01:02:27 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/using_react_mobx_with_rails/</guid>
+      <description>MobX is the new state management library which packs really well with react. Mobx makes things much simpler to redux, which is more famous in react community. I have detailed out the step on how to get started with using mobx and rails 5.
+Install react_on_rails gem To make mobx functional with rails, I had to drop react-rails gem and adopt the react_on_rails gem. Setting it up is cumbersome in the beginning but it pays off well in the long run.</description>
+    </item>
+    
+  </channel>
+</rss>

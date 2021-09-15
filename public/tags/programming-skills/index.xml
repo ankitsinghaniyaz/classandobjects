@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>programming skills on Class &amp; Objects</title>
+    <link>https://www.classandobjects.com/tags/programming-skills/</link>
+    <description>Recent content in programming skills on Class &amp; Objects</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 Sep 2016 19:17:43 +0530</lastBuildDate><atom:link href="https://www.classandobjects.com/tags/programming-skills/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Level Up the Programming Skills : Language vs Logic</title>
+      <link>https://www.classandobjects.com/blogs/level_up_programming_skills/</link>
+      <pubDate>Fri, 09 Sep 2016 19:17:43 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/blogs/level_up_programming_skills/</guid>
+      <description>Learning the language of computers can be both interesting and daunting. You may be either starting your career or are a seasoned developer, the chances are too likely that you are having trouble hitting the right balance between language and logical skills. In this article, I will try to find out what is the right balance to keep levelling up our programming skills.
+In the current education system, most of the times, we tend to focus too much on the logical aspect of the programming.</description>
+    </item>
+    
+  </channel>
+</rss>

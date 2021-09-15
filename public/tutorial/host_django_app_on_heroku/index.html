@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <title>Step by Step Guide on Deploying Django Application on Heroku - Class &amp; Objects</title>
+
+  
+  
+  <meta name="description" content="This guide describe how to deploy Django application on Heroku, gracefully! Yes, you heard it right. Heroku was mostly build with Ruby in mind but now it supports Python applications too. There are some points which are not mentioned in other blogs and Heroku official docs. I will try to describe all the process in detail here, so that you have a good experience deploying you apps. Lets get started!" />
+  <meta name="author" content="" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://www.classandobjects.com/app.min.css" />
+
+  
+  <link rel="preload stylesheet" as="style" href="https://www.classandobjects.com/an-old-hope.min.css" />
+  <script
+    defer
+    src="https://www.classandobjects.com/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/theme.png" />
+
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/twitter.svg" />
+  
+  <link rel="preload" as="image" href="https://www.classandobjects.com/github.svg" />
+  
+
+  
+  <link rel="icon" href="https://www.classandobjects.com/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://www.classandobjects.com/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.80.0" />
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="Step by Step Guide on Deploying Django Application on Heroku" />
+<meta property="og:description" content="Step by step guide on how to deploy django application on heroku. This guide talks about creating Procfile, requirement.txt and setting up the toolbelt" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.classandobjects.com/tutorial/host_django_app_on_heroku/" />
+<meta property="article:published_time" content="2016-05-27T11:03:20+05:30" />
+<meta property="article:modified_time" content="2016-05-27T11:03:20+05:30" />
+
+  
+  <meta itemprop="name" content="Step by Step Guide on Deploying Django Application on Heroku">
+<meta itemprop="description" content="Step by step guide on how to deploy django application on heroku. This guide talks about creating Procfile, requirement.txt and setting up the toolbelt">
+<meta itemprop="datePublished" content="2016-05-27T11:03:20+05:30" />
+<meta itemprop="dateModified" content="2016-05-27T11:03:20+05:30" />
+<meta itemprop="wordCount" content="967">
+
+
+
+<meta itemprop="keywords" content="python," />
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Step by Step Guide on Deploying Django Application on Heroku"/>
+<meta name="twitter:description" content="Step by step guide on how to deploy django application on heroku. This guide talks about creating Procfile, requirement.txt and setting up the toolbelt"/>
+<meta name="twitter:site" content="@https://www.twitter.com/classandobjects"/>
+
+  
+  
+</head>
+
+
+  <body class="not-ready" data-menu="false">
+    <header class="header">
+  
+  <p class="logo">
+    <a class="site-name" href="https://www.classandobjects.com/">Class &amp; Objects</a><a class="btn-dark"></a>
+  </p>
+  
+
+  <script>
+    let bodyClx = document.body.classList;
+    let btnDark = document.querySelector('.btn-dark');
+    let sysDark = window.matchMedia('(prefers-color-scheme: dark)');
+    let darkVal = localStorage.getItem('dark');
+
+    let setDark = (isDark) => {
+      bodyClx[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark ? 'yes' : 'no');
+    };
+
+    setDark(darkVal ? darkVal === 'yes' : sysDark.matches);
+    requestAnimationFrame(() => bodyClx.remove('not-ready'));
+
+    btnDark.addEventListener('click', () => setDark(!bodyClx.contains('dark')));
+    sysDark.addEventListener('change', (event) => setDark(event.matches));
+  </script>
+
+  
+  
+
+  
+  <nav class="social">
+    
+    <a
+      class="twitter"
+      style="--url: url(./twitter.svg)"
+      href="https://twitter.com/classandobjects"
+      target="_blank"
+    ></a>
+    
+    <a
+      class="github"
+      style="--url: url(./github.svg)"
+      href="https://github.com/ankitsinghaniyaz"
+      target="_blank"
+    ></a>
+    
+  </nav>
+  
+</header>
+
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-title">
+    <p>
+      <time>:date_medium</time>
+      
+    </p>
+    <h1>Step by Step Guide on Deploying Django Application on Heroku</h1>
+  </header>
+  <section class="post-content"><p>This guide describe how to deploy Django application on Heroku, gracefully! Yes, you heard it right. Heroku was mostly build with Ruby in mind but now it supports Python applications too. There are some points which are not mentioned in other blogs and <a href="https://devcenter.heroku.com/articles/django-app-configuration">Heroku official docs</a>. I will try to describe all the process in detail here, so that you have a good experience deploying you apps. Lets get started!</p>
+<h2 id="creating-the-project">Creating the Project</h2>
+<p>Creating your project is the most important step in this series. Create your application with default Django settings. These are the few configuration that you will have to do. You can create a Django project using following command:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">django-admin startproject myproject
+</code></pre></div><p>This tutorial talks about configuring Django apps created through above method!</p>
+<p>If you are creating a new application I highly recommend using Heroku Django template. You can start your project as:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">django-admin startproject --template<span style="color:#f92672">=</span>https://github.com/heroku/heroku-django-template/archive/master.zip --name<span style="color:#f92672">=</span>Procfile  myproject
+</code></pre></div><blockquote>
+<p>Note: If you created application using this template you can skip the configuration step.</p>
+</blockquote>
+<h2 id="creating-virtual-environment">Creating Virtual Environment</h2>
+<p>There are lot of packages in your default python path. You may want to create a fresh and sandboxed environment for this application. This avoids your global changes from affecting this application. Install <code>virtualenv</code> with:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pip install virtualenv
+</code></pre></div><p>You can create the virtual environment with following commands:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># creates virtualenv with name myenv, feel free to change it</span>
+virtualenv myenv
+
+<span style="color:#75715e"># activate the environment</span>
+source myenv/bin/activate
+</code></pre></div><h2 id="installing-dependencies">Installing Dependencies</h2>
+<p>These are few dependencies which are required to successfully deploy your application. Make sure you install them all.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pip install django
+pip install gunicorn
+pip install dj-database-url
+pip install whitenoise
+pip install psycopg2
+</code></pre></div><p>You can get <a href="http://stackoverflow.com/questions/5420789/how-to-install-psycopg2-with-pip-on-python">error while installing psycopg2</a>. I found solution to that on stackoverflow:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install libpq-dev python-dev
+</code></pre></div><p>Try again installing <code>psycopg2</code>!</p>
+<p>You also want to install <a href="https://devcenter.heroku.com/articles/getting-started-with-python#set-up">Heroku Toolbelt</a> and <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">git</a> for your platform. This helps us easily manage our application remotely.</p>
+<p>Try following commands on console to make sure you installed them properly:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">heroku --help
+git --help
+</code></pre></div><p>If these commands return with some options, you have successfully installed them.</p>
+<blockquote>
+<p><strong>Did You Know?</strong> Heroku uses git to create local repository</p>
+</blockquote>
+<h2 id="creating-requirementstxt">Creating requirements.txt</h2>
+<p>There is no way for Heroku to know your application dependencies. So we need a <code>requirements.txt</code> file in our root at the same level as <code>manage.py</code> file.
+We can generate the file with following command:</p>
+<pre><code>pip freeze &gt; requirements.txt
+</code></pre><blockquote>
+<p>Note: Make sure you create the file parallel to manage.py file.</p>
+</blockquote>
+<h2 id="creating-procfile">Creating Procfile</h2>
+<p>Create a file called as <code>Procfile</code> at same level as your <code>manage.py</code> file. Put the following line into it:</p>
+<pre><code>web: gunicorn myproject.wsgi
+</code></pre><blockquote>
+<p>Note: Procfile starts with a capital <code>P</code></p>
+</blockquote>
+<blockquote>
+<p>Note: Make sure to change myproject.wsgi to yourprojectname.wsgi</p>
+</blockquote>
+<p>This file is used by Heroku to determine what kind of service will be running on the server. It says that &ldquo;We want a web server gunicorn with the project mentioned&rdquo;</p>
+<h2 id="creating-runtimetxt">Creating runtime.txt</h2>
+<p>Herkou uses <code>Python2</code> as default. If you are like me and want to use <code>Python3</code> instead. You can create a file <code>runtime.txt</code> in your project root at the same level as <code>manage.py</code></p>
+<p>You can find out your python version by firing:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">python -V
+</code></pre></div><p>then put the line in your <code>runtime.txt</code> file as:</p>
+<pre><code>python-3.5.1
+</code></pre><h2 id="configuring-to-deploy">Configuring to Deploy</h2>
+<p>Now you are all set to Configure your Django app for Herkou. There are two files that you need to edit.</p>
+<h3 id="modify-settingspy">Modify settings.py</h3>
+<p>Open <code>settings.py</code> file, it can be found under your <code>myproject/myproject/setting.py</code>. There is only one <code>settings.py</code> file in your project. Edit it and the following lines following:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># add this import at top</span>
+<span style="color:#f92672">import</span> dj_database_url
+
+<span style="color:#75715e"># scroll down to find entries related to DATABASE, below that put following lines</span>
+db_from_env <span style="color:#f92672">=</span> dj_database_url<span style="color:#f92672">.</span>config(conn_max_age<span style="color:#f92672">=</span><span style="color:#ae81ff">500</span>)
+DATABASES[<span style="color:#e6db74">&#39;default&#39;</span>]<span style="color:#f92672">.</span>update(db_from_env)
+
+<span style="color:#75715e"># scroll down to find entries realted to STATIC, add these lines there</span>
+PROJECT_ROOT <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>dirname(os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>abspath(__file__))
+
+STATIC_ROOT <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(PROJECT_ROOT, <span style="color:#e6db74">&#39;staticfiles&#39;</span>)
+STATIC_URL <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;/static/&#39;</span>
+
+<span style="color:#75715e"># Extra places for collectstatic to find static files.</span>
+STATICFILES_DIRS <span style="color:#f92672">=</span> (
+    os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(PROJECT_ROOT, <span style="color:#e6db74">&#39;static&#39;</span>),
+)
+STATICFILES_STORAGE <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;whitenoise.django.GzipManifestStaticFilesStorage&#39;</span>
+
+<span style="color:#75715e"># make sure to remove duplicates line if they exist</span>
+</code></pre></div><h3 id="modify-wsgipy">Modify wsgi.py</h3>
+<p>Find <code>wsgi.py</code> file parallel to <code>settings.py</code> file. Edit it and add following lines:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Add these imports at top</span>
+<span style="color:#f92672">from</span> django.core.wsgi <span style="color:#f92672">import</span> get_wsgi_application
+<span style="color:#f92672">from</span> whitenoise.django <span style="color:#f92672">import</span> DjangoWhiteNoise
+
+application <span style="color:#f92672">=</span> get_wsgi_application()
+application <span style="color:#f92672">=</span> DjangoWhiteNoise(application)
+</code></pre></div><h2 id="create-gitignore">Create .gitignore</h2>
+<p>Create a git ignore file to avoid adding of unwanted files to our repository. Create a file called <code>.gitignore</code> on your project root. Add following lines to it.</p>
+<pre><code># name of your environment
+venv
+# do not allow python cache file
+*.pyc
+</code></pre><p>Alternatively you can delete the virtual environment <code>venv</code> you created!</p>
+<h2 id="deploy-on-heroku">Deploy on Heroku</h2>
+<p>Now you are done with configuring Django application. We are now going to host our application to Heroku. We will use the <strong>herkou toolbelt and git</strong> we installed previously.</p>
+<p>Go to <a href="https://www.heroku.com/">heroku</a> and sign up for an account. Do not forget to verify the email address. Fire in following commands while inside your project root.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">heroku login
+<span style="color:#75715e"># Enter your login id and password you used to create the account</span>
+
+<span style="color:#75715e"># Set up git flow</span>
+git init
+git add .
+
+<span style="color:#75715e"># may have to provide email and name</span>
+git config user.email <span style="color:#e6db74">&#34;email@domain.com&#34;</span>
+git config user.name <span style="color:#e6db74">&#34;yourname&#34;</span>
+
+git commit -m <span style="color:#e6db74">&#39;Initial commit&#39;</span>
+
+heroku create
+<span style="color:#75715e"># Creates a new application for this project</span>
+
+git push heroku master
+<span style="color:#75715e"># creates a local repository heroku and starts to host it on heroku</span>
+
+<span style="color:#75715e"># if above step throws an error you may have to disable static collection and push again using above command</span>
+heroku config:set DISABLE_COLLECTSTATIC<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+
+heroku open
+<span style="color:#75715e"># opens you app on browser</span>
+
+heroku logs
+<span style="color:#75715e"># use this to see how your app is working in case you find some error</span>
+</code></pre></div><h2 id="conclusion">Conclusion</h2>
+<p>I have tried to give all the steps I took to deploy apps to heroku. If you find this article usefull share it with your friends. Feel free to comment about any improvement you would like to see.</p>
+<blockquote>
+<p>We Learn, We Grow..</p>
+</blockquote>
+</section>
+
+  
+  
+  <footer class="post-tags">
+     
+    <a href="https://www.classandobjects.com/tags/python">python</a>
+    
+  </footer>
+  
+
+  
+  
+  
+  <nav class="post-nav">
+    
+    <a class="prev" href="https://www.classandobjects.com/tutorial/confusing_things_in_react/"><span>←</span><span>Things Beginners Find Confusing About React.js</span></a>
+     
+    <a class="next" href="https://www.classandobjects.com/tutorial/python_boggle_solver/"><span>Can you Boggle Solve?</span><span>→</span></a>
+    
+  </nav>
+  
+
+  
+  
+</article>
+
+</main>
+
+    <footer class="footer">
+  <p>&copy; 2021 <a href="https://www.classandobjects.com/">Class &amp; Objects</a></p>
+  <p>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</p>
+  <p>
+    <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 5.1</a>
+  </p>
+</footer>
+
+  </body>
+</html>

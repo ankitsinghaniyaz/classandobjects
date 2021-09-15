@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hosting on Class &amp; Objects</title>
+    <link>https://www.classandobjects.com/tags/hosting/</link>
+    <description>Recent content in hosting on Class &amp; Objects</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 22 May 2016 16:48:45 +0530</lastBuildDate><atom:link href="https://www.classandobjects.com/tags/hosting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adding Domain to Github Pages</title>
+      <link>https://www.classandobjects.com/tutorial/adding_custom_domain_to_github_pages/</link>
+      <pubDate>Sun, 22 May 2016 16:48:45 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/adding_custom_domain_to_github_pages/</guid>
+      <description>A domain which shows what you do can add credibility to your blog. In this tutorial we are going to add custom domain to our github page. You may also want to host a website on github. You can have domain with godaddy, hostgator, namecheap, etc. The steps remains the same. I will point out any peculiarity, if they exist. So, lets get started.
+Configuring Github There should be a way for github to know what is the name of your domain.</description>
+    </item>
+    
+    <item>
+      <title>How to Easily Host a Static website on Github</title>
+      <link>https://www.classandobjects.com/tutorial/host_static_site_on_github/</link>
+      <pubDate>Sat, 21 May 2016 15:36:40 +0530</pubDate>
+      
+      <guid>https://www.classandobjects.com/tutorial/host_static_site_on_github/</guid>
+      <description>This post shows, how you can easily host your static website on Github. We are using Hugo static site generator. You can use anything similar.
+Initial Setup I believe that you already have setup your hugo project, refer the link in case you want to start a project. Then open your config.toml file and modify the baseUrl as:
+baseurl = &amp;quot;http://{username}.github.io/&amp;quot;
+replace {username} with your username.
+Repository for Project Files This step is not mandatory, but still you want to do this.</description>
+    </item>
+    
+  </channel>
+</rss>
