@@ -358,6 +358,7 @@ img {
 
 .post-tags {
   margin-top: 7rem;
+  margin-bottom: 7rem;
 }
 
 .post-tags a {
@@ -378,6 +379,7 @@ img {
   display: flex;
   justify-content: space-between;
   margin-top: var(--y-gap);
+  margin-bottom: var(--y-gap);
   background: rgba(var(--dark), 0.05);
   border-radius: 0.5rem;
 }
@@ -387,7 +389,7 @@ img {
   align-items: center;
   width: 50%;
   padding: var(--gap);
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: 700;
   line-height: 1.2;
 }

@@ -4,6 +4,10 @@ contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
 author = "Ankit Singhaniya"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+DisqusShortname = "classandobjects"
+
 
 # Site settings
 baseurl = "https://www.classandobjects.com/"
@@ -26,7 +30,7 @@ theme = "paper"
 
 
 	# Enter optionally your twitter account
-	twitter = "classandobjects"
+	twitter = "aks0510"
 	gplus = "+AnkitSinghaniya"
 	github = "ankitsinghaniyaz"
 	enableRSS = true  # RESEARCH MORE ON RSS
@@ -63,10 +67,3 @@ theme = "paper"
 
 	# enable table of content
 	toc = false
-
-# Add additional social link entries underneath
-[social]
-    twitter  = "https://www.twitter.com/classandobjects"
-   #  facebook = "https://www.facebook.com/
-    github   = "https://www.github.com/ankitsinghaniyaz"
-   #  dribble  = "https://www.dribbble.com/"
