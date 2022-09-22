@@ -1,6 +1,7 @@
 +++
 categories = ["tutorial", "guide"]
 date = "2016-09-16T22:35:37+05:30"
+lastmod = "2022-09-22T10:10:01+05:30"
 description = "Subscribe button are crucial to engage your loyal audience. Create a subscribe button for your static site. Also add a on scroll pop up for subscribers."
 draft = false
 keywords = ["add subscribe button",
@@ -13,7 +14,7 @@ title = "Add Subscribe Button to Your Website, also Add a Scroll Triggered Subsc
 toc = false
 
 +++
-Subscribe button is a useful feature to have on any website. It helps you create loyal audience base and helps your users get amazing content from the blogs they love. It can be quite easy to integrate one on a WordPress site or a website with a backend. In this article, I will show you how to add a subscribe button to any static website using [formspree.io](www.formspree.io), [Vex js](https://github.com/hubspot/vex) and javascript. I will also show how you can add a subscribe box(popup) when a user has scrolled the page. I am using Hugo as my static site generator, the process is exactly the same for any static site. So let's get started.
+Subscribe button is a useful feature to have on any website. It helps you create loyal audience base and helps your users get amazing content from the blogs they love. It can be quite easy to integrate one on a WordPress site or a website with a backend. In this article, I will show you how to [add a subscribe button to any static website using Formester](https://Formester.com), [Vex js](https://github.com/hubspot/vex) and javascript. I will also show how you can add a subscribe box(popup) when a user has scrolled the page. I am using Hugo as my static site generator, the process is exactly the same for any static site. So let's get started.
 
 ## Setup Vex js
 
@@ -76,7 +77,7 @@ function subscribe() {
                         var form = document.createElement("form");
                         form.setAttribute('method',"post");
                         //replace below email with your email
-                        form.setAttribute('action', "http://formspree.io/classandobjects@gmail.com");
+                        form.setAttribute('action', "http://formester.com/forms/23j23-324nj23-234234");
 
                         var input = document.createElement("input"); //input element, text
                         input.setAttribute('type',"email");
@@ -94,9 +95,9 @@ function subscribe() {
 </script>
 ```
 
-In the above example just replace classandobects@gmail.com with you own email address and the theme name with your selected Vex theme. This should be enough to get you started. Formspree.io allow you to get 1000 emails for free and is fairly easy to use. Until now you have implemented a subscribe option like the one you get when you click the `envelope` icon on your left.
+In the above example just replace classandobects@gmail.com with you own email address and the theme name with your selected Vex theme. This should be enough to get you started. Formester.com allow you to get 100 submissions for free and is fairly easy to use. Until now you have implemented a subscribe option like the one you get when you click the `envelope` icon on your left.
 
-> TIP: You will have to verify the first email you get via formspree.io
+> TIP: You will have to verify the first email you get via formester.com
 
 ## Bonus, Adding a subscribe form on scroll
 
@@ -125,7 +126,7 @@ Try scrolling below on this site and as you reach around **70%**, you get a popu
                 var email_value = data.email;
                             var form = document.createElement("form");
                             form.setAttribute('method',"post");
-                            form.setAttribute('action', "http://formspree.io/classandobjects@gmail.com");
+                            form.setAttribute('action', "http://formester.com/3h2uo-2131k-213k12");
 
                             var input = document.createElement("input");
                             input.setAttribute('type',"email");
